@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <!-- Назва на вкладці -->
+    <title>English Lesson 2</title>
+
+    <!-- Скрипт перемикання теми -->
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+
+      const hljsThemeLink =
+        savedTheme === "dark"
+          ? "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+          : "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css";
+
+      document.head.insertAdjacentHTML(
+        "beforeend",
+        `<link id="hljs-theme" rel="stylesheet" href="${hljsThemeLink}" />`,
+      );
+    </script>
+
+    <!-- Підключення шрифтів (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Підсвітка коду (Highlight.js) -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"
+    ></script>
+
+    <!-- CodeMirror -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/xml/xml.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/css/css.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"
+    ></script>
+
+    <!-- Власні стилі та скрипти -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- "Завіса", яка плавно зникає при завантаженні сторінки -->
+    <div class="transition-curtain"></div>
+
+    <!-- top-bar -->
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            width="62"
+            height="62"
+            class="site-logo"
+          />
+        </div>
+        <div class="top-bar__controls">
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Хедер з назвою теми та посиланнями -->
+    <header>
+      <div class="title-container">
+        <a href="#" class="nav-arrow prev-arrow" title="Попередній урок"
+          ><img src="./media/icons/double-alt-arrow-left.svg"
+        /></a>
+
+        <h1 id="lesson-title">English: 02</h1>
+
+        <a href="#" class="nav-arrow next-arrow" title="Наступний урок"
+          ><img src="./media/icons/double-alt-arrow-right.svg"
+        /></a>
+      </div>
+
+      <p class="topic">Past Simple</p>
+
+      <!-- Короткий опис -->
+      <section class="objective">
+        <ul>
+          <li>Master the Past Simple tense and question types.</li>
+          <li>Learn essential irregular verbs for programming.</li>
+          <li>Practice explaining your code and reporting bugs.</li>
+        </ul>
+      </section>
+
+      <hr />
+    </header>
+
+    <!-- Основний контент -->
+    <main>
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Part 1</button>
+        <button class="tab-btn" data-target="part-2">Part 2</button>
+        <button class="tab-btn" data-target="part-3">Homework</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1 -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Past Simple Tense</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p1-intro">Past Simple</h3>
+
+            <p>
+              We use the <span class="accent">Past Simple</span> tense to talk
+              about actions that
+              <span class="accent">started and finished in the past</span>. It
+              is the most common way to describe past events.
+            </p>
+
+            <ul>
+              <li>
+                <span class="accent">Recent or distant past:</span> It doesn't
+                matter if the action happened a second ago or a hundred years
+                ago.
+                <ul>
+                  <li class="italic">I saved my file a minute ago.</li>
+                  <li class="italic">
+                    Ada Lovelace wrote the first algorithm in 1843.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="accent">With or without time expressions:</span> We
+                often use time words like yesterday, last week, two days ago, or
+                in 2023. However, sometimes the time is simply understood from
+                the context.
+                <ul>
+                  <li class="italic">I debugged the code yesterday.</li>
+                  <li class="italic">The computer crashed!</li>
+                </ul>
+              </li>
+              <li>
+                <span class="accent">One or many actions:</span> We use it for a
+                single completed action, a repeated action in the past, or a
+                sequence of actions.
+                <ul>
+                  <li class="italic">I clicked the button.</li>
+                  <li class="italic">
+                    I practiced Python every day last summer.
+                  </li>
+                  <li class="italic">
+                    I opened the laptop, wrote some code, and ran the program.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <hr />
+
+            <h3 id="p1-verbs">Regular and Irregular Verbs</h3>
+
+            <p>
+              To make sentences in the Past Simple, we need to change the verb
+              into its past form (also called V2). There are two types of verbs
+              in English: <span class="accent">Regular</span> and
+              <span class="accent">Irregular</span>.
+            </p>
+
+            <h4>Regular Verbs</h4>
+
+            <p>
+              For most regular verbs we just add
+              <span class="accent">-ed</span> in the end. But there are some
+              special spelling rules you need to remember:
+            </p>
+
+            <ol>
+              <li>
+                <span class="accent">Verbs ending in -e:</span> If the verb
+                already ends in an <span class="accent">-e</span>, just add
+                <span class="accent">-d</span>.
+                <ul>
+                  <li class="italic">save → saved</li>
+                  <li class="italic">delete → deleted</li>
+                </ul>
+              </li>
+              <li>
+                <span class="accent">Verbs ending in a consonant + y:</span> If
+                the verb ends in a <span class="accent">consonant</span> and a
+                <span class="accent">-y</span>, change the
+                <span class="accent">y to i</span> and add -ed.
+                <ul>
+                  <li class="italic">study → studied</li>
+                  <li class="italic">try → tried</li>
+                </ul>
+                Careful! If there is a vowel before the y (a, e, i, o, u), just
+                add -ed normally:
+                <ul>
+                  <li class="italic">play → played</li>
+                </ul>
+              </li>
+              <li>
+                <span class="accent"
+                  >The C-V-C Rule (Consonant-Vowel-Consonant):</span
+                >
+                If a short word ends in a Consonant, a Vowel, and a Consonant,
+                we <span class="accent">double</span> the last letter before
+                adding -ed.
+                <ul>
+                  <li class="italic">stop → stopped</li>
+                  <li class="italic">plan → planned</li>
+                  <li class="italic">debug → debugged</li>
+                </ul>
+              </li>
+            </ol>
+
+            <div class="soft-callout">
+              <h4>Exercise 1: Convert to Past</h4>
+              <div>
+                <p>
+                  Write the correct Past Simple form for each of the verbs
+                  below.
+                </p>
+                <ol>
+                  <li>calculate</li>
+                  <li>save</li>
+                  <li>try</li>
+                  <li>play</li>
+                  <li>stop</li>
+                  <li>import</li>
+                </ol>
+                <textarea
+                  id="textarea-p1-ex1"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <h4>Irregular Verbs</h4>
+
+            <p>
+              These verbs don't follow the rules. You just have to memorize
+              their past forms. Here is a list of very useful irregular verbs
+              for programming and math:
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>Base form</th>
+                  <th>Past simple</th>
+                  <th>Translation</th>
+                </tr>
+                <tr>
+                  <td>write</td>
+                  <td>wrote</td>
+                  <td>писати</td>
+                </tr>
+                <tr>
+                  <td>read</td>
+                  <td>read (/red/)</td>
+                  <td>читати</td>
+                </tr>
+                <tr>
+                  <td>build</td>
+                  <td>built</td>
+                  <td>будувати, створювати</td>
+                </tr>
+                <tr>
+                  <td>find</td>
+                  <td>found</td>
+                  <td>знаходити</td>
+                </tr>
+                <tr>
+                  <td>catch</td>
+                  <td>caught</td>
+                  <td>ловити (баг в коді)</td>
+                </tr>
+                <tr>
+                  <td>think</td>
+                  <td>thought</td>
+                  <td>думати</td>
+                </tr>
+                <tr>
+                  <td>make</td>
+                  <td>made</td>
+                  <td>робити</td>
+                </tr>
+                <tr>
+                  <td>choose</td>
+                  <td>chose</td>
+                  <td>обирати</td>
+                </tr>
+                <tr>
+                  <td>run</td>
+                  <td>ran</td>
+                  <td>запускати (код)</td>
+                </tr>
+                <tr>
+                  <td>break</td>
+                  <td>broke</td>
+                  <td>ламати</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="python-basics-1"
+            >
+              <script type="application/json" class="fc-data">
+                [
+                  {
+                    "front": "write",
+                    "back": "wrote, писати"
+                  },
+                  {
+                    "front": "read",
+                    "back": "read, читати"
+                  },
+                  {
+                    "front": "build",
+                    "back": "built, будувати"
+                  },
+                  {
+                    "front": "find",
+                    "back": "found, знаходити"
+                  },
+                  {
+                    "front": "catch",
+                    "back": "caught, ловити (баг)"
+                  },
+                  {
+                    "front": "think",
+                    "back": "thought, думати"
+                  },
+                  {
+                    "front": "make",
+                    "back": "made, робити"
+                  },
+                  {
+                    "front": "choose",
+                    "back": "chose, обирати"
+                  },
+                  {
+                    "front": "run",
+                    "back": "ran, запускати"
+                  },
+                  {
+                    "front": "break",
+                    "back": "broke, ламати"
+                  }
+                ]
+              </script>
+
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 2: Learn new words</h4>
+              <div>
+                <p>
+                  Choose any 3 words from the table above and write a sentence
+                  with each of them using the Past Simple tense.
+                </p>
+
+                <textarea
+                  id="textarea-p1-ex2"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 3: Developer's Log</h4>
+              <div>
+                <p>
+                  Read the developer's log. Put the verbs in brackets into the
+                  Past Simple tense.
+                </p>
+                <p>
+                  Yesterday, I <strong>(write)</strong> a new Python script.
+                  First, I <strong>(import)</strong> the math library. The
+                  program <strong>(calculate)</strong> the area of a circle.
+                  Suddenly, the code <strong>(break)</strong>! I
+                  <strong>(think)</strong> for a minute, and then I
+                  <strong>(find)</strong> the bug. After that, I
+                  <strong>(save)</strong> the file and the program
+                  <strong>(run)</strong> perfectly.
+                </p>
+
+                <textarea
+                  id="textarea-p1-ex3"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-rules">Positive and Negative Sentences</h3>
+
+            <h4>Positive Sentences</h4>
+
+            <p class="bold">Formula: Subject + Verb (Past form)</p>
+
+            <ul>
+              <li class="italic">I found the bug.</li>
+              <li class="italic">She ran the code.</li>
+            </ul>
+
+            <h4>Negative Sentences</h4>
+
+            <p class="bold">Formula: Subject + didn't + Verb (Base form)</p>
+
+            <ul>
+              <li>✅ Correct: I <strong>did not find</strong> the bug.</li>
+              <li>✅ Correct: I <strong>didn't find</strong> the bug.</li>
+              <li>❌ Incorrect: I didn't found the bug.</li>
+              <li>❌ Incorrect: I not found the bug.</li>
+            </ul>
+
+            <div class="soft-callout">
+              <h4>Exercise 4: Spot the Bug</h4>
+              <div>
+                <p>
+                  Find the mistakes in the sentences below and correct them (if
+                  there are any).
+                </p>
+                <ol>
+                  <li>The system don't saved my files.</li>
+                  <li>The program didn't worked yesterday.</li>
+                  <li>I wrote no comments in the code.</li>
+                  <li>She didn't made any mistakes in the math test.</li>
+                  <li>We didn't found the exact value of X.</li>
+                  <li>The code did'nt ran because of a syntax error.</li>
+                  <li>I chose not to change this code.</li>
+                </ol>
+                <textarea
+                  id="textarea-p1-ex4"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 5: Make it Negative</h4>
+              <div>
+                <p>Rewrite these positive statements as negative.</p>
+                <ol>
+                  <li>I imported the math library.</li>
+                  <li>The computer ran the code fast.</li>
+                  <li>She caught the exception in line 5.</li>
+                  <li>We chose a positive number.</li>
+                  <li>I built a simple calculator.</li>
+                  <li>The turtle drew a square.</li>
+                  <li>He read the documentation.</li>
+                  <li>The loop stopped automatically.</li>
+                </ol>
+                <textarea
+                  id="textarea-p1-ex5"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-1"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="" />
+              <span>Questions in Past Simple Tense</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p2-intro">Questions</h3>
+
+            <p>
+              In life, we ask questions to get information. In programming,
+              asking the system for data is called a
+              <span class="accent">query</span>. When we want to query the past
+              in English, we use specific formulas to build our questions
+              correctly.
+            </p>
+
+            <hr />
+
+            <h3 id="p2-qs">Question Types</h3>
+
+            <p>
+              There are <span class="accent">three</span> main types of
+              questions in the Past Simple tense. The difference between them
+              depends on what information we are looking for: a simple
+              <span class="accent">confirmation</span> (True/False), a
+              <span class="accent">specific detail</span>, or
+              <span class="accent">the "doer"</span> of the action.
+            </p>
+
+            <h4>Type 1: General (Yes/No) Questions</h4>
+
+            <p>
+              <span class="accent">General questions</span> are used to check if
+              an action happened, and they only return a <strong>Yes</strong> or
+              <strong>No</strong> answer.
+            </p>
+            <p class="bold">Formula: Did + subject + base verb + ...?</p>
+            <ul>
+              <li class="italic">Did the program run correctly?</li>
+              <li class="italic">Did you import the math library?</li>
+              <li class="italic">Did the turtle draw a triangle?</li>
+            </ul>
+
+            <div class="soft-callout">
+              <h4>Exercise 6: Make it a Query</h4>
+              <div>
+                <p>
+                  Change these positive sentences into General (Yes/No)
+                  questions.
+                </p>
+                <ol>
+                  <li>You finished your project.</li>
+                  <li>He calculated the numbers.</li>
+                  <li>The students read the text.</li>
+                  <li>The code worked without bugs.</li>
+                  <li>She found the solution.</li>
+                </ol>
+                <textarea
+                  id="textarea-p2-ex1"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <h4>Short Answers</h4>
+            <p>
+              When answering a Yes/No question, we
+              <span class="accent">do not repeat the main verb</span>. We just
+              use the helper verb "did" or "didn't".
+            </p>
+            <ul>
+              <li>✅ Yes, it did.</li>
+              <li>✅ No, it didn't.</li>
+              <li>❌ Yes, it did run.</li>
+              <li>❌ No, it didn't work.</li>
+            </ul>
+
+            <p>
+              <strong>⚡ Pro Tip (Emphatic "Did"):</strong> There is one
+              exception! You can use <em>did + base verb</em> in a positive
+              sentence if you want to strongly emphasize that something
+              <em>really</em> happened (usually to prove someone wrong).
+            </p>
+            <ul>
+              <li class="italic">— You didn't save the file!</li>
+              <li class="italic">— Yes, I <strong>did save</strong> it!</li>
+            </ul>
+
+            <div class="soft-callout">
+              <h4>Exercise 7: Responses</h4>
+              <div>
+                <p>
+                  Write short answers to the questions from Exercise 6.
+                  Alternate between Yes and No (1. Yes, 2. No, 3. Yes...)
+                </p>
+
+                <textarea
+                  id="textarea-p2-ex2"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <h4>Type 2: Special Questions (Wh-)</h4>
+
+            <p>
+              We use <span class="accent">Special Questions</span> to ask about
+              a specific detail: place, time, reason, or method. These questions
+              always start with a
+              <span class="accent">special question word</span> (Wh-word).
+            </p>
+
+            <p class="bold">
+              Formula: Wh-word + did + subject + base verb + ...?
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>Wh- Word</th>
+                  <th>Translation</th>
+                  <th>Example</th>
+                </tr>
+                <tr>
+                  <td class="bold">What</td>
+                  <td>що / який</td>
+                  <td>What did you import?</td>
+                </tr>
+                <tr>
+                  <td class="bold">Where</td>
+                  <td>де / куди</td>
+                  <td>Where did you save the file?</td>
+                </tr>
+                <tr>
+                  <td class="bold">When</td>
+                  <td>коли</td>
+                  <td>When did the error happen?</td>
+                </tr>
+                <tr>
+                  <td class="bold">Why</td>
+                  <td>чому</td>
+                  <td>Why did the program stop?</td>
+                </tr>
+                <tr>
+                  <td class="bold">How</td>
+                  <td>як</td>
+                  <td>How did you solve the equation?</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="python-basics-2"
+            >
+              <script type="application/json" class="fc-data">
+                [
+                  {
+                    "front": "What",
+                    "back": "Що / Який"
+                  },
+                  {
+                    "front": "Where",
+                    "back": "Де / Куди"
+                  },
+                  {
+                    "front": "When",
+                    "back": "Коли"
+                  },
+                  {
+                    "front": "Why",
+                    "back": "Чому"
+                  },
+                  {
+                    "front": "How",
+                    "back": "Як"
+                  }
+                ]
+              </script>
+
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 8: Analyze the Data</h4>
+              <div>
+                <p>
+                  Write TWO Wh- questions for the bold words in the sentences
+                  below (one about the doer, one about the object).
+                </p>
+                <p class="italic">
+                  Example: <strong>The program</strong> printed
+                  <strong>a negative integer</strong>.<br />
+                  -> What printed a negative integer?<br />
+                  -> What did the program print?
+                </p>
+                <ol>
+                  <li>
+                    <strong>The developer</strong> created
+                    <strong>a new app</strong>.
+                  </li>
+                  <li>
+                    <strong>A virus</strong> deleted <strong>the files</strong>.
+                  </li>
+                  <li><strong>Anna</strong> found <strong>the bug</strong>.</li>
+                </ol>
+                <textarea
+                  id="textarea-p2-ex3"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <h4>Type 3: Subject Questions (Who / What)</h4>
+
+            <p>
+              This is the trickiest type! Let's break down why it is special.
+              <br /><br />
+              In a regular question, <span class="accent">did</span> stands
+              between the question word and the subject (між питальним словом та
+              підметом):
+            </p>
+
+            <ul>
+              <li class="italic">What did you break?</li>
+              <li class="italic">What = question word</li>
+              <li class="italic">you = subject</li>
+            </ul>
+
+            <p>
+              But sometimes, <span class="accent">Who</span> or
+              <span class="accent">What</span> <u>IS</u> the subject. We are
+              asking about the person or thing that performed the action. In
+              this case, there is no separate subject, so there is nowhere to
+              put "did". So the word
+              <span class="accent">"did" disappears</span>, and the verb stays
+              in the <span class="accent"> past tense </span>!
+            </p>
+
+            <p class="bold">
+              Formula: Who / What + past verb + ...? (Without did!)
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>What we know</th>
+                  <th>Question</th>
+                  <th>Why?</th>
+                </tr>
+                <tr>
+                  <td>You broke something. What was it?</td>
+                  <td>
+                    What <span class="bold">did</span> you
+                    <span class="bold">break</span>?
+                  </td>
+                  <td>"You" is the subject, so "did" is in its place.</td>
+                </tr>
+                <tr>
+                  <td>Something broke your code. What was it?</td>
+                  <td>What <span class="bold">broke</span> your code?</td>
+                  <td>"What" is the subject, so we don't use "did".</td>
+                </tr>
+                <tr>
+                  <td>She wrote something. What was it?</td>
+                  <td>
+                    What <span class="bold">did</span> she
+                    <span class="bold">write</span>?
+                  </td>
+                  <td>"She" is the subject, so "did" is in its place.</td>
+                </tr>
+                <tr>
+                  <td>Someone wrote this program. Who was it?</td>
+                  <td>Who <span class="bold">wrote</span> this program?</td>
+                  <td>"Who" is the subject, so we don't use "did".</td>
+                </tr>
+              </table>
+            </div>
+
+            <p>A few more examples without "did":</p>
+            <ul>
+              <li>
+                <span class="bold">Who deleted</span> my file?
+                <em>(Not: Who did delete)</em>
+              </li>
+              <li>
+                <span class="bold">What caused</span> the syntax error?
+                <em>(Not: What did cause)</em>
+              </li>
+              <li><span class="bold">What broke</span> the server?</li>
+            </ul>
+
+            <div class="soft-callout">
+              <h4>Exercise 9: Console Prompts</h4>
+              <div>
+                <p>
+                  You can see the system's answer. Write a question to get that
+                  answer. The question type is indicated in brackets.
+                </p>
+                <ol>
+                  <li>I saved the file on the Desktop. → [Where?] ___</li>
+                  <li>I imported the turtle library. → [What?] ___</li>
+                  <li>
+                    The program ran for exactly 5 seconds. → [How long?] ___
+                  </li>
+                  <li>I didn't run the program. → [Did?] ___</li>
+                  <li>
+                    Something deleted all the variables. → [What? — subject
+                    query] ___
+                  </li>
+                  <li>I solved the equation using a formula. → [How?] ___</li>
+                </ol>
+                <textarea
+                  id="textarea-p2-ex4"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 10: Cyber Detective</h4>
+              <div>
+                <p>
+                  Read each situation and write the correct question. Decide:
+                  does the question need "did" or not?
+                </p>
+                <ol>
+                  <li>
+                    <span class="bold">Situation 1:</span> You found out that
+                    someone broke your Python file. You want to know WHO
+                  </li>
+                  <li>
+                    <span class="bold">Situation 2:</span> Your friend broke
+                    something in your code. You want to know WHAT exactly they
+                    broke.
+                  </li>
+                  <li>
+                    <span class="bold">Situation 3:</span> The program produced
+                    a strange error. You want to know WHAT caused it.
+                  </li>
+                  <li>
+                    <span class="bold">Situation 4:</span> You know that your
+                    friend debugged the program yesterday. You want to know
+                    WHEN.
+                  </li>
+                  <li>
+                    <span class="bold">Situation 5:</span> Something
+                    automatically imported a wrong library. You want to know
+                    WHAT did that.
+                  </li>
+                </ol>
+                <textarea
+                  id="textarea-p2-ex5"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 11: Three Queries</h4>
+              <div>
+                <p>
+                  Take the sentence below and write THREE questions (each a
+                  different type: General, Special Object, and Subject).
+                </p>
+
+                <p class="italic">
+                  Example:<br />
+                  Sentence: Something deleted the file.<br />
+                  a) Did something delete the file?<br />
+                  b) What did it delete?<br />
+                  c) What deleted the file?
+                </p>
+
+                <p class="bold">Your Sentence: Someone ran the program.</p>
+
+                <textarea
+                  id="textarea-p2-ex6"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-speak">Speaking Practice: Stand-up Meeting</h3>
+
+            <ol>
+              <li>
+                <span class="bold">Read</span> the Scenario Cards below (in
+                Ukrainian).
+              </li>
+              <li>
+                <span class="bold">Translate</span> the story from Ukrainian to
+                English (out loud).
+              </li>
+              <li>
+                <span class="bold">Ask</span> 3 questions about the story (each
+                a different type).
+              </li>
+            </ol>
+
+            <br />
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>Card 1: Turtle Graphics</th>
+                </tr>
+                <tr>
+                  <td>
+                    Вчора Анна намагалася намалювати квадрат у Turtle. Вона
+                    написала код, але забула імпортувати бібліотеку. Програма
+                    показала помилку. Анна знайшла цю помилку, виправила її і
+                    запустила код знову. Цього разу Turtle намалював квадрат.
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <details>
+              <summary>Hints</summary>
+              <div>
+                <ul>
+                  <li><strong>Намагатися</strong> – to try / to attempt</li>
+                  <li>
+                    <strong>Намалювати квадрат</strong> – to draw a square
+                  </li>
+                  <li><strong>Написати код</strong> – to write code</li>
+                  <li><strong>Забути</strong> – to forget</li>
+                  <li>
+                    <strong>Імпортувати бібліотеку</strong> – to import a
+                    library
+                  </li>
+                  <li><strong>Показати помилку</strong> – to show an error</li>
+                  <li>
+                    <strong>Знайти помилку</strong> – to find a mistake / bug
+                  </li>
+                  <li>
+                    <strong>Виправити помилку</strong> – to fix an error / to
+                    correct a mistake
+                  </li>
+                  <li>
+                    <strong>Запустити код знову</strong> – to run the code again
+                  </li>
+                  <li><strong>Цього разу</strong> – this time</li>
+                </ul>
+              </div>
+            </details>
+
+            <br />
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>Card 2: Calculator App</th>
+                </tr>
+                <tr>
+                  <td>
+                    Вчора Макс будував простий калькулятор на Python. Він
+                    написав функції для додавання та віднімання, але не встиг
+                    зробити ділення. Макс зберіг код і показав другові. Його
+                    друг знайшов один баг в коді.
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <details>
+              <summary>Hints</summary>
+              <div>
+                <ul>
+                  <li>
+                    <strong>Будувати простий калькулятор</strong> – to build a
+                    simple calculator
+                  </li>
+                  <li>
+                    <strong>Написати функції</strong> – to write functions
+                  </li>
+                  <li>
+                    <strong>Додавання та віднімання</strong> – addition and
+                    subtraction
+                  </li>
+                  <li>
+                    <strong>Не встигнути зробити</strong> – to not have time to
+                    make
+                  </li>
+                  <li><strong>Ділення</strong> – division</li>
+                  <li><strong>Зберегти код</strong> – to save the code</li>
+                  <li><strong>Показати другові</strong> – to show a friend</li>
+                  <li><strong>Знайти баг</strong> – to find a bug</li>
+                </ul>
+              </div>
+            </details>
+
+            <br />
+
+            <div class="tablecontainer">
+              <table>
+                <tr>
+                  <th>Card 3: Math Problem</th>
+                </tr>
+                <tr>
+                  <td>
+                    Вчора я вирішувала рівняння. Я думала над ним дві години.
+                    Спочатку я обрала неправильний метод, і програма видала
+                    помилку. Потім я знайшла рішення в інтернеті. Це врятувало
+                    мою домашню роботу!
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <details>
+              <summary>Hints</summary>
+              <div>
+                <ul>
+                  <li>
+                    <strong>Вирішувати рівняння</strong> – to solve an equation
+                  </li>
+                  <li>
+                    <strong>Думати над чимось</strong> – to think about
+                    something
+                  </li>
+                  <li><strong>Дві години</strong> – for two hours</li>
+                  <li><strong>Спочатку</strong> – at first / initially</li>
+                  <li>
+                    <strong>Обрати неправильний метод</strong> – to choose the
+                    wrong method
+                  </li>
+                  <li>
+                    <strong>Видати помилку</strong> – to produce an error / to
+                    show an error
+                  </li>
+                  <li><strong>Потім</strong> – then / after that</li>
+                  <li><strong>Знайти рішення</strong> – to find a solution</li>
+                  <li><strong>В інтернеті</strong> – on the Internet</li>
+                  <li>
+                    <strong>Врятувати домашню роботу</strong> – to save homework
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-2"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3 -->
+
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/math.svg" class="star" alt="" />
+              <span>Homework</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3>Debugging Module (Grammar)</h3>
+
+            <p>
+              Imagine your friend spent the whole evening coding yesterday, but
+              something went terribly wrong. You need to ask him exactly what
+              happened to help him find the bug.
+            </p>
+
+            <div class="soft-callout">
+              <h4>Exercise 1: Ask the Right Questions</h4>
+              <div>
+                <p>
+                  Write <span class="accent">5 questions</span> in the Past
+                  Simple tense to ask your friend.
+                </p>
+                <ul>
+                  <li>
+                    One <span class="accent">General</span> query (Yes/No).
+                  </li>
+                  <li>
+                    Two <span class="accent">Special</span> queries (Wh- words
+                    like where, when, how, why).
+                  </li>
+                  <li>
+                    Two <span class="accent">Subject</span> queries (Who/What
+                    did something - without "did").
+                  </li>
+                </ul>
+                <p class="italic">
+                  Try to use at least one of these words in every question:
+                  <strong
+                    >import, library, calculate, output, delete, run,
+                    find</strong
+                  >.
+                </p>
+
+                <ol>
+                  <li>(General)</li>
+                  <li>(Special)</li>
+                  <li>(Special)</li>
+                  <li>(Subject)</li>
+                  <li>(Subject)</li>
+                </ol>
+
+                <textarea
+                  id="textarea-p3-ex1"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3>Vocabulary Mastery</h3>
+
+            <p>
+              To truly memorize new words, reading them is not enough. You need
+              to play with them, connect them to other words, and use them in
+              context. Let's do a deep dive into our irregular verbs!
+            </p>
+
+            <div class="soft-callout">
+              <h4>Exercise 2: Word Detective</h4>
+              <div>
+                <p>
+                  Pick <span class="accent">3 irregular verbs</span> from
+                  today's lesson that you find the most
+                  <span class="accent">difficult</span> to remember. For each
+                  word, do the following research:
+                </p>
+                <ol>
+                  <li>
+                    <span class="bold">Pronunciation:</span> Google how to
+                    pronounce the word and repeat it out loud 3 times.
+                  </li>
+                  <li>
+                    <span class="bold">Synonyms & Antonyms:</span> Find at least
+                    one word with a similar meaning (synonym) and one with an
+                    opposite meaning (antonym).
+                  </li>
+                  <li>
+                    <span class="bold">Word Family:</span> Find the noun or
+                    adjective form of the word (e.g.,
+                    <em>Verb: to write → Noun: a writer</em>).
+                  </li>
+                </ol>
+
+                <p><span class="bold">Example:</span></p>
+                <ul>
+                  <li>The word: write (писати). Pronunciation: /raɪt/</li>
+                  <li>
+                    Synonyms: draft (робити чернетку), document (документувати)
+                  </li>
+                  <li>Antonyms: erase (стирати), read (читати)</li>
+                  <li>
+                    Word Family: a writer (письменник, noun), written
+                    (написаний, adjective)
+                  </li>
+                </ul>
+
+                <textarea
+                  id="textarea-p3-ex2"
+                  class="test-textarea"
+                  placeholder="Word 1: (write your research here)&#10;Word 2: ...&#10;Word 3: ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 3: The Programmer's Tale</h4>
+              <div>
+                <p>
+                  Write a short creative story (4-5 sentences) about a
+                  programmer. You must use at least 3 words from your research
+                  in Exercise 2. You can use the irregular verbs themselves,
+                  their synonyms, their antonyms, or their word family. Make
+                  sure your story is written in the Past Simple tense!
+                </p>
+
+                <textarea
+                  id="textarea-p3-ex3"
+                  class="test-textarea"
+                  placeholder="Yesterday, a programmer sat at his desk and..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-3"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <!-- Кнопка для повернення на початок сторінки -->
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
