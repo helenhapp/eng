@@ -280,6 +280,10 @@ details summary:hover {
   color: var(--brand2);
 }
 
+p code {
+  display: inline !important;
+}
+
 /* ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ */
 /* 🌸 3. АНІМАЦІЇ ПЕРЕХОДІВ */
 /* ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ */
@@ -714,7 +718,7 @@ table {
   background-color: var(--soft-callout);
 }
 
-tr:hover {
+td:hover {
   background-color: var(--hover-bg);
 }
 

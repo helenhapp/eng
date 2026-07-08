@@ -138,7 +138,10 @@
     <!-- Хедер з назвою теми та посиланнями -->
     <header>
       <div class="title-container">
-        <a href="./lesson2.html" class="nav-arrow prev-arrow" title="Попередній урок"
+        <a
+          href="./lesson2.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
           ><img src="./media/icons/double-alt-arrow-left.svg"
         /></a>
 
@@ -150,15 +153,6 @@
       </div>
 
       <p class="topic">Conditionals</p>
-
-      <!-- Короткий опис -->
-      <!-- <section class="objective">
-        <ul>
-          <li>Master the Past Simple tense and question types.</li>
-          <li>Learn essential irregular verbs for programming.</li>
-          <li>Practice explaining your code and reporting bugs.</li>
-        </ul>
-      </section> -->
 
       <hr />
     </header>
@@ -185,24 +179,455 @@
           </div>
 
           <div class="lesson-content">
-            <h3 id="p1-lorem">Lorem, ipsum dolor.</h3>
+            <h3 id="p1-vocab">Vocabulary Bank</h3>
+            <p>
+              Here are some useful words and phrases you will see in today's
+              lesson. Flip the cards to practice!
+            </p>
 
-            <p>...</p>
+            <!-- flashcards -->
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="conditionals-vocab-1"
+            >
+              <script type="application/json" class="fc-data">
+                [
+                  {
+                    "front": "probable",
+                    "back": "ймовірний"
+                  },
+                  {
+                    "front": "unless",
+                    "back": "якщо не / хіба що"
+                  },
+                  {
+                    "front": "bug",
+                    "back": "помилка (в коді)"
+                  },
+                  {
+                    "front": "fix",
+                    "back": "виправляти / лагодити"
+                  },
+                  {
+                    "front": "syntax error",
+                    "back": "синтаксична помилка"
+                  },
+                  {
+                    "front": "review notes",
+                    "back": "переглядати записи (конспект)"
+                  },
+                  {
+                    "front": "grade",
+                    "back": "оцінка"
+                  },
+                  {
+                    "front": "divide",
+                    "back": "ділити (в математиці)"
+                  },
+                  {
+                    "front": "imaginary",
+                    "back": "уявний"
+                  },
+                  {
+                    "front": "unlikely",
+                    "back": "малоймовірний"
+                  },
+                  {
+                    "front": "debug",
+                    "back": "дебажити (шукати та виправляти помилки)"
+                  },
+                  {
+                    "front": "script",
+                    "back": "скрипт (написана програма)"
+                  },
+                  {
+                    "front": "heavily",
+                    "back": "сильно (наприклад, про дощ: raining heavily)"
+                  },
+                  {
+                    "front": "formula",
+                    "back": "формула"
+                  },
+                  {
+                    "front": "imperative",
+                    "back": "наказовий спосіб"
+                  }
+                ]
+              </script>
 
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-conditionals">What are Conditionals?</h3>
+
+            <p>
+              Think of <span class="accent">conditionals</span> like an
+              <code>if/else</code> statement in programming! They have two
+              parts: the <span class="accent">If-clause</span> (the condition or
+              hypothesis), which begins with the word
+              <span class="accent">if</span>, and the
+              <span class="accent">main clause</span>, which shows the result.
+            </p>
+
+            <p>
+              When the if-clause comes first, we separate the two parts with a
+              comma. If the main clause comes first, we don't need a comma.
+            </p>
+
+            <ul>
+              <li class="italic">
+                If the code is correct, the program will run.
+              </li>
+              <li class="italic">
+                The program will run if the code is correct.
+              </li>
+            </ul>
+
+            <hr />
+
+            <h3 id="p1-type1">Type 1 Conditionals</h3>
+
+            <p>
+              <span class="accent">Type 1 conditionals</span> talk about a
+              <span class="accent">real</span> or
+              <span class="accent">very probable</span> situation in the
+              <span class="accent">present</span> or
+              <span class="accent">future</span>. Here is the formula:
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <th>If-clause</th>
+                  <th>Main clause</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="4">If + present simple</td>
+                    <td>future simple (will)</td>
+                  </tr>
+                  <tr>
+                    <td>present simple</td>
+                  </tr>
+                  <tr>
+                    <td>imperative (a command)</td>
+                  </tr>
+                  <tr>
+                    <td>modal verb (can/must/may) + bare infinitive</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <ul>
+              <li class="italic">
+                If it snows in Lviv this winter, we will build a snowman.
+              </li>
+              <li class="italic">If you mix yellow and blue, you get green.</li>
+              <li class="italic">
+                If you don't understand the math problem, ask the teacher!
+              </li>
+              <li class="italic">
+                If you go to a cafe, you can order a hot chocolate.
+              </li>
+            </ul>
+
+            <p>
+              We can use the word <span class="accent">unless</span> instead of
+              <i>if...not</i>. The verb after "unless" is always positive. Think
+              of it like saying "except if".
+            </p>
+
+            <ul>
+              <li class="italic">
+                If you don't fix the bug, the game won't work.
+              </li>
+              <li class="italic">
+                Unless you fix the bug, the game won't work.
+              </li>
+            </ul>
+
+            <!-- 1 -->
             <div class="soft-callout">
-              <h4>Exercise #: ...</h4>
+              <h4>Exercise 1</h4>
               <div>
-                <p>...</p>
+                <p>
+                  Match column A with column В to make correct Type 1
+                  conditional sentences, as in the example.
+                </p>
+
+                <p class="italic">e.g. If it rains, take an umbrella.</p>
+
+                <div class="tablecontainer">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Column A</th>
+                        <th>Column B</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="accent">1. it rains</td>
+                        <td>a. ask for extra cheese</td>
+                      </tr>
+                      <tr>
+                        <td>2. you order a pizza</td>
+                        <td>b. eat lots of pasta</td>
+                      </tr>
+                      <tr>
+                        <td>3. you divide 10 by 2</td>
+                        <td class="accent">с. take an umbrella</td>
+                      </tr>
+                      <tr>
+                        <td>4. you go to Italy</td>
+                        <td>d. check for typos</td>
+                      </tr>
+                      <tr>
+                        <td>5. your code has a bug</td>
+                        <td>e. you get 5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <textarea
-                  id="textarea-p1-ex#"
+                  id="textarea-p1-ex1"
                   class="test-textarea"
                   placeholder="Type your answer here..."
                 ></textarea>
               </div>
             </div>
 
-            <hr />
+            <!-- 2 -->
+            <div class="soft-callout">
+              <h4>Exercise 2</h4>
+              <div>
+                <p>
+                  Fill in the blanks with <span class="accent">unless</span> or
+                  <span class="accent">if</span>.
+                </p>
+
+                <ol>
+                  <li>
+                    We won't go to the park
+                    <span class="accent">unless</span> it stops raining.
+                  </li>
+                  <li>
+                    ___ you forget your password, you can't log in to your
+                    account.
+                  </li>
+                  <li>
+                    ___ you use a calculator, this math problem is very easy.
+                  </li>
+                  <li>I can't run the program ___ you fix the syntax error.</li>
+                  <li>
+                    We will go on a school trip ___ the weather is sunny
+                    tomorrow.
+                  </li>
+                  <li>You won't learn Python ___ you practice writing code.</li>
+                  <li>I will order a cappuccino ___ we go to the cafe.</li>
+                </ol>
+
+                <textarea
+                  id="textarea-p1-ex2"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="soft-callout">
+              <h4>Exercise 3</h4>
+              <div>
+                <p>
+                  Put the verbs in brackets into the correct tense. Add a comma
+                  where necessary.
+                </p>
+
+                <ol>
+                  <li>
+                    If you <span class="accent">want</span> (want) to learn
+                    programming, start with Python.
+                  </li>
+                  <li>
+                    If Oleg ___ (study) hard, he'll get a good mark in math.
+                  </li>
+                  <li>
+                    Please ask the teacher if you ___ (not/understand) the
+                    lesson.
+                  </li>
+                  <li>
+                    Will you be sad if we ___ (not/travel) to the mountains this
+                    weekend?
+                  </li>
+                  <li>
+                    Maria will buy a new laptop if she ___ (save) enough pocket
+                    money.
+                  </li>
+                  <li>
+                    Unless the bus ___ (arrive) soon, we'll be late for school.
+                  </li>
+                  <li>If you ___ (mix) yellow and blue, you get green.</li>
+                  <li>___ you ___ (buy) me a souvenir if you go to Kyiv?</li>
+                  <li>
+                    If you don't wear a jacket outside, you ___ (catch) a cold.
+                  </li>
+                  <li>
+                    I won't pass the math test unless I ___ (practice) more.
+                  </li>
+                  <li>If it ___ (snow) tomorrow, we will play outside.</li>
+                </ol>
+
+                <textarea
+                  id="textarea-p1-ex3"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="soft-callout">
+              <h4>Exercise 4</h4>
+              <div>
+                <p>Put the verbs in brackets into the correct tense.</p>
+
+                <ol>
+                  <li>
+                    A: I'm really hungry.<br />B: Well, if you
+                    <span class="accent">wait</span> (wait) five minutes, I
+                    <span class="accent">will make</span> (make) you a sandwich.
+                  </li>
+                  <li>
+                    A: I have a huge math test tomorrow!<br />B: If you ___
+                    (review) your notes now, you ___ (get) a good grade.
+                  </li>
+                  <li>
+                    A: My code is not working at all!<br />B: Well, if you ___
+                    (show) me your screen, I ___ (help) you find the bug.
+                  </li>
+                  <li>
+                    A: Are you traveling this summer?<br />B: Yes, I ___ (visit)
+                    Spain if I ___ (pass) all my exams.
+                  </li>
+                  <li>
+                    A: I really want to order dessert.<br />B: Great, if you ___
+                    (ask) the waiter, I ___ (pay) for it.
+                  </li>
+                  <li>
+                    A: Could I borrow your Python book?<br />B: Yes, if you ___
+                    (look) in my backpack, you ___ (find) it.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="textarea-p1-ex4"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="soft-callout">
+              <h4>Exercise 5</h4>
+              <div>
+                <p>Rewrite the sentences, as in the examples.</p>
+
+                <ol>
+                  <li>
+                    If Anna doesn't study, she will fail the test.<br /><span
+                      class="accent"
+                      >Unless Anna studies, she will fail the test.</span
+                    >
+                  </li>
+                  <li>
+                    Unless the cafe opens soon, we won't get any coffee.<br /><span
+                      class="accent"
+                      >If the cafe doesn't open soon, we won't get any
+                      coffee.</span
+                    >
+                  </li>
+                  <li>
+                    The teacher will be happy if you don't forget your homework.
+                  </li>
+                  <li>Max won't travel to London if he doesn't get a visa.</li>
+                  <li>
+                    If you don't add a print() function, the code won't show
+                    anything.
+                  </li>
+                  <li>
+                    Unless the weather gets warmer, we won't go to the beach.
+                  </li>
+                  <li>
+                    If the students don't listen, they won't understand the
+                    rules.
+                  </li>
+                  <li>
+                    Unless my brother helps me, I won't finish this math puzzle.
+                  </li>
+                  <li>Unless you wear a scarf, you will feel cold outside.</li>
+                  <li>
+                    If the train doesn't arrive on time, we will miss our
+                    flight.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="textarea-p1-ex5"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -218,24 +643,195 @@
           </div>
 
           <div class="lesson-content">
-            <h3 id="p2-lorem">Lorem, ipsum dolor.</h3>
+            <h3 id="p2-type2">Type 2 Conditionals</h3>
 
-            <p>...</p>
+            <p>
+              Type 2 conditionals are for dreaming! We use them to talk about
+              imaginary or improbable situations that are unlikely to happen in
+              the present or future. Here is the formula:
+            </p>
 
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>If-clause</th>
+                    <th>Main clause</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>If + past simple</td>
+                    <td>would/could/might + bare infinitive</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <ul>
+              <li class="italic">
+                If I had a million dollars, I would travel the world.
+              </li>
+              <li class="italic">
+                If I knew how to code a 3D game, I would make a masterpiece.
+              </li>
+            </ul>
+
+            <p>
+              In Type 2 Conditionals, we can use
+              <span class="accent">were</span> instead of <i>was</i> for all
+              persons. It sounds more formal and correct.
+            </p>
+
+            <ul>
+              <li class="italic">
+                If Peter was here, he would fix the computer.
+              </li>
+              <li class="italic">
+                If Peter were here, he would fix the computer. (Preferred!)
+              </li>
+            </ul>
+
+            <p>
+              We use the phrase
+              <span class="accent">If I were you...</span> when we want to give
+              someone advice.
+            </p>
+
+            <ul>
+              <li class="italic">
+                If I were you, I’d ask the teacher to explain the math formula
+                again.
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- 6 -->
             <div class="soft-callout">
-              <h4>Exercise #: ...</h4>
+              <h4>Exercise 6</h4>
               <div>
-                <p>...</p>
+                <p>
+                  Choose one of the prompts from the list to say what you would
+                  do in each of the situations below.
+                </p>
+
+                <p class="italic">
+                  order a pizza, debug the code, use a calculator, go to the
+                  doctor, bring an umbrella, ask the teacher for help
+                </p>
+
+                <ol>
+                  <li>
+                    You see a bug in your Python script.<br /><span
+                      class="accent"
+                      >If I saw a bug in my Python script, I would debug the
+                      code.</span
+                    >
+                  </li>
+                  <li>You don't understand the math homework.</li>
+                  <li>It starts raining heavily outside.</li>
+                  <li>You feel very sick before school.</li>
+                  <li>You have to multiply 4,582 by 13.</li>
+                  <li>You feel hungry but you don't want to cook.</li>
+                </ol>
 
                 <textarea
-                  id="textarea-p2-ex#"
+                  id="textarea-p2-ex6"
                   class="test-textarea"
                   placeholder="Type your answer here..."
                 ></textarea>
               </div>
             </div>
 
-            <hr />
+            <!-- 7 -->
+            <div class="soft-callout">
+              <h4>Exercise 7</h4>
+              <div>
+                <p>
+                  Put the verbs in brackets into the correct tense to make
+                  correct Type 2 conditional sentences.
+                </p>
+
+                <ol>
+                  <li>
+                    If I <span class="accent">were</span> (be) you, I
+                    <span class="accent">would ask</span> (ask) the teacher for
+                    help.
+                  </li>
+                  <li>If we ___ (have) tickets, we ___ (travel) to Paris.</li>
+                  <li>
+                    Oksana ___ (buy) a new smartphone if she ___ (have) enough
+                    money.
+                  </li>
+                  <li>
+                    If winter ___ (be) warmer, we ___ (not/wear) heavy coats.
+                  </li>
+                  <li>
+                    The waiter ___ (bring) us dessert if we ___ (order) it.
+                  </li>
+                  <li>
+                    He ___ (solve) the math problem if he ___ (know) the
+                    formula.
+                  </li>
+                  <li>
+                    We ___ (create) a video game if we ___ (have) more time.
+                  </li>
+                  <li>
+                    If she ___ (speak) Italian, she ___ (order) food easily in
+                    Rome.
+                  </li>
+                  <li>If I ___ (be) a bird, I ___ (fly) everywhere.</li>
+                  <li>
+                    Taras ___ (write) a Python script if he ___ (have) his
+                    laptop.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="textarea-p2-ex7"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Speaking Task -->
+            <div class="soft-callout">
+              <h4>Speaking Exercise</h4>
+              <div>
+                <p class="italic">
+                  Уяви, що ти розробник відеоігор і зараз створюєш власну гру
+                  (наприклад, cozy-симулятор ферми або піксельну пригодницьку
+                  гру). Розкажи про неї англійською, використовуючи
+                  Conditionals!
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>Крок 1:</strong> Розкажи про 3-4 правила твоєї гри,
+                    використовуючи
+                    <span class="accent">Type 1 Conditionals</span>. <br />
+                    <em
+                      >Наприклад: "If the player plants a seed, a tree will
+                      grow. Unless you feed your character, they won't have
+                      energy."</em
+                    >
+                  </li>
+                  <li>
+                    <strong>Крок 2:</strong> Пофантазуй про "гру мрії". Що б ти
+                    додав/ла, або що б ти зробив/ла як розробник, якби у тебе не
+                    було жодних обмежень? Використовуй
+                    <span class="accent">Type 2 Conditionals</span>. <br />
+                    <em
+                      >Наприклад: "If I had a million dollars, I would hire a
+                      big team. If I were a famous game developer, I would
+                      create a game about my cat."</em
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
