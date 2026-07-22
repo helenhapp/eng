@@ -111,13 +111,13 @@ body.dyslexia-mode .objective {
   --bg1: #fffdf9;
   --bg2: #fdf6ed;
   --panel: #ffffff;
-  --panel-alt: var(--brand5); 
+  --panel-alt: var(--brand5);
   --hover-bg: #e6f5f4;
   --code-bg: #f8fbfb;
 
   /* Напівпрозорі заливки */
   --link-bg: rgba(46, 196, 182, 0.15);
-  --soft-callout: rgba(255, 159, 28, 0.05); 
+  --soft-callout: rgba(255, 159, 28, 0.05);
   --bar-bg: var(--panel);
 
   /* Перемикачі */
@@ -134,7 +134,7 @@ body.dyslexia-mode .objective {
 
   /* Акценти та рамки */
   --accent: var(--brand4);
-  --accent-pop: var(--brand6); 
+  --accent-pop: var(--brand6);
   --accordion-border: var(--brand4);
   --tab-border: var(--brand4);
   --code-border: var(--brand4);
@@ -153,7 +153,7 @@ body.dyslexia-mode .objective {
 
 /* Темна тема */
 [data-theme="dark"] {
-  --brand2: #24b2a4; 
+  --brand2: #24b2a4;
   --brand3: #ff9f1c; /* Amber Glow - Неоновий оранжевий для кнопок та лінків */
   --brand6: #ffbf69; /* Honey Bronze - М'який оранжевий для яскравого тексту */
 
@@ -282,6 +282,34 @@ details summary:hover {
 
 p code {
   display: inline !important;
+}
+
+.pronounce-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pronounce-btn:hover {
+  background: transparent;
+  transform: scale(1.05);
+}
+
+.pronounce-btn:active {
+  transform: scale(0.95);
+}
+
+.pronounce-btn img {
+  width: 22px;
+  height: auto;
+  min-width: 22px;
+  max-width: 22px;
+  border: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 /* ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ */
@@ -718,9 +746,9 @@ table {
   background-color: var(--soft-callout);
 }
 
-td:hover {
+/* td:hover {
   background-color: var(--hover-bg);
-}
+} */
 
 tr:hover td pre:has(code),
 tr:hover td code {
@@ -928,7 +956,8 @@ header a.nav-arrow:hover {
 }
 
 /* Випадаючі списки та Відкриті блоки (Lesson Blocks) */
-.accordion, .lesson-wrapper {
+.accordion,
+.lesson-wrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1718,7 +1747,9 @@ pre::-webkit-scrollbar-thumb,
   padding: 12px 15px;
   margin-top: 15px; /* Більший відступ від тексту завдання */
   min-height: 48px; /* Рівно на 1 рядок тексту */
-  background-color: var(--panel); /* Робимо фон білим (або темним у dark mode) замість фону callout */
+  background-color: var(
+    --panel
+  ); /* Робимо фон білим (або темним у dark mode) замість фону callout */
   border: 2px dashed var(--accent); /* Пунктирна рамка, як місце для вписування */
   border-radius: 6px;
   color: var(--text-main);
@@ -1743,7 +1774,7 @@ pre::-webkit-scrollbar-thumb,
 
 .test-textarea:focus {
   outline: none;
-  border-color: var(--brand2); 
+  border-color: var(--brand2);
   border-style: solid; /* При кліку пунктир стає суцільною лінією */
   /* box-shadow: 0 0 0 3px rgba(255, 159, 28, 0.2);  */
 }

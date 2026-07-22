@@ -1,0 +1,1718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <title>English Lesson 5</title>
+
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="transition-curtain"></div>
+
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            class="site-logo"
+          />
+        </div>
+        <div class="top-bar__controls">
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <div class="title-container">
+        <a
+          href="./lesson4.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
+        >
+          <img src="./media/icons/double-alt-arrow-left.svg" />
+        </a>
+        <h1 id="lesson-title">English: 05</h1>
+        <a href="#" class="nav-arrow next-arrow" title="Наступний урок">
+          <img src="./media/icons/double-alt-arrow-right.svg" />
+        </a>
+      </div>
+      <p class="topic">Numbers & Time</p>
+      <hr />
+    </header>
+
+    <main>
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Vocabulary</button>
+        <button class="tab-btn" data-target="part-2">Numbers</button>
+        <button class="tab-btn" data-target="part-3">Time</button>
+        <button class="tab-btn" data-target="part-4">Prepositions</button>
+        <button class="tab-btn" data-target="part-5">Puzzle</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Vocabulary Bank: At the Supermarket</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="vocab">Vocabulary</h3>
+
+            <!-- 1. Store & Navigation -->
+            <h4 id="p1-t1">1. Store & Navigation</h4>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="basket"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>shopping basket</span>
+                      </div>
+                    </td>
+                    <td>кошик</td>
+                    <td class="italic">
+                      Take a shopping basket if you only need milk.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="shelf"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>shelf</span>
+                      </div>
+                    </td>
+                    <td>полиця</td>
+                    <td class="italic">I can't reach the top shelf.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="scale"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>scale</span>
+                      </div>
+                    </td>
+                    <td>ваги</td>
+                    <td class="italic">Put the apples on the scale.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="weigh"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to weigh</span>
+                      </div>
+                    </td>
+                    <td>зважувати</td>
+                    <td class="italic">
+                      You need to weigh the fruit yourself.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="produce"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>produce section</span>
+                      </div>
+                    </td>
+                    <td>відділ овочів та фруктів</td>
+                    <td class="italic">
+                      Let's buy some tomatoes in the produce section.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="dairy"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>dairy section</span>
+                      </div>
+                    </td>
+                    <td>молочний відділ</td>
+                    <td class="italic">
+                      Milk and butter are in the dairy section.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="bakery"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>bakery</span>
+                      </div>
+                    </td>
+                    <td>відділ випічки</td>
+                    <td class="italic">It smells so good in the bakery!</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 2. Checkout & Paying -->
+            <h4 id="p1-t2">2. Checkout & Paying</h4>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="checkout"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>checkout</span>
+                      </div>
+                    </td>
+                    <td>каса (зона оплати)</td>
+                    <td class="italic">
+                      There is a long line at the checkout.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="cashier"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>cashier</span>
+                      </div>
+                    </td>
+                    <td>касир</td>
+                    <td class="italic">The cashier was very polite today.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="queue"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>queue</span>
+                      </div>
+                    </td>
+                    <td>черга</td>
+                    <td class="italic">
+                      I don't want to stand in this long queue.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="receipt"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>receipt</span>
+                      </div>
+                    </td>
+                    <td>
+                      чек
+                      <span class="italic"
+                        >(увага: літера 'p' не читається!)</span
+                      >
+                    </td>
+                    <td class="italic">Do you need your receipt?</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="change"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>change</span>
+                      </div>
+                    </td>
+                    <td>решта, здача</td>
+                    <td class="italic">Here is your change and receipt.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="discount"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>discount</span>
+                      </div>
+                    </td>
+                    <td>знижка</td>
+                    <td class="italic">Is there a discount on this cake?</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="pay"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to pay (in cash / by card)</span>
+                      </div>
+                    </td>
+                    <td>платити (готівкою / карткою)</td>
+                    <td class="italic">I would like to pay by card, please.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p><strong>Note:</strong> queue (BrE) = line (AmE)</p>
+
+            <hr />
+
+            <!-- FLASHCARDS -->
+            <h3 id="p1-fc">Flashcards</h3>
+
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="lesson5-vocab-v2"
+            >
+              <!-- prettier-ignore -->
+              <script type="application/json" class="fc-data">
+                [
+                  { "front": "shopping basket", "back": "кошик" },
+                  { "front": "shelf", "back": "полиця" },
+                  { "front": "scale", "back": "ваги" },
+                  { "front": "to weigh", "back": "зважувати" },
+                  { "front": "produce section", "back": "відділ овочів та фруктів" },
+                  { "front": "dairy section", "back": "молочний відділ" },
+                  { "front": "bakery", "back": "відділ випічки" },
+                  { "front": "checkout", "back": "каса (зона оплати)" },
+                  { "front": "cashier", "back": "касир" },
+                  { "front": "queue", "back": "черга" },
+                  { "front": "receipt", "back": "чек" },
+                  { "front": "change", "back": "решта, здача" },
+                  { "front": "discount", "back": "знижка" },
+                  { "front": "to pay in cash", "back": "платити готівкою" }
+                ]
+              </script>
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- PRACTICE EXERCISE -->
+            <h3 id="p1-practice">Practice</h3>
+
+            <div class="soft-callout">
+              <h4>Exercise 1: Fill in the blanks</h4>
+              <div>
+                <p>
+                  Read the sentences and fill in the missing words from the box
+                  below.
+                </p>
+
+                <p
+                  class="bold"
+                  style="
+                    color: var(--brand2);
+                    background-color: var(--panel-alt);
+                    padding: 10px;
+                    border-radius: 6px;
+                    text-align: center;
+                    margin: 20px 0;
+                    line-height: 2;
+                  "
+                >
+                  [ checkout &nbsp;|&nbsp; receipt &nbsp;|&nbsp; produce
+                  &nbsp;|&nbsp; shopping basket &nbsp;|&nbsp; cashier
+                  &nbsp;|&nbsp; scale &nbsp;|&nbsp; change &nbsp;|&nbsp; queue
+                  &nbsp;|&nbsp; dairy &nbsp;|&nbsp; discount &nbsp;|&nbsp; shelf
+                  &nbsp;|&nbsp; weigh &nbsp;|&nbsp; bakery &nbsp;|&nbsp; cash ]
+                </p>
+
+                <ol style="margin-top: 20px">
+                  <li>
+                    If you need to buy several items, take a ____________.
+                  </li>
+                  <li>
+                    I can't reach the top ____________. Could you help me?
+                  </li>
+                  <li>
+                    Let's go to the ____________ section to get some fresh
+                    tomatoes. And then we can get milk and butter in the
+                    ____________ section.
+                  </li>
+                  <li>
+                    You need to ____________ the apples. Put them on the
+                    ____________ to see how heavy they are.
+                  </li>
+                  <li>
+                    Are you ready to go to the ____________ to pay for our
+                    groceries?
+                  </li>
+                  <li>
+                    I don't want to stand in this long ____________ because it's
+                    boring.
+                  </li>
+                  <li>
+                    The ____________ scanned all my items quickly. After I paid,
+                    she gave me a ____________.
+                  </li>
+                  <li>
+                    I don't have my credit card with me, so I will pay in
+                    ____________.
+                  </li>
+                  <li>
+                    You gave me a $20 bill, and the total is $18. Here is $2 for
+                    your ____________.
+                  </li>
+                  <li>
+                    There is a 50% ____________ on all pastries today! Let's go
+                    and get some in the ____________.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex1"
+                  class="test-textarea"
+                  placeholder="Type the words here (1 - ..., 2 - ...)"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-1"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 2: NUMBERS & PRICES -->
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Numbers & Prices</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p2-nums">Numbers</h3>
+
+            <h4 id="p2-0-10">0 - 10</h4>
+
+            <div class="tablecontainer">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>0 - zero</td>
+                    <td>4 - four</td>
+                    <td>8 - eight</td>
+                  </tr>
+                  <tr>
+                    <td>1 - one</td>
+                    <td>5 - five</td>
+                    <td>9 - nine</td>
+                  </tr>
+                  <tr>
+                    <td>2 - two</td>
+                    <td>6 - six</td>
+                    <td class="bold">10 - ten</td>
+                  </tr>
+                  <tr>
+                    <td>3 - three</td>
+                    <td>7 - seven</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 id="p2-teen-ty">The "-teen" vs "-ty"</h4>
+            <p>
+              Зверни увагу на різницю між
+              <span class="accent">-teen</span> (13-19) та
+              <span class="accent">-ty</span> (десятки).
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>11 - 19 (-teen)</th>
+                    <th>Tens (-ty)</th>
+                    <th>Large Numbers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11 - eleven</td>
+                    <td></td>
+                    <td>100 - <span class="accent">one</span> hundred</td>
+                  </tr>
+                  <tr>
+                    <td>12 - twelve</td>
+                    <td>20 - twenty</td>
+                    <td>
+                      200 - <span class="accent">two</span> hundred <br /><span
+                        class="italic"
+                        >(без закінчення "s"!)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>13 - thir<span class="accent">teen</span></td>
+                    <td>30 - thir<span class="accent">ty</span></td>
+                    <td>1,000 - one thousand<br />2,000 - two thousand</td>
+                  </tr>
+                  <tr>
+                    <td>14 - four<span class="accent">teen</span></td>
+                    <td>
+                      40 - for<span class="accent">ty</span> <br /><span
+                        class="italic"
+                        >(без літери "u"!)</span
+                      >
+                    </td>
+                    <td>
+                      1,000,000 - one million<br />2,000,000 - two million
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>15 - fif<span class="accent">teen</span></td>
+                    <td>50 - fif<span class="accent">ty</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Слова <span class="accent">hundred</span>,
+              <span class="accent">thousand</span> та
+              <span class="accent">million</span> ніколи не отримують закінчення
+              <span class="accent">-s</span>, якщо перед ними стоїть конкретна
+              цифра. Але це закінчення з'являється, коли ми говоримо абстрактно,
+              без точної кількості: hundreds of hours, thousands of dollars...
+            </p>
+
+            <h4 id="p2-rules">Important Rules</h4>
+
+            <!-- Правило Дефіса -->
+            <div class="soft-callout">
+              <h4>The Hyphen Rule (Правило Дефіса)</h4>
+              <div>
+                <p>
+                  Коли ми поєднуємо десятки та одиниці (від 21 до 99), то
+                  <strong>обов'язково</strong> пишемо їх через дефіс:
+                </p>
+                <ul>
+                  <li>45 = forty-five</li>
+                  <li>99 = ninety-nine</li>
+                  <li>21 = twenty-one</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Правило And -->
+            <div class="soft-callout">
+              <h4>The "And" Rule (Сотні та Десятки)</h4>
+              <div>
+                <p>
+                  У британській англійській, коли ми називаємо сотні разом із
+                  десятками або одиницями, між ними заведено ставити слово
+                  <strong>and</strong>:
+                </p>
+                <ul>
+                  <li>
+                    105 = one hundred <span class="accent bold">and</span> five
+                  </li>
+                  <li>
+                    250 = two hundred <span class="accent bold">and</span> fifty
+                  </li>
+                  <li>
+                    345 = three hundred
+                    <span class="accent bold">and</span> forty-five
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-price">Prices</h3>
+
+            <h4 id="p2-currency">Currencies (Валюти)</h4>
+            <p>
+             Символ валюти в англійській мові ставиться перед числом.
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="bold"
+                      style="font-size: 20px; text-align: center"
+                    >
+                      $
+                    </td>
+                    <td>
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="dollar"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>dollar (dollars)</span>
+                      </div>
+                    </td>
+                    <td><strong>$100</strong> (one hundred dollars)</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="bold"
+                      style="font-size: 20px; text-align: center"
+                    >
+                      €
+                    </td>
+                    <td>
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="euro"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>euro (euros)</span>
+                      </div>
+                    </td>
+                    <td><strong>€50</strong> (fifty euros)</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="bold"
+                      style="font-size: 20px; text-align: center"
+                    >
+                      ₴
+                    </td>
+                    <td>
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="hryvnia"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>hryvnia (hryvnias)</span>
+                      </div>
+                    </td>
+                    <td><strong>₴200</strong> (two hundred hryvnias)</td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="bold"
+                      style="font-size: 20px; text-align: center"
+                    >
+                      £
+                    </td>
+                    <td>
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="pound"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>pound (pounds)</span>
+                      </div>
+                    </td>
+                    <td><strong>£12</strong> (twelve pounds)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 id="p2-reading-prices">How to read prices</h4>
+            <p>
+              Існує два поширені способи читати ціни:
+              <strong>повний</strong> (офіційний) та
+              <strong>короткий</strong> (розмовний).
+            </p>
+
+            <div class="soft-callout">
+              <p
+                class="bold"
+                style="font-size: 22px; color: var(--brand2); margin-top: 0"
+              >
+                $4.50
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">Повний:</span> Four dollars and fifty
+                  cents.
+                </li>
+                <li><span class="accent">Короткий:</span> Four fifty.</li>
+              </ul>
+
+              <p
+                class="bold"
+                style="font-size: 22px; color: var(--brand2); margin-top: 15px"
+              >
+                €12.99
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">Повний:</span> Twelve euros and
+                  ninety-nine cents.
+                </li>
+                <li>
+                  <span class="accent">Короткий:</span> Twelve ninety-nine.
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <!-- PRACTICE EXERCISE -->
+            <h3 id="p2-practice">Practice</h3>
+            <div class="soft-callout">
+              <h4>Exercise 2: Write the prices</h4>
+              <div>
+                <p>
+                  Read the shopping list and write the prices in words using the
+                  short form. Pay attention to the spelling of the numbers!
+                </p>
+
+                <p class="italic">
+                  Example: $4.50 → <span class="accent">four fifty</span>
+                </p>
+
+                <ol>
+                  <li>
+                    A fresh loaf of bread from the bakery is
+                    <strong>$3.45</strong>.
+                  </li>
+                  <li>
+                    A box of chocolate cookies on the top shelf costs
+                    <strong>€13.32</strong>.
+                  </li>
+                  <li>
+                    The cashier says your total is
+                    <strong>₴125</strong>.
+                  </li>
+                  <li>
+                    You buy a bag of apples in the produce section for
+                    <strong>$14.61</strong>.
+                  </li>
+                  <li>
+                    We bought a lot of groceries and paid
+                    <strong>€298</strong> today.
+                  </li>
+                  <li>
+                    You give the cashier a $50 bill, and your change is
+                    <strong>$18.57</strong>.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex2"
+                  class="test-textarea"
+                  placeholder="Type the answers here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-2"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3: TELLING TIME -->
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Telling Time</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p3-ampm">1. AM vs PM (12-годинний формат)</h3>
+            <p>
+              В англомовних країнах у повсякденному мовленні переважно
+              використовують 12-годинний формат часу. 24-годинний формат частіше
+              зустрічається в розкладах, транспорті, на телефонах та в офіційних
+              документах.
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Abbreviation</th>
+                    <th>When?</th>
+                    <th>Examples</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold accent" style="font-size: 18px">AM</td>
+                    <td>З опівночі до 11:59 дня (Ніч та Ранок)</td>
+                    <td>
+                      05:12 = 5:12 <strong>am</strong><br />08:00 = 8:00
+                      <strong>am</strong>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold accent" style="font-size: 18px">PM</td>
+                    <td>З 12:00 дня до 23:59 (День та Вечір)</td>
+                    <td>
+                      14:05 = 2:05 <strong>pm</strong><br />20:20 = 8:20
+                      <strong>pm</strong>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p3-digital">2. Електронний спосіб (Простий)</h3>
+            <p>
+              Найпростіший спосіб сказати час — спочатку назвати години, а потім
+              хвилини.
+            </p>
+
+            <img src="./digital-clock.jpg" alt="digital clock" />
+
+            <div class="soft-callout">
+              <ul>
+                <li>
+                  <strong>20:20</strong> ➔ Віднімаємо 12, щоб отримати формат
+                  PM. Це 8:20. Читаємо:
+                  <span class="accent bold">"eight twenty (pm)"</span>.
+                </li>
+                <li>
+                  <strong>05:12</strong> ➔ Це ранок. Читаємо:
+                  <span class="accent bold">"five twelve (am)"</span>.
+                </li>
+              </ul>
+              <p style="margin-top: 15px">
+                💡 <strong>Важлива деталь:</strong> Якщо кількість хвилин від 01
+                до 09, ми читаємо нуль як літеру <strong>"O"</strong> (оу).
+                Наприклад, <strong>14:05</strong> = 2:05 pm ➔
+                <span class="accent bold">"two oh five"</span>.
+              </p>
+            </div>
+
+            <hr />
+
+            <h3 id="p3-analog">3. Класичний спосіб (Стрілочний годинник)</h3>
+            <p>
+              Це традиційний спосіб говорити про час, особливо в британській
+              англійській.
+            </p>
+
+            <p>Уяви, що годинник — це піца, розрізана рівно навпіл:</p>
+            <ul>
+              <li>
+                Права половина (від 1 до 30 хвилин) — це
+                <strong>PAST</strong> (хвилини, які пройшли
+                <em>після</em> початку години).
+              </li>
+              <li>
+                Ліва половина (від 31 до 59 хвилин) — це
+                <strong>TO</strong> (хвилини, яких не вистачає
+                <em>до</em> наступної години).
+              </li>
+            </ul>
+
+            <img src="./analog-clock.jpg" alt="clock" />
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Phrase</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">o'clock</td>
+                    <td>Рівно година (00 хвилин)</td>
+                    <td>10:00 ➔ It's ten <strong>o'clock</strong>.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">a quarter past</td>
+                    <td>15 хвилин після</td>
+                    <td>08:15 ➔ It's <strong>a quarter past</strong> eight.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">half past</td>
+                    <td>Половина (30 хвилин)</td>
+                    <td>10:30 ➔ It's <strong>half past</strong> ten.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">a quarter to</td>
+                    <td>За 15 хвилин (до наступної години)</td>
+                    <td>
+                      02:45 ➔ It's <strong>a quarter to</strong> three.
+                      <br /><span class="italic">(За чверть до третьої)</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              ⚠️ <strong>Зверни увагу:</strong> В класичному способі ми спочатку
+              кажемо <span class="accent">хвилини</span>, а вже потім
+              <span class="accent">години</span>! Наприклад:
+            </p>
+
+            <ul>
+              <li>
+                <span class="accent">11:10</span> ➔ It's
+                <span class="accent">ten past</span> eleven.
+              </li>
+              <li>
+                <span class="accent">15:37</span> ➔ It's
+                <span class="accent">twenty-three to</span> four.
+              </li>
+            </ul>
+
+            <hr />
+
+            <h3 id="p3-noon-midnight">
+              4. Midnight & Noon (Опівночі та Полудень)
+            </h3>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Digital (AM/PM)</th>
+                    <th>Special Word</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold" style="font-size: 18px">00:00</td>
+                    <td>twelve <strong>am</strong></td>
+                    <td><strong>midnight</strong> (північ)</td>
+                  </tr>
+
+                  <tr>
+                    <td class="bold" style="font-size: 18px">12:00</td>
+                    <td>twelve <strong>pm</strong></td>
+                    <td><strong>noon</strong> (полудень)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="soft-callout">
+              У повсякденній англійській для 12:00 та 00:00 часто використовують
+              слова <span class="accent">noon</span> та
+              <span class="accent">midnight</span>, щоб уникнути плутанини.
+            </p>
+
+            <div class="soft-callout">
+              <p
+                class="bold"
+                style="font-size: 18px; color: var(--brand2); margin-top: 0"
+              >
+                Як читати час вночі (наприклад, 00:12)?
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">Електронний:</span> Читаємо як 12 годин і
+                  12 хвилин ➔ <strong>twelve twelve am</strong>.
+                </li>
+                <li>
+                  <span class="accent">Класичний:</span> Замість "twelve" кажемо
+                  слово "midnight" ➔ <strong>twelve past midnight</strong>.
+                </li>
+              </ul>
+
+              <p
+                class="bold"
+                style="font-size: 18px; color: var(--brand2); margin-top: 15px"
+              >
+                А вдень (наприклад, 12:15)?
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">Електронний:</span> Читаємо як зазвичай ➔
+                  <strong>twelve fifteen pm</strong>.
+                </li>
+                <li>
+                  <span class="accent">Класичний:</span> Замість "twelve" кажемо
+                  слово "noon" ➔ <strong>a quarter past noon</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <!-- PRACTICE EXERCISES -->
+            <h3 id="p3-practice">Practice</h3>
+
+            <div class="soft-callout">
+              <h4>Exercise 3: Digital Time</h4>
+              <div>
+                <p>
+                  Convert the 24-hour clocks into spoken 12-hour digital time.
+                </p>
+
+                <p class="italic">
+                  Example: <strong>21:10</strong> ➔
+                  <span class="accent">nine ten pm</span>
+                </p>
+
+                <ol style="margin-top: 20px; line-height: 2.2">
+                  <li>
+                    <strong>07:15</strong>
+                  </li>
+                  <li>
+                    <strong>15:30</strong>
+                  </li>
+                  <li>
+                    <strong>08:05</strong>
+                  </li>
+                  <li>
+                    <strong>19:45</strong>
+                  </li>
+                  <li>
+                    <strong>12:00</strong>
+                  </li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex3-1"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 4: The Classic Way</h4>
+              <div>
+                <p>
+                  Now, write the time using the classic method (<strong
+                    >past, to, a quarter, half, o'clock</strong
+                  >).
+                </p>
+                <p class="italic">
+                  Example: <strong>05:20</strong> ➔
+                  <span class="accent">twenty past five</span>
+                </p>
+
+                <ol style="margin-top: 20px; line-height: 2.2">
+                  <li>
+                    <strong>09:00</strong>
+                  </li>
+                  <li>
+                    <strong>10:15</strong>
+                  </li>
+                  <li>
+                    <strong>04:30</strong>
+                  </li>
+                  <li>
+                    <strong>11:50</strong>
+                  </li>
+                  <li>
+                    <strong>08:45</strong>
+                  </li>
+                  <li>
+                    <strong>19:05</strong>
+                  </li>
+                  <li>
+                    <!-- noon -->
+                    <strong>12:00</strong>
+                  </li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex3-2"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-3"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 4: PREPOSITIONS -->
+      <section id="part-4" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Time Prepositions (in / on / at)</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p4-basics">Prepositions and Time</h3>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Preposition</th>
+                    <th>Rule</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="accent bold" style="font-size: 20px">AT</td>
+                    <td>Точний час, ніч і свята без слова "Day".</td>
+                    <td>
+                      <span class="italic"
+                        >at 5 o'clock, at half past two, at 2 am, at midnight, at noon,
+                        at night, at Christmas.</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="accent bold" style="font-size: 20px">ON</td>
+                    <td>Дні тижня, точні дати та деякі свята.</td>
+                    <td>
+                      <span class="italic"
+                        >on Monday, on October 5th, on my birthday, on
+                        Halloween, on Christmas Day.</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="accent bold" style="font-size: 20px">IN</td>
+                    <td>Довгі періоди: місяці, роки, сезони, частини дня.</td>
+                    <td>
+                      <span class="italic"
+                        >in the morning, in summer, in October, in 2026.</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p4-logic">Time Logic Words</h3>
+            <ul style="line-height: 2">
+              <li><strong>Before</strong> — перед / до.</li>
+              <li><strong>After</strong> — після.</li>
+              <li>
+                <strong>Until / Till</strong> — аж до (підкреслює тривалість
+                дії).<br />
+                <span class="italic text-soft"
+                  >"I waited in the queue until 5 PM."</span
+                >
+              </li>
+              <li>
+                <strong>By</strong> — до певного моменту (дедлайн).<br />
+                <span class="italic text-soft"
+                  >"You must finish the project by midnight."</span
+                >
+              </li>
+            </ul>
+
+            <hr />
+
+            <!-- FINAL EXERCISES -->
+            <h3 id="p4-practice">Final Practice</h3>
+
+            <div class="soft-callout">
+              <h4>Exercise 5: Fill in the blanks</h4>
+              <div>
+                <p>
+                  Choose the correct preposition:
+                  <strong>in, on, at, by, until, before, after</strong>.
+                </p>
+                <ol>
+                  <li>The supermarket opens _____ 8 o'clock.</li>
+                  <li>I need to buy milk and bread _____ Friday.</li>
+                  <li>
+                    We always go shopping for groceries _____ the morning.
+                  </li>
+                  <li>He waited in the queue _____ half past three.</li>
+                  <li>There is a 50% discount on sweets _____ Halloween.</li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex4-1"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 6: Unscramble the sentences</h4>
+              <div>
+                <p>Put the words in the correct order to make a sentence.</p>
+                <ol>
+                  <li>[ past / closes / bakery / The / at / half / eight ]</li>
+                  <li>
+                    [ waited / queue / to / We / quarter / in / five / the /
+                    until / a ]
+                  </li>
+                  <li>[ am / section / The / at / opens / produce / seven ]</li>
+                  <li>
+                    [ paid / ten / the / She / two / milk / at / for / past ]
+                  </li>
+                  <li>[ until / is / discount / valid / midnight / Your ]</li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex4-2"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Exercise 7: Translate into English</h4>
+              <div>
+                <p>
+                  Translate the sentences using the vocabulary and rules from
+                  today's lesson.
+                </p>
+                <ol>
+                  <li>
+                    Відділ випічки зачиняється о 21:00
+                    <span class="italic">(використай am/pm)</span>.
+                  </li>
+                  <li>Ось ваш чек. Ваша решта – $15.50.</li>
+                  <li>Зваж ці яблука на вагах, будь ласка.</li>
+                </ol>
+
+                <textarea
+                  id="vocab-ex4-3"
+                  class="test-textarea"
+                  placeholder="Type your answer here..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-4"
+              >
+                Clear Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 5: MYSTERY CASE -->
+      <section id="part-5" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Case: The Shopping Mystery</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3>🕵️ The Shopping Mystery</h3>
+
+            <p>
+              Three friends went shopping on Saturday afternoon. Each person
+              bought a different item, paid at a different time, and paid a
+              different amount of money.
+            </p>
+
+            <p>Read the clues and complete the table.</p>
+
+            <hr />
+
+            <h3>Information</h3>
+
+            <div style="display: flex; justify-content: space-evenly">
+              <div class="soft-callout">
+                <h4>People</h4>
+                <ul>
+                  <li class="accent">Max</li>
+                  <li class="accent">Lily</li>
+                  <li class="accent">Sam</li>
+                </ul>
+              </div>
+              <div class="soft-callout">
+                <h4>Items</h4>
+                <ul>
+                  <li>🍎 Apples</li>
+                  <li>🎂 Cake</li>
+                  <li>🐶 Dog food</li>
+                </ul>
+              </div>
+              <div class="soft-callout">
+                <h4>Times</h4>
+                <ul>
+                  <li>2:15 pm</li>
+                  <li>2:30 pm</li>
+                  <li>2:45 pm</li>
+                </ul>
+              </div>
+              <div class="soft-callout">
+                <h4>Prices</h4>
+                <ul>
+                  <li>$5</li>
+                  <li>$12</li>
+                  <li>$20</li>
+                </ul>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3>Clues</h3>
+
+            <ol>
+              <li>Lily did not buy the dog food.</li>
+              <li>The cake cost $12.</li>
+              <li>Sam finished shopping at half past two.</li>
+              <li>The person who bought the apples was the last to pay.</li>
+              <li>Max spent more than Lily.</li>
+              <li>The dog food cost $20.</li>
+              <li>Sam did not buy the cake.</li>
+            </ol>
+
+            <hr />
+
+            <h3>Complete the table</h3>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Person</th>
+                    <th>Item</th>
+                    <th>Time</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Max</td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-1-1"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-1-2"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-1-3"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lily</td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-2-1"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-2-2"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-2-3"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sam</td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-3-1"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-3-2"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                    <td>
+                      <textarea
+                        id="vocab-ex5-3-3"
+                        class="test-textarea"
+                      ></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3>Answer the questions</h3>
+
+            <ol>
+              <li>Who bought the apples?</li>
+              <li>Who paid at a quarter past two?</li>
+              <li>How much did Max spend?</li>
+              <li>What did Lily buy?</li>
+              <li>Who checked out last?</li>
+            </ol>
+
+            <hr />
+
+            <details class="answer">
+              <summary>
+                <span>Solution</span>
+              </summary>
+              <div>
+                <ul>
+                  <li><strong>Max:</strong> Cake | 2:15 | $12</li>
+                  <li><strong>Lily:</strong> Apples | 2:45 | $5</li>
+                  <li><strong>Sam:</strong> Dog food | 2:30 | $20</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

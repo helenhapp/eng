@@ -817,7 +817,8 @@
         textarea.addEventListener("input", autoResize);
 
         // НОВЕ: Спостерігач, який чекає, поки поле стане видимим (коли ви відкриваєте вкладку)
-        const observer = new IntersectionObserver((entries, obs) => { // ДОДАНО: параметр obs
+        const observer = new IntersectionObserver((entries, obs) => {
+          // ДОДАНО: параметр obs
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               autoResize(); // Перераховуємо висоту в момент появи на екрані
@@ -1342,11 +1343,7 @@
           "Continue learning",
         );
       } else {
-        this.showMenu(
-          "Ready?",
-          `Words: ${this.deck.length}`,
-          "Start learning",
-        );
+        this.showMenu("Ready?", `Words: ${this.deck.length}`, "Start learning");
       }
     }
 
@@ -1880,6 +1877,73 @@
   }
 
   // -----------------------------------------
+  // 🔊 9. PRONUNCIATION MANAGER (TTS & API)
+  // -----------------------------------------
+  class PronunciationManager {
+    constructor() {
+      this.pronounceButtons = document.querySelectorAll(".pronounce-btn");
+      if (this.pronounceButtons.length > 0) {
+        this.init();
+      }
+    }
+
+    init() {
+      this.pronounceButtons.forEach((btn) => {
+        btn.addEventListener("click", async (e) => {
+          e.preventDefault();
+          const word = btn.getAttribute("data-word");
+          if (!word) return;
+
+          // Візуальний відгук (робимо кнопку трохи прозорою під час завантаження)
+          btn.style.opacity = "0.5";
+
+          try {
+            // Запит до словника
+            const response = await fetch(
+              `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+            );
+            const data = await response.json();
+
+            let audioUrl = "";
+
+            // Шукаємо аудіофайл (переважно британський)
+            if (data && data[0] && data[0].phonetics) {
+              for (const phonetic of data[0].phonetics) {
+                if (phonetic.audio) {
+                  audioUrl = phonetic.audio;
+                  if (audioUrl.includes("-uk.mp3")) break;
+                }
+              }
+            }
+
+            if (audioUrl) {
+              const audio = new Audio(audioUrl);
+              audio.play();
+            } else {
+              this.fallbackSpeak(word);
+            }
+          } catch (error) {
+            console.warn("API Error, using fallback TTS", error);
+            this.fallbackSpeak(word);
+          } finally {
+            // Повертаємо кнопці нормальний вигляд
+            setTimeout(() => (btn.style.opacity = "1"), 1500);
+          }
+        });
+      });
+    }
+
+    fallbackSpeak(word) {
+      if ("speechSynthesis" in window) {
+        const utterance = new SpeechSynthesisUtterance(word);
+        utterance.lang = "en-GB"; // Британський акцент
+        utterance.rate = 0.9; // Трохи сповільнюємо
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+  }
+
+  // -----------------------------------------
   // 🏁 8. INITIALIZATION (The Engine)
   // -----------------------------------------
   document.addEventListener("DOMContentLoaded", () => {
@@ -1887,6 +1951,7 @@
     const uiManager = new UIManager();
     new CodeManager();
     new GlobalEvents(themeManager, uiManager);
+    new PronunciationManager();
 
     // Iніціалізуємо КОЖНУ форму на сторінці окремо
     document.querySelectorAll(".homework-form").forEach((form) => {
