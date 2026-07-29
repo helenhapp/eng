@@ -241,7 +241,7 @@ body::before {
 main,
 header {
   width: 92%;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 main {
@@ -310,6 +310,30 @@ p code {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.callout2 {
+  border-left: 3px solid rgb(227, 112, 150);
+  padding: 10px;
+  background-color: rgb(252, 243, 237);
+}
+
+[data-theme="dark"] .callout2 {
+  background-color: rgb(20, 23, 23);
+}
+
+.callout3 {
+  color: var(--brand1);
+  background-color: var(--panel-alt);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 2;
+}
+
+[data-theme="dark"] .callout3 {
+  color: var(--brand2);
 }
 
 /* ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ - ✦ */
@@ -2005,19 +2029,19 @@ code.long-code .hljs-ln td.hljs-ln-code {
 @media (min-width: 1440px) {
   main,
   header {
-    max-width: 1100px;
+    max-width: 1200px;
   }
 }
 @media (min-width: 1920px) {
   main,
   header {
-    max-width: 1300px;
+    max-width: 1400px;
   }
 }
 @media (min-width: 2560px) {
   main,
   header {
-    max-width: 1500px;
+    max-width: 1600px;
   }
 }
 

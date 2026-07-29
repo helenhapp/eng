@@ -82,7 +82,7 @@
       <div class="tabs-nav">
         <button class="tab-btn active" data-target="part-1">Vocabulary</button>
         <button class="tab-btn" data-target="part-2">Grammar</button>
-        <button class="tab-btn" data-target="part-3">Mystery Case</button>
+        <button class="tab-btn" data-target="part-3">Read & Speak</button>
       </div>
 
       <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
@@ -102,6 +102,12 @@
           <div class="lesson-content">
             <h3 id="vocab">Vocabulary</h3>
 
+            <p>
+              To remember the vocabulary better, write a sentence with each word
+              in the text area. If you have no ideas, you can translate the
+              placeholder sentence instead.
+            </p>
+
             <h4>Nouns</h4>
 
             <!-- nouns -->
@@ -111,7 +117,7 @@
                   <tr>
                     <th>Word</th>
                     <th>Translation</th>
-                    <th>Example</th>
+                    <th>Sentence</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -133,8 +139,14 @@
                         <span>notebook</span>
                       </div>
                     </td>
-                    <td>зошит</td>
-                    <td class="italic">I forgot my notebook at home.</td>
+                    <td>зошит (або блокнот)</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-1"
+                        class="test-textarea"
+                        placeholder="Я пишу домашнє завдання в зошиті."
+                      ></textarea>
+                    </td>
                   </tr>
                   <tr>
                     <td class="bold">
@@ -155,7 +167,13 @@
                       </div>
                     </td>
                     <td>підручник</td>
-                    <td class="italic">Open your textbook to page 45.</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-2"
+                        class="test-textarea"
+                        placeholder="Я забула свій підручник."
+                      ></textarea>
+                    </td>
                   </tr>
                   <tr>
                     <td class="bold">
@@ -176,7 +194,13 @@
                       </div>
                     </td>
                     <td>завдання (навчальне)</td>
-                    <td class="italic">The assignment is due on Friday.</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-3"
+                        class="test-textarea"
+                        placeholder="Це завдання дуже просте."
+                      ></textarea>
+                    </td>
                   </tr>
                   <tr>
                     <td class="bold">
@@ -197,8 +221,12 @@
                       </div>
                     </td>
                     <td>дедлайн (крайній термін)</td>
-                    <td class="italic">
-                      What is the deadline for this project?
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-4"
+                        class="test-textarea"
+                        placeholder="Дедлайн цього завдання завтра."
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -220,8 +248,12 @@
                       </div>
                     </td>
                     <td>розклад</td>
-                    <td class="italic">
-                      My schedule is on the first page of my notebook.
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-5"
+                        class="test-textarea"
+                        placeholder="Ти памʼятаєш наш розклад?"
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -243,8 +275,12 @@
                       </div>
                     </td>
                     <td>оцінка</td>
-                    <td class="italic">
-                      She got the highest grade (US) / mark (UK) in the class.
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-6"
+                        class="test-textarea"
+                        placeholder="Я отримала найвищу оцінку!"
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -266,13 +302,46 @@
                       </div>
                     </td>
                     <td>навчальний предмет</td>
-                    <td class="italic">What is your favourite subject?</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-7"
+                        class="test-textarea"
+                        placeholder="Який твій улюблений предмет?"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="handwriting"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>handwriting</span>
+                      </div>
+                    </td>
+                    <td>почерк</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-7-2"
+                        class="test-textarea"
+                        placeholder="У неї гарний почерк."
+                      ></textarea>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <h4>Varbs</h4>
+            <h4>Verbs</h4>
 
             <!-- verbs -->
             <div class="tablecontainer">
@@ -281,7 +350,7 @@
                   <tr>
                     <th>Word</th>
                     <th>Translation</th>
-                    <th>Example</th>
+                    <th>Sentence</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -304,8 +373,12 @@
                       </div>
                     </td>
                     <td>здавати (роботу)</td>
-                    <td class="italic">
-                      Did you submit your assignment on time?
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-8"
+                        class="test-textarea"
+                        placeholder="Я здала домашнє завдання вчасно."
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -327,7 +400,13 @@
                       </div>
                     </td>
                     <td>повторювати матеріал</td>
-                    <td class="italic">I need to revise for my maths test.</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-9"
+                        class="test-textarea"
+                        placeholder="Мені треба повторити матеріал для тесту з математики."
+                      ></textarea>
+                    </td>
                   </tr>
                   <tr>
                     <td class="bold">
@@ -348,8 +427,12 @@
                       </div>
                     </td>
                     <td>нагадувати</td>
-                    <td class="italic">
-                      Could you remind me about the deadline?
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-10"
+                        class="test-textarea"
+                        placeholder="Можеш нагадати мені, який в нас наступний урок?"
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -371,30 +454,13 @@
                       </div>
                     </td>
                     <td>перевіряти</td>
-                    <td class="italic">
-                      Always check your homework before you submit it.
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-11"
+                        class="test-textarea"
+                        placeholder="Я завжди перевіряю своє домашнє завдання перед тим як здати його."
+                      ></textarea>
                     </td>
-                  </tr>
-                  <tr>
-                    <td class="bold">
-                      <div class="flex">
-                        <button
-                          class="pronounce-btn"
-                          data-word="forget"
-                          title="Listen"
-                        >
-                          <img
-                            src="./media/icons/volume.svg"
-                            width="16"
-                            height="16"
-                            alt="play"
-                          />
-                        </button>
-                        <span>to forget</span>
-                      </div>
-                    </td>
-                    <td>забувати</td>
-                    <td class="italic">He forgot his ruler again.</td>
                   </tr>
                 </tbody>
               </table>
@@ -409,7 +475,7 @@
                   <tr>
                     <th>Word</th>
                     <th>Translation</th>
-                    <th>Example</th>
+                    <th>Sentence</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -431,9 +497,13 @@
                         <span>due</span>
                       </div>
                     </td>
-                    <td>очікуваний (про термін)</td>
-                    <td class="italic">
-                      The homework is due tomorrow morning.
+                    <td>має бути зданий / виконаний до...</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-12"
+                        class="test-textarea"
+                        placeholder="Це завдання має бути виконане до завтра."
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -455,7 +525,13 @@
                       </div>
                     </td>
                     <td>прострочений</td>
-                    <td class="italic">Your assignment is overdue.</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-13"
+                        class="test-textarea"
+                        placeholder="Це завдання прострочене. Його треба було здати вчора."
+                      ></textarea>
+                    </td>
                   </tr>
                   <tr>
                     <td class="bold">
@@ -476,8 +552,12 @@
                       </div>
                     </td>
                     <td>охайний, акуратний</td>
-                    <td class="italic">
-                      Her notes are always neat and easy to read.
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-14"
+                        class="test-textarea"
+                        placeholder="У неї дуже акуратний почерк."
+                      ></textarea>
                     </td>
                   </tr>
                   <tr>
@@ -499,7 +579,13 @@
                       </div>
                     </td>
                     <td>організований</td>
-                    <td class="italic">He is very organized.</td>
+                    <td>
+                      <textarea
+                        id="l6-p1-voc-15"
+                        class="test-textarea"
+                        placeholder="Він організований і завжди планує свій час."
+                      ></textarea>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -508,20 +594,25 @@
             <!-- due -->
             <div class="soft-callout">
               <p style="margin: 0">
-                ⚠️ <strong>"due" як прикметник:</strong> використовується в
+                <strong>"due" як прикметник:</strong> використовується в
                 конструкції <em>to be due (on/by date)</em>. Не плутати з
                 дієсловом <em>"do"</em>!
               </p>
               <ul>
                 <li>
-                  <em>The essay is due on Monday.</em> (Його треба здати в
+                  <em>This essay is due on Monday.</em> (Це есе треба здати в
                   понеділок).
                 </li>
                 <li>
                   <em>It was due yesterday — now it's overdue.</em>
-                  (Прострочене).
+                  (Його треба було здати вчора, тому тепер воно прострочене.).
                 </li>
               </ul>
+            </div>
+
+            <div class="soft-callout">
+              <strong>Submit </strong> means to officially give your work to a
+              teacher, school, or website so it can be checked or graded.
             </div>
 
             <!-- FLASHCARDS -->
@@ -541,11 +632,11 @@
                   { "front": "schedule", "back": "розклад" },
                   { "front": "grade / mark", "back": "оцінка" },
                   { "front": "subject", "back": "навчальний предмет" },
+                  { "front": "handwriting", "back": "почерк" },
                   { "front": "to submit", "back": "здавати роботу" },
                   { "front": "to revise", "back": "повторювати матеріал" },
                   { "front": "to remind", "back": "нагадувати" },
                   { "front": "to check", "back": "перевіряти" },
-                  { "front": "to forget", "back": "забувати" },
                   { "front": "due", "back": "має бути здане (термін)" },
                   { "front": "overdue", "back": "прострочений" },
                   { "front": "neat", "back": "охайний, акуратний" },
@@ -598,11 +689,11 @@
 
             <hr />
 
-            <h3 id="p1-practice-1">Practice 1</h3>
+            <h3 id="p1-practice-1">Practice</h3>
 
             <!-- A -->
             <div class="soft-callout">
-              <h4>Exercise A: Fill in the blanks</h4>
+              <h4>Exercise: Fill in the blanks</h4>
               <div>
                 <p>
                   Read the sentences below <strong>out loud</strong>. Fill in
@@ -613,25 +704,13 @@
                   orally.
                 </p>
 
-                <p
-                  class="bold"
-                  style="
-                    color: var(--brand2);
-                    background-color: var(--panel-alt);
-                    padding: 10px;
-                    border-radius: 6px;
-                    text-align: center;
-                    margin: 20px 0;
-                    line-height: 2;
-                  "
-                >
+                <p class="bold callout3">
                   [ assignment &nbsp;|&nbsp; check &nbsp;|&nbsp; deadline
-                  &nbsp;|&nbsp; due &nbsp;|&nbsp; forget &nbsp;|&nbsp; grade
-                  &nbsp;|&nbsp; mark &nbsp;|&nbsp; neat &nbsp;|&nbsp; notebook
-                  &nbsp;|&nbsp; organized &nbsp;|&nbsp; overdue &nbsp;|&nbsp;
-                  remind &nbsp;|&nbsp; revise &nbsp;|&nbsp; schedule
-                  &nbsp;|&nbsp; subject &nbsp;|&nbsp; submit &nbsp;|&nbsp;
-                  textbook ]
+                  &nbsp;|&nbsp; due &nbsp;|&nbsp; grade &nbsp;|&nbsp; neat
+                  &nbsp;|&nbsp; notebook &nbsp;|&nbsp; organized &nbsp;|&nbsp;
+                  overdue &nbsp;|&nbsp; remind &nbsp;|&nbsp; revise
+                  &nbsp;|&nbsp; schedule &nbsp;|&nbsp; subject &nbsp;|&nbsp;
+                  submit &nbsp;|&nbsp; textbook ]
                 </p>
 
                 <ol style="margin-top: 20px; line-height: 2.2">
@@ -649,11 +728,11 @@
                   </li>
                   <li>
                     Please _________ me to _________ my essay for spelling
-                    mistakes before I give it to the teacher.
+                    mistakes before I submit it.
                   </li>
                   <li>
-                    If you _________ to do your homework, your teacher will give
-                    you a bad _________ (or _________ in the UK).
+                    If you forget to do your homework, you'll get a bad
+                    _________.
                   </li>
                   <li>
                     You must _________ your project tomorrow morning. If you
@@ -665,25 +744,30 @@
                   </li>
                   <li>
                     We have a big test next week, so I need to _________ all the
-                    materials today, because the exam is _________ on Monday.
+                    materials today.
+                  </li>
+                  <li>
+                    I need to finish the project that is _________ on Monday.
                   </li>
                 </ol>
 
                 <textarea
                   id="l6-p1-exa"
                   class="test-textarea"
-                  placeholder="Type the words here (1 - schedule, notebook, 2 - ...)"
+                  placeholder="Type the words here (1 - schedule...)"
                 ></textarea>
               </div>
             </div>
 
             <hr />
 
-            <h3 id="p1-spotlight">Tricky Words</h3>
-            <p>Слова, які виглядають як синоніми, але мають різні значення.</p>
+            <h3 id="p1-spotlight">Language Notes</h3>
 
             <h4>1. Assignment vs. Task</h4>
-            <p>The rule: <strong>different size and source.</strong></p>
+            <p>
+              The rule: <strong>different size and source.</strong> An
+              assignment usually consists of several tasks.
+            </p>
             <div class="tablecontainer">
               <table>
                 <thead>
@@ -716,8 +800,10 @@
             <h4>2. Grade vs. Mark</h4>
             <p>
               The rule:
-              <strong>Final overall score vs. Raw individual points.</strong>
-              Both words are used in English, but they have different functions.
+              <strong
+                >Final result for a course vs. score for one piece of
+                work.</strong
+              >
             </p>
             <div class="tablecontainer">
               <table>
@@ -733,7 +819,8 @@
                     <td class="bold">What?</td>
                     <td>A final, overall category (A, B+, 90%).</td>
                     <td>
-                      Raw points on a specific test or single question (8/10).
+                      A mark is the score for one piece of work (for example,
+                      one test or one essay).
                     </td>
                   </tr>
                   <tr>
@@ -776,8 +863,8 @@
                       (US) Look over notes to refresh memory before a test.
                     </td>
                     <td>
-                      (UK) Study for an exam.<br />(Universal) Edit or improve
-                      writing.
+                      (UK) Study for a test or exam.<br />(Universal) Edit or
+                      improve a piece of writing.
                     </td>
                     <td>
                       The mental act of <em>remembering</em> without looking at
@@ -787,6 +874,7 @@
                 </tbody>
               </table>
             </div>
+
             <p class="italic text-soft">
               "Before the test: I need to <strong>review</strong> (US) /
               <strong>revise</strong> (UK) my notes."<br />
@@ -831,75 +919,6 @@
 
             <hr />
 
-            <h3 id="p1-practice-2">Practice 2</h3>
-
-            <!-- B -->
-            <div class="soft-callout">
-              <h4>Exercise B: Right word, right reason</h4>
-              <div>
-                <p>
-                  Two similar words are given. Choose the correct one AND
-                  explain why. Write your answers in full sentences.
-                </p>
-
-                <ol style="margin-top: 20px">
-                  <li>
-                    Your teacher asks you to write a five-page report on Ancient
-                    Egypt. Is this an <strong>assignment</strong> or a
-                    <strong>task</strong>?
-                    <textarea
-                      id="l6-p1-exb-q1"
-                      class="test-textarea"
-                      placeholder="It is an... because..."
-                    ></textarea>
-                  </li>
-                  <li style="margin-top: 15px">
-                    You open your history notes on Sunday evening and read
-                    through them before Monday's test. Are you
-                    <strong>revising</strong> (UK) /
-                    <strong>reviewing</strong> (US) or
-                    <strong>recalling</strong>?
-                    <textarea
-                      id="l6-p1-exb-q2"
-                      class="test-textarea"
-                      placeholder="I am... because..."
-                    ></textarea>
-                  </li>
-                  <li style="margin-top: 15px">
-                    During the test, you close your eyes and try to remember the
-                    dates from your notes — no looking allowed. Is this
-                    <strong>revising/reviewing</strong> or
-                    <strong>recalling</strong>?
-                    <textarea
-                      id="l6-p1-exb-q3"
-                      class="test-textarea"
-                      placeholder="This is..."
-                    ></textarea>
-                  </li>
-                  <li style="margin-top: 15px">
-                    Max's desk has everything in its place: pens in the pencil
-                    case, books on the shelf. Is his desk
-                    <strong>neat</strong> or <strong>tidy</strong>?
-                    <textarea
-                      id="l6-p1-exb-q4"
-                      class="test-textarea"
-                    ></textarea>
-                  </li>
-                  <li style="margin-top: 15px">
-                    Anna's handwriting is perfectly spaced and beautiful, but
-                    there are papers scattered everywhere on her desk. Which
-                    word describes her handwriting? Which describes her desk?
-                    <textarea
-                      id="l6-p1-exb-q5"
-                      class="test-textarea"
-                    ></textarea>
-                  </li>
-                </ol>
-              </div>
-            </div>
-
-            <hr />
-
             <div style="text-align: right; margin-top: 20px">
               <button
                 type="button"
@@ -927,68 +946,64 @@
             <h3 id="p2-table">Full Pronouns Table</h3>
 
             <div class="tablecontainer">
-              <table>
+              <table class="big-table">
                 <thead>
                   <tr>
-                    <th>Type</th>
-                    <th>I</th>
-                    <th>you</th>
-                    <th>he</th>
-                    <th>she</th>
-                    <th>it</th>
-                    <th>we</th>
-                    <th>they</th>
+                    <th>Subject</th>
+                    <th>Object</th>
+                    <th>Dependent</th>
+                    <th>Independent</th>
+                    <th>Reflexive</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="bold">Subject</td>
-                    <td>I</td>
-                    <td>you</td>
-                    <td>he</td>
-                    <td>she</td>
-                    <td>it</td>
-                    <td>we</td>
-                    <td>they</td>
-                  </tr>
-                  <tr>
-                    <td class="bold">Object</td>
+                    <td class="bold">I</td>
                     <td>me</td>
-                    <td>you</td>
-                    <td>him</td>
-                    <td>her</td>
-                    <td>it</td>
-                    <td>us</td>
-                    <td>them</td>
-                  </tr>
-                  <tr>
-                    <td class="bold">Poss. Adjective</td>
                     <td>my</td>
-                    <td>your</td>
-                    <td>his</td>
-                    <td>her</td>
-                    <td>its</td>
-                    <td>our</td>
-                    <td>their</td>
-                  </tr>
-                  <tr>
-                    <td class="bold">Poss. Pronoun</td>
                     <td>mine</td>
-                    <td>yours</td>
-                    <td>his</td>
-                    <td>hers</td>
-                    <td>its</td>
-                    <td>ours</td>
-                    <td>theirs</td>
+                    <td>myself</td>
                   </tr>
                   <tr>
-                    <td class="bold">Reflexive</td>
-                    <td>myself</td>
+                    <td class="bold">you</td>
+                    <td>you</td>
+                    <td>your</td>
+                    <td>yours</td>
                     <td>yourself</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">he</td>
+                    <td>him</td>
+                    <td>his</td>
+                    <td>his</td>
                     <td>himself</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">she</td>
+                    <td>her</td>
+                    <td>her</td>
+                    <td>hers</td>
                     <td>herself</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">it</td>
+                    <td>it</td>
+                    <td>its</td>
+                    <td>–</td>
                     <td>itself</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">we</td>
+                    <td>us</td>
+                    <td>our</td>
+                    <td>ours</td>
                     <td>ourselves</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">they</td>
+                    <td>them</td>
+                    <td>their</td>
+                    <td>theirs</td>
                     <td>themselves</td>
                   </tr>
                 </tbody>
@@ -997,12 +1012,20 @@
 
             <hr />
 
-            <h3 id="p2-type1">Type 1: Subject (Підметовий)</h3>
+            <h3 id="p2-type1">1. Особові займенники (Personal Pronouns)</h3>
             <p>
-              Підметові займенники — це <strong>головні герої</strong> речення.
-              Вони виконують дію (відповідають на питання <em>Хто? Що?</em>) і
-              зазвичай стоять на самому початку речення,
-              <strong>перед дієсловом</strong>.
+              Ці займенники вказують на осіб або предмети. Залежно від ролі в
+              реченні, вони поділяються на <strong>два відмінки</strong>.
+            </p>
+
+            <h4>А) Називний відмінок (Subject)</h4>
+
+            <p class="bold callout3">I, you, he, she, it, we, they</p>
+
+            <p>
+              Це <strong>головні герої</strong> речення. Вони виконують дію
+              (відповідають на питання <em>Хто? Що?</em>) і зазвичай стоять на
+              самому початку речення, <strong>перед дієсловом</strong>.
             </p>
             <ul>
               <li>
@@ -1022,8 +1045,8 @@
                 <li>
                   Max and (I / me) are going to the library. <br />
                   <span class="italic text-soft"
-                    >💡 Лайфхак: якщо сумніваєшся, прибери іншу людину. Як
-                    правильно: "I am going" чи "me am going"?</span
+                    >💡 Лайфхак: якщо сумніваєшся, прибери іншу людину з
+                    речення. Як правильно: "I am going" чи "me am going"?</span
                   >
                 </li>
               </ol>
@@ -1034,15 +1057,16 @@
               ></textarea>
             </div>
 
-            <hr />
+            <h4>Б) Об'єктний відмінок (Object)</h4>
 
-            <h3 id="p2-type2">Type 2: Object (Об'єктний)</h3>
+            <p class="bold callout3">me, you, him, her, it, us, them</p>
+
             <p>
-              Об'єктні займенники — це ті, на кого
-              <strong>спрямована дія</strong>. Вони "приймають" дію на себе
-              (відповідають на питання <em>Кого? Кому? Ким?</em>). Вони завжди
-              стоять <strong>після дієслова</strong> або після
-              <strong>прийменників</strong> (to, for, with, about, between).
+              Це ті, на кого <strong>спрямована дія</strong>. Вони "приймають"
+              дію на себе (відповідають на питання <em>Кого? Кому? Ким?</em>).
+              Ці займенники завжди стоять <strong>після дієслова</strong> або
+              після <strong>прийменників</strong> (to, for, with, about,
+              between).
             </p>
             <ul>
               <li>
@@ -1051,7 +1075,7 @@
               </li>
               <li>
                 He gave the notebook to <span class="accent">me</span>.
-                <em>(Стоїть після прийменника to).</em>
+                <em>(Стоїть після прийменника "to").</em>
               </li>
             </ul>
 
@@ -1119,7 +1143,7 @@
                 💡 <strong>Чому "me", а не "I"?</strong> Тому що слово
                 <em>between</em> (між) — це прийменник. А за правилом, після
                 всіх прийменників ми завжди маємо використовувати об'єктний
-                відмінок (Type 2).
+                відмінок.
               </p>
             </div>
 
@@ -1141,33 +1165,41 @@
 
             <hr />
 
-            <h3 id="p2-type3">
-              Type 3: Possessive Adjective vs. Pronoun (Залежні і самостійні
-              присвійні займенники)
-            </h3>
+            <h3 id="p2-type2">2. Присвійні займенники (Possessive Pronouns)</h3>
             <p>
-              Обидва види виражають приналежність (<em>Чий?</em>), але
-              поводяться в реченні зовсім по-різному.
+              Ці займенники виражають приналежність (<em>Чий? Чия? Чиє?</em>). В
+              англійській мові вони існують у
+              <strong>двох різних формах</strong>, і обирати їх потрібно залежно
+              від того, чи є після них іменник.
             </p>
 
+            <h4>А) Залежна форма (Dependent Form)</h4>
+
+            <p class="bold callout3">my, your, his, her, its, our, their</p>
+
             <p>
-              <strong>1. Possessive Adjective (Залежний)</strong> — стоїть
-              строго ПЕРЕД іменником. Він не може існувати без іменника, йому
-              треба за щось триматися.
+              Ці займенники завжди <strong>залежать від іменника</strong>. Вони
+              стоять строго ПЕРЕД ним, описуючи його (тому в англійській їх
+              часто називають <em class="accent">Possessive Adjectives</em> —
+              присвійні прикметники).
             </p>
             <ul>
               <li><span class="accent">My</span> notebook is blue.</li>
               <li>She checked <span class="accent">her</span> assignment.</li>
             </ul>
 
+            <h4>Б) Самостійна форма (Independent Form)</h4>
+
+            <p class="bold callout3">mine, yours, his, hers, –, ours, theirs</p>
+
             <p>
-              <strong>2. Possessive Pronoun (Самостійний)</strong> — стоїть
-              САМОСТІЙНО. Він повністю поглинає іменник, щоб уникнути повторення
-              в реченні.
+              Ці займенники сильні і стоять <strong>САМОСТІЙНО</strong>. Вони
+              повністю заміняють сполучення з іменником, щоб уникнути
+              повторення.
             </p>
             <ul>
               <li>
-                The blue notebook is <span class="accent">mine</span>.
+                This blue notebook is <span class="accent">mine</span>.
                 <em>(mine = my notebook)</em>.
               </li>
               <li>
@@ -1211,10 +1243,12 @@
               </p>
               <ul style="margin-bottom: 15px">
                 <li>
-                  This is <strong>his</strong> textbook. (Залежний, перед
+                  This is <strong>his</strong> textbook. (Відносна, перед
                   іменником)
                 </li>
-                <li>The textbook is <strong>his</strong>. (Самостійний)</li>
+                <li>
+                  The textbook is <strong>his</strong>. (Абсолютна, самостійна)
+                </li>
               </ul>
 
               <p style="margin-top: 0">⚠️ <strong>"its" ≠ "it's"</strong></p>
@@ -1247,38 +1281,128 @@
 
             <hr />
 
-            <h3 id="p2-type4">Type 4: Reflexive (Зворотний)</h3>
-            <p>
-              Мають закінчення <strong>-self</strong> (для однини) або
-              <strong>-selves</strong> (для множини). Використовуються у двох
-              випадках:
+            <h3 id="p2-type3">3. Зворотні займенники (Reflexive Pronouns)</h3>
+
+            <p class="bold callout3">
+              myself, yourself, himself, herself, itself, ourselves, themselves
             </p>
 
             <p>
-              <strong>А) Дзеркало (Дія спрямована на самого себе):</strong>
-              Підмет і об'єкт — це одна і та сама особа.
+              Вони мають специфічне закінчення <strong>-self</strong> (для
+              однини) або <strong>-selves</strong> (для множини). Українською
+              мовою вони можуть перекладатися двома способами:
+            </p>
+
+            <p>
+              <strong>А) За допомогою зворотних дієслів або слова «себе»</strong
+              ><br />
+              Це ситуація, коли підмет і об'єкт — це одна і та сама особа (дія
+              спрямована на того, хто її виконує).
             </p>
             <ul>
               <li>
                 She hurt <span class="accent">herself</span> during PE class.
+                <br />
+                <em>(Вона травмувала<strong>ся</strong> на фізкультурі).</em>
               </li>
-              <li>He taught <span class="accent">himself</span> to code.</li>
+              <li>
+                He bought <span class="accent">himself</span> a new textbook.
+                <br />
+                <em>(Він купив <strong>собі</strong> новий підручник).</em>
+              </li>
             </ul>
 
             <p>
-              <strong>Б) Підсилення ("самостійно / без допомоги"):</strong> Ми
-              хочемо підкреслити, що людина зробила це особисто.
+              <strong
+                >Б) Для підсилення (перекладаємо як «сам», «сама»,
+                «самостійно»)</strong
+              ><br />
+              Ми використовуємо їх, коли хочемо наголосити, що людина зробила
+              щось особисто, без чиєїсь допомоги.
             </p>
             <ul>
               <li>
                 I revised all the material <span class="accent">myself</span> —
-                nobody helped me.
+                nobody helped me. <br />
+                <em>(Я повторив весь матеріал <strong>самостійно</strong>).</em>
               </li>
               <li>
                 Did you check your assignment
-                <span class="accent">yourself</span>?
+                <span class="accent">yourself</span>? <br />
+                <em>(Ти <strong>сам</strong> перевірив своє завдання?)</em>
               </li>
             </ul>
+
+            <div class="soft-callout">
+              <p style="margin-top: 0">
+                💡 <strong>Yourself чи Yourselves?</strong>
+              </p>
+              <p>
+                Займенник <strong>you</strong> в англійській мові означає і «ти»
+                (однина), і «ви» (множина). Тому це єдиний випадок, коли
+                зворотний займенник має дві різні форми:
+              </p>
+              <ul style="margin-bottom: 0">
+                <li>
+                  <strong>Yourself</strong> (себе, ти сам) — коли звертаємося до
+                  <em>однієї</em> людини: <br />
+                  <span class="italic text-soft"
+                    >John, did you make this cake
+                    <span class="accent bold">yourself</span>?</span
+                  >
+                </li>
+                <li style="margin-top: 10px">
+                  <strong>Yourselves</strong> (себе, ви самі) — коли звертаємося
+                  до <em>групи</em> людей: <br />
+                  <span class="italic text-soft"
+                    >Guys, did you make this cake
+                    <span class="accent bold">yourselves</span>?</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="soft-callout">
+              <p style="margin-top: 0">
+                💡
+                <strong>"yourself" vs. "by yourself"</strong>
+              </p>
+              <p>
+                Обидва варіанти перекладаються схоже, але мають різний відтінок:
+              </p>
+              <ul style="margin-bottom: 0">
+                <li>
+                  <strong>Yourself (особисто ти):</strong> Акцент на тому,
+                  <em>хто</em> це зробив. <br />
+                  <span class="italic text-soft"
+                    >"I baked this cake
+                    <span class="accent bold">myself</span>."</span
+                  >
+                  (Я сам це спік, а не купив у магазині. Мені могли
+                  допомагати.).
+                </li>
+                <li style="margin-top: 10px">
+                  <strong>By yourself (сам / один / самостійно):</strong>
+                  значає, що людина була одна (alone) або виконала щось без
+                  сторонньої допомоги (without help). <br />
+                  <span class="italic text-soft"
+                    >"I baked this cake
+                    <span class="accent bold">by myself</span>."</span
+                  >
+                  (Мені ніхто не допомагав.)<br />
+                  <span class="italic text-soft"
+                    >"Do you live
+                    <span class="accent bold">by yourself</span>?"</span
+                  >
+                  (Ти живеш сам/один?)<br />
+                  <span class="italic text-soft"
+                    >"She sat in the room
+                    <span class="accent bold">by herself</span>."</span
+                  >
+                  (Вона сиділа в кімнаті наодинці).
+                </li>
+              </ul>
+            </div>
 
             <div class="tablecontainer" style="margin-top: 20px">
               <table>
@@ -1321,10 +1445,8 @@
                 </li>
                 <li>
                   Did you make this cake by (yourself / yourselves), Sarah?
-                  <br /><span class="italic text-soft"
-                    >(Звертаємось до однієї Сари)</span
-                  >
                 </li>
+                <li>She lived in that big house (herself / by herself).</li>
               </ol>
               <textarea
                 id="l6-p2-check4"
@@ -1383,6 +1505,10 @@
                   </li>
                   <li>
                     Its a great subject, but its homework is always overdue.
+                  </li>
+                  <li>
+                    I was completely alone in the classroom, sitting there
+                    myself.
                   </li>
                 </ol>
                 <textarea
@@ -1455,11 +1581,46 @@
                     предмету.
                   </li>
                 </ol>
+
                 <textarea
                   id="l6-p2-ex4"
                   class="test-textarea"
                   placeholder="Translate..."
                 ></textarea>
+
+                <details class="answer" style="margin-bottom: 20px">
+                  <summary>
+                    <span>Hints</span>
+                  </summary>
+                  <div>
+                    <ul style="margin-top: 10px; line-height: 1.8">
+                      <li><strong>оцінки</strong> — grades / marks</li>
+                      <li>
+                        <strong>набагато кращі за</strong> — much better than
+                      </li>
+                      <li><strong>перевірили</strong> — checked</li>
+                      <li><strong>розклад</strong> — schedule</li>
+                      <li>
+                        <strong>ніхто не нагадував</strong> — nobody reminded
+                      </li>
+                      <li><strong>чий</strong> — whose</li>
+                      <li><strong>зошит</strong> — notebook</li>
+                      <li><strong>перша сторінка</strong> — the first page</li>
+                      <li>
+                        <strong>домашнє завдання</strong> — homework /
+                        assignment
+                      </li>
+                      <li><strong>прострочене</strong> — overdue</li>
+                      <li>
+                        <strong>ще не здали</strong> — haven't submitted yet
+                      </li>
+                      <li><strong>організований</strong> — organized</li>
+                      <li><strong>дедлайн</strong> — deadline</li>
+                      <li><strong>кожен</strong> — every</li>
+                      <li><strong>предмет</strong> — subject</li>
+                    </ul>
+                  </div>
+                </details>
               </div>
             </div>
 
@@ -1484,7 +1645,7 @@
           <div class="lesson-header">
             <h2>
               <img src="./media/icons/read.svg" class="star" alt="icon" />
-              <span>Reading: The Lost and Found</span>
+              <span>The Lost and Found Case</span>
             </h2>
           </div>
 
@@ -1492,55 +1653,65 @@
             <h3 id="p3-reading">The Lost and Found</h3>
 
             <p>
-              Friday afternoon. The final bell had rung and the hallways were
-              quiet. In Room 7, Mrs. Peterson sat behind a small desk covered in
-              lost items.
+              It was Friday afternoon. The final bell had rung and the hallways
+              were quiet. Mrs. Peterson was in her office and there were four
+              items lying on the desk in front of her: two notebooks and two
+              pencil cases.
             </p>
             <p>
-              Four students walked in together: Anna, Ben, Clara, and Dan. All
-              four of them had lost something during the week.
-            </p>
-            <p>
-              On Mrs. Peterson's desk lay four items: a blue notebook, a maths
-              textbook, a pencil case, and a ruler.
+              Four students walked in the room together: Anna, Ben, Clara, and
+              Sam. All four of them had lost something during the week. Mrs.
+              Peterson listened carefully while each student described what they
+              had lost.
             </p>
 
-            <p>
-              "My schedule is written on the very first page of my notebook,"
-              said Anna. "I can't revise for my test without it — I need to
-              check which subjects I have next week."
-            </p>
+            <p><span class="accent">Anna</span> looked worried:</p>
 
-            <p>
-              Ben stepped forward and picked up the textbook. "I write my name
-              inside every textbook I own," he said. "Every single one. It's the
-              most organized thing about me."
-            </p>
+            <div class="callout2">
+              "I really hope someone finds mine. Without it I can't remember
+              what classes I have next week."
+            </div>
 
-            <p>
-              Clara sighed. "My assignment was already overdue and I was about
-              to submit it. I had everything in my bag." She looked at the
-              pencil case and shook her head. "But that one isn't mine. Mine is
-              brand new — I bought it last Monday. That one looks old."
-            </p>
+            <p><span class="accent">Ben</span> shrugged:</p>
 
-            <p>
-              Dan was the last to speak. He pointed quietly at the ruler. "My
-              mum wrote my name on it so I wouldn't forget it," he said. "It's
-              the third ruler I've lost this year."
-            </p>
+            <div class="callout2" style="border-color: rgb(81, 112, 190)">
+              "Mine isn't very special. I only know there's a small football
+              sticker on the front. I put it there 5 months ago."
+            </div>
 
-            <p>Mrs. Peterson turned each item over carefully.</p>
+            <p><span class="accent">Clara</span> smiled:</p>
+
+            <div class="callout2" style="border-color: rgb(245, 139, 53)">
+              "I had it for years, but it still looks almost new, because I
+              clean it every day."
+            </div>
+
+            <p><span class="accent">Sam</span> laughed:</p>
+
+            <div class="callout2" style="border-color: rgb(88, 211, 88)">
+              "My mum keeps telling me to write my name on everything. This time
+              I actually listened."
+            </div>
+
+            <p>Mrs. Peterson examined the four items one by one:</p>
             <ul>
               <li>
-                The blue notebook had a weekly schedule written neatly on the
-                first page.
+                The <span class="accent">blue pencil case</span> looked very
+                neat. Someone took good care of it.
               </li>
               <li>
-                The maths textbook had no name written anywhere inside it.
+                The <span class="accent">Math notebook</span> had a four letter
+                word written on the cover, and a small round sticker next to it.
               </li>
-              <li>The pencil case was old, with a small sticker on the zip.</li>
-              <li>The ruler had a name written on the back in blue ink.</li>
+              <li>
+                The <span class="accent">plain black notebook</span> had
+                someone's schedule written on the first page.
+              </li>
+              <li>
+                The <span class="accent">green pencil case</span> had many
+                stickers on it. One sticker was partly covering a word ending
+                with "...am".
+              </li>
             </ul>
 
             <p class="italic">
@@ -1566,6 +1737,8 @@
                 placeholder="Your theories..."
               ></textarea>
             </p>
+
+            <p>And write your answers here:</p>
 
             <div class="tablecontainer">
               <table>
@@ -1607,7 +1780,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bold">Dan</td>
+                    <td class="bold">Sam</td>
                     <td>
                       <textarea
                         id="l6-p3-puzzle-4"
@@ -1620,49 +1793,35 @@
               </table>
             </div>
 
-            <details class="answer">
-              <summary>
-                <span>Solution</span>
-              </summary>
-              <div>
-                <ul>
-                  <li>
-                    <strong>Anna:</strong> blue notebook (her schedule is on
-                    page 1).
-                  </li>
-                  <li>
-                    <strong>Dan:</strong> ruler (his mum wrote his name on it).
-                  </li>
-                  <li>
-                    <strong>Ben:</strong> pencil case (by elimination: he writes
-                    his name in textbooks, but this textbook has no name, so
-                    it's not his).
-                  </li>
-                  <li>
-                    <strong>Clara:</strong> maths textbook (by elimination: the
-                    old pencil case isn't hers, because hers is new).
-                  </li>
-                </ul>
-              </div>
-            </details>
-
             <hr />
 
             <h3 id="p3-speaking">Speaking Tasks</h3>
 
+            <!-- 1 -->
             <div class="soft-callout">
               <h4>Task 1: Comprehension</h4>
               <div>
                 <p>Answer using full sentences and correct pronouns.</p>
                 <ol>
-                  <li>Whose schedule is written in the notebook?</li>
-                  <li>Why doesn't the textbook belong to Ben?</li>
-                  <li>Is the old pencil case Clara's? Why not?</li>
-                  <li>How does Mrs. Peterson know the ruler is Dan's?</li>
+                  <li>What could happen if Anna didn't find her lost item?</li>
+                  <li>
+                    What sticker did Ben mention? What does it tell us about his
+                    interests?
+                  </li>
+                  <li>
+                    What did Sam's mum always tell him to do? Do you think he'll
+                    keep doing it?
+                  </li>
+                  <li>What clue helped you identify Clara's item?</li>
+                  <li>
+                    Who seems the most organized? And who might be the most
+                    forgetful?
+                  </li>
                 </ol>
               </div>
             </div>
 
+            <!-- 2 -->
             <div class="soft-callout">
               <h4>Task 2: Explain your solution</h4>
               <div>
@@ -1680,52 +1839,24 @@
                   <li class="italic text-soft">
                     "The clue was ___. It told me that ___."
                   </li>
+                  <li class="italic text-soft">
+                    "First ___, then ___, finally ___."
+                  </li>
                 </ul>
               </div>
             </div>
 
+            <!-- 3 -->
             <div class="soft-callout">
-              <h4>Task 3: Character descriptions</h4>
+              <h4>Task 3: Talking About Yourself</h4>
               <div>
                 <ol>
-                  <li>Is Ben organized? What does he do that shows this?</li>
-                  <li>Is Clara's assignment overdue? What happened?</li>
-                  <li>
-                    What does Anna need to do this weekend? What subject does
-                    she have a test in?
-                  </li>
+                  <li>What is your favourite school subject?</li>
+                  <li>Which subject is the most difficult for you?</li>
+                  <li>Do you always submit your homework on time?</li>
+                  <li>Have you ever forgotten your notebook or pen at home?</li>
                 </ol>
               </div>
-            </div>
-
-            <hr />
-
-            <h3 id="p3-bonus">Bonus: Another Mystery</h3>
-            <p>
-              Mrs. Peterson finds a fifth item — a red notebook with no name and
-              no schedule inside. None of the four students claims it.
-            </p>
-            <p class="italic text-soft">
-              "But someone in this school owns it," she says. "Here is what I
-              know: the owner is very neat. They use this notebook for only one
-              subject. The last entry is dated last Tuesday."
-            </p>
-
-            <div class="soft-callout">
-              <p>Answer the questions:</p>
-              <ol>
-                <li>Could the red notebook belong to Anna? Why / why not?</li>
-                <li>Could it belong to Ben? Why / why not?</li>
-                <li>
-                  What kind of person does it most likely belong to? Describe
-                  them in 2–3 sentences using vocabulary from today's lesson.
-                </li>
-              </ol>
-              <textarea
-                id="l6-p3-bonus"
-                class="test-textarea"
-                placeholder="Your theories..."
-              ></textarea>
             </div>
 
             <hr />
