@@ -1,0 +1,1770 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <title>English Lesson 6</title>
+
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="transition-curtain"></div>
+
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            class="site-logo"
+          />
+        </div>
+        <div class="top-bar__controls">
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <div class="title-container">
+        <a
+          href="./lesson5.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
+        >
+          <img src="./media/icons/double-alt-arrow-left.svg" />
+        </a>
+        <h1 id="lesson-title">English: 06</h1>
+        <a href="#" class="nav-arrow next-arrow" title="Наступний урок">
+          <img src="./media/icons/double-alt-arrow-right.svg" />
+        </a>
+      </div>
+      <p class="topic">Pronouns · School & Homework</p>
+      <hr />
+    </header>
+
+    <main>
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Vocabulary</button>
+        <button class="tab-btn" data-target="part-2">Grammar</button>
+        <button class="tab-btn" data-target="part-3">Mystery Case</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>School & Homework</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="vocab">Vocabulary</h3>
+
+            <h4>Nouns</h4>
+
+            <!-- nouns -->
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="notebook"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>notebook</span>
+                      </div>
+                    </td>
+                    <td>зошит</td>
+                    <td class="italic">I forgot my notebook at home.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="textbook"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>textbook</span>
+                      </div>
+                    </td>
+                    <td>підручник</td>
+                    <td class="italic">Open your textbook to page 45.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="assignment"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>assignment</span>
+                      </div>
+                    </td>
+                    <td>завдання (навчальне)</td>
+                    <td class="italic">The assignment is due on Friday.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="deadline"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>deadline</span>
+                      </div>
+                    </td>
+                    <td>дедлайн (крайній термін)</td>
+                    <td class="italic">
+                      What is the deadline for this project?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="schedule"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>schedule</span>
+                      </div>
+                    </td>
+                    <td>розклад</td>
+                    <td class="italic">
+                      My schedule is on the first page of my notebook.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="grade"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>grade / mark</span>
+                      </div>
+                    </td>
+                    <td>оцінка</td>
+                    <td class="italic">
+                      She got the highest grade (US) / mark (UK) in the class.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="subject"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>subject</span>
+                      </div>
+                    </td>
+                    <td>навчальний предмет</td>
+                    <td class="italic">What is your favourite subject?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4>Varbs</h4>
+
+            <!-- verbs -->
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="submit"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to submit</span>
+                      </div>
+                    </td>
+                    <td>здавати (роботу)</td>
+                    <td class="italic">
+                      Did you submit your assignment on time?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="revise"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to revise</span>
+                      </div>
+                    </td>
+                    <td>повторювати матеріал</td>
+                    <td class="italic">I need to revise for my maths test.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="remind"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to remind</span>
+                      </div>
+                    </td>
+                    <td>нагадувати</td>
+                    <td class="italic">
+                      Could you remind me about the deadline?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="check"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to check</span>
+                      </div>
+                    </td>
+                    <td>перевіряти</td>
+                    <td class="italic">
+                      Always check your homework before you submit it.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="forget"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to forget</span>
+                      </div>
+                    </td>
+                    <td>забувати</td>
+                    <td class="italic">He forgot his ruler again.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4>Adjectives</h4>
+
+            <!-- adj -->
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="due"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>due</span>
+                      </div>
+                    </td>
+                    <td>очікуваний (про термін)</td>
+                    <td class="italic">
+                      The homework is due tomorrow morning.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="overdue"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>overdue</span>
+                      </div>
+                    </td>
+                    <td>прострочений</td>
+                    <td class="italic">Your assignment is overdue.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="neat"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>neat</span>
+                      </div>
+                    </td>
+                    <td>охайний, акуратний</td>
+                    <td class="italic">
+                      Her notes are always neat and easy to read.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="organized"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>organized</span>
+                      </div>
+                    </td>
+                    <td>організований</td>
+                    <td class="italic">He is very organized.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- due -->
+            <div class="soft-callout">
+              <p style="margin: 0">
+                ⚠️ <strong>"due" як прикметник:</strong> використовується в
+                конструкції <em>to be due (on/by date)</em>. Не плутати з
+                дієсловом <em>"do"</em>!
+              </p>
+              <ul>
+                <li>
+                  <em>The essay is due on Monday.</em> (Його треба здати в
+                  понеділок).
+                </li>
+                <li>
+                  <em>It was due yesterday — now it's overdue.</em>
+                  (Прострочене).
+                </li>
+              </ul>
+            </div>
+
+            <!-- FLASHCARDS -->
+            <h4>Flashcards</h4>
+
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="lesson6-vocab"
+            >
+              <!-- prettier-ignore -->
+              <script type="application/json" class="fc-data">
+                [
+                  { "front": "notebook", "back": "зошит" },
+                  { "front": "textbook", "back": "підручник" },
+                  { "front": "assignment", "back": "завдання" },
+                  { "front": "deadline", "back": "дедлайн" },
+                  { "front": "schedule", "back": "розклад" },
+                  { "front": "grade / mark", "back": "оцінка" },
+                  { "front": "subject", "back": "навчальний предмет" },
+                  { "front": "to submit", "back": "здавати роботу" },
+                  { "front": "to revise", "back": "повторювати матеріал" },
+                  { "front": "to remind", "back": "нагадувати" },
+                  { "front": "to check", "back": "перевіряти" },
+                  { "front": "to forget", "back": "забувати" },
+                  { "front": "due", "back": "має бути здане (термін)" },
+                  { "front": "overdue", "back": "прострочений" },
+                  { "front": "neat", "back": "охайний, акуратний" },
+                  { "front": "organized", "back": "організований" }
+                ]
+              </script>
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-practice-1">Practice 1</h3>
+
+            <!-- A -->
+            <div class="soft-callout">
+              <h4>Exercise A: Fill in the blanks</h4>
+              <div>
+                <p>
+                  Read the sentences below <strong>out loud</strong>. Fill in
+                  the blanks with the correct words from the box, and then
+                  <strong
+                    >translate the complete sentence into Ukrainian</strong
+                  >
+                  orally.
+                </p>
+
+                <p
+                  class="bold"
+                  style="
+                    color: var(--brand2);
+                    background-color: var(--panel-alt);
+                    padding: 10px;
+                    border-radius: 6px;
+                    text-align: center;
+                    margin: 20px 0;
+                    line-height: 2;
+                  "
+                >
+                  [ assignment &nbsp;|&nbsp; check &nbsp;|&nbsp; deadline
+                  &nbsp;|&nbsp; due &nbsp;|&nbsp; forget &nbsp;|&nbsp; grade
+                  &nbsp;|&nbsp; mark &nbsp;|&nbsp; neat &nbsp;|&nbsp; notebook
+                  &nbsp;|&nbsp; organized &nbsp;|&nbsp; overdue &nbsp;|&nbsp;
+                  remind &nbsp;|&nbsp; revise &nbsp;|&nbsp; schedule
+                  &nbsp;|&nbsp; subject &nbsp;|&nbsp; submit &nbsp;|&nbsp;
+                  textbook ]
+                </p>
+
+                <ol style="margin-top: 20px; line-height: 2.2">
+                  <li>
+                    I need to write down my new _________ in my _________ so I
+                    know what classes I have every day.
+                  </li>
+                  <li>
+                    My favourite _________ is History, and we use a very
+                    interesting _________ for it.
+                  </li>
+                  <li>
+                    The teacher gave us a huge _________, and the _________ is
+                    next Friday.
+                  </li>
+                  <li>
+                    Please _________ me to _________ my essay for spelling
+                    mistakes before I give it to the teacher.
+                  </li>
+                  <li>
+                    If you _________ to do your homework, your teacher will give
+                    you a bad _________ (or _________ in the UK).
+                  </li>
+                  <li>
+                    You must _________ your project tomorrow morning. If you
+                    bring it on Wednesday, it will be _________.
+                  </li>
+                  <li>
+                    The teacher praised him because his handwriting is very
+                    _________ and his desk is always _________.
+                  </li>
+                  <li>
+                    We have a big test next week, so I need to _________ all the
+                    materials today, because the exam is _________ on Monday.
+                  </li>
+                </ol>
+
+                <textarea
+                  id="l6-p1-exa"
+                  class="test-textarea"
+                  placeholder="Type the words here (1 - schedule, notebook, 2 - ...)"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-spotlight">Tricky Words</h3>
+            <p>Слова, які виглядають як синоніми, але мають різні значення.</p>
+
+            <h4>1. Assignment vs. Task</h4>
+            <p>The rule: <strong>different size and source.</strong></p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Assignment</th>
+                    <th>Task</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">Size</td>
+                    <td>Larger, formal project</td>
+                    <td>Smaller piece of work</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Who decides?</td>
+                    <td>Someone else (teacher, boss) gives it to you</td>
+                    <td>Can be self-set</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="italic text-soft">
+              "Your <strong>assignment</strong> is to write a history essay.
+              Your first <strong>task</strong> is to go to the library and find
+              three books."
+            </p>
+
+            <h4>2. Grade vs. Mark</h4>
+            <p>
+              The rule:
+              <strong>Final overall score vs. Raw individual points.</strong>
+              Both words are used in English, but they have different functions.
+            </p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Grade</th>
+                    <th>Mark</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">What?</td>
+                    <td>A final, overall category (A, B+, 90%).</td>
+                    <td>
+                      Raw points on a specific test or single question (8/10).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Region</td>
+                    <td>
+                      Used in both 🇺🇸 and 🇬🇧 for final results. In the US, it
+                      also means a school year (<em>6th grade</em>). In the UK,
+                      they say <em>Year 6</em>.
+                    </td>
+                    <td>
+                      Very common in 🇬🇧. In the US, people often say
+                      <em>"points"</em> instead of marks.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="italic text-soft">
+              "The teacher gave me 8 <strong>marks</strong> out of 10 on the
+              essay, which brought my final <strong>grade</strong> for the class
+              up to an A."
+            </p>
+
+            <h4>3. To revise vs. To review vs. To recall</h4>
+            <p>
+              The rule: <strong>three stages of working with knowledge.</strong>
+            </p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>To review</th>
+                    <th>To revise</th>
+                    <th>To recall</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      (US) Look over notes to refresh memory before a test.
+                    </td>
+                    <td>
+                      (UK) Study for an exam.<br />(Universal) Edit or improve
+                      writing.
+                    </td>
+                    <td>
+                      The mental act of <em>remembering</em> without looking at
+                      anything.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="italic text-soft">
+              "Before the test: I need to <strong>review</strong> (US) /
+              <strong>revise</strong> (UK) my notes."<br />
+              "During the test: I need to <strong>recall</strong> the facts."<br />
+              "After the test: I need to <strong>revise</strong> my essay (fix
+              mistakes)."
+            </p>
+
+            <h4>4. Neat vs. Tidy</h4>
+            <p>
+              The rule:
+              <strong>how something looks vs. where things are.</strong>
+            </p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Neat</th>
+                    <th>Tidy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">About</td>
+                    <td>Appearance, precision</td>
+                    <td>Placement (everything is in its right place)</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Examples</td>
+                    <td>Neat handwriting, a neat haircut</td>
+                    <td>A tidy desk, a tidy room</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="italic text-soft">
+              "Your handwriting is very <strong>neat</strong> — but your desk is
+              not <strong>tidy</strong>, because your pens and papers are
+              scattered everywhere."
+            </p>
+
+            <hr />
+
+            <h3 id="p1-practice-2">Practice 2</h3>
+
+            <!-- B -->
+            <div class="soft-callout">
+              <h4>Exercise B: Right word, right reason</h4>
+              <div>
+                <p>
+                  Two similar words are given. Choose the correct one AND
+                  explain why. Write your answers in full sentences.
+                </p>
+
+                <ol style="margin-top: 20px">
+                  <li>
+                    Your teacher asks you to write a five-page report on Ancient
+                    Egypt. Is this an <strong>assignment</strong> or a
+                    <strong>task</strong>?
+                    <textarea
+                      id="l6-p1-exb-q1"
+                      class="test-textarea"
+                      placeholder="It is an... because..."
+                    ></textarea>
+                  </li>
+                  <li style="margin-top: 15px">
+                    You open your history notes on Sunday evening and read
+                    through them before Monday's test. Are you
+                    <strong>revising</strong> (UK) /
+                    <strong>reviewing</strong> (US) or
+                    <strong>recalling</strong>?
+                    <textarea
+                      id="l6-p1-exb-q2"
+                      class="test-textarea"
+                      placeholder="I am... because..."
+                    ></textarea>
+                  </li>
+                  <li style="margin-top: 15px">
+                    During the test, you close your eyes and try to remember the
+                    dates from your notes — no looking allowed. Is this
+                    <strong>revising/reviewing</strong> or
+                    <strong>recalling</strong>?
+                    <textarea
+                      id="l6-p1-exb-q3"
+                      class="test-textarea"
+                      placeholder="This is..."
+                    ></textarea>
+                  </li>
+                  <li style="margin-top: 15px">
+                    Max's desk has everything in its place: pens in the pencil
+                    case, books on the shelf. Is his desk
+                    <strong>neat</strong> or <strong>tidy</strong>?
+                    <textarea
+                      id="l6-p1-exb-q4"
+                      class="test-textarea"
+                    ></textarea>
+                  </li>
+                  <li style="margin-top: 15px">
+                    Anna's handwriting is perfectly spaced and beautiful, but
+                    there are papers scattered everywhere on her desk. Which
+                    word describes her handwriting? Which describes her desk?
+                    <textarea
+                      id="l6-p1-exb-q5"
+                      class="test-textarea"
+                    ></textarea>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-1"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 2: GRAMMAR -->
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Pronouns (Займенники)</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p2-table">Full Pronouns Table</h3>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>I</th>
+                    <th>you</th>
+                    <th>he</th>
+                    <th>she</th>
+                    <th>it</th>
+                    <th>we</th>
+                    <th>they</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">Subject</td>
+                    <td>I</td>
+                    <td>you</td>
+                    <td>he</td>
+                    <td>she</td>
+                    <td>it</td>
+                    <td>we</td>
+                    <td>they</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Object</td>
+                    <td>me</td>
+                    <td>you</td>
+                    <td>him</td>
+                    <td>her</td>
+                    <td>it</td>
+                    <td>us</td>
+                    <td>them</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Poss. Adjective</td>
+                    <td>my</td>
+                    <td>your</td>
+                    <td>his</td>
+                    <td>her</td>
+                    <td>its</td>
+                    <td>our</td>
+                    <td>their</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Poss. Pronoun</td>
+                    <td>mine</td>
+                    <td>yours</td>
+                    <td>his</td>
+                    <td>hers</td>
+                    <td>its</td>
+                    <td>ours</td>
+                    <td>theirs</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Reflexive</td>
+                    <td>myself</td>
+                    <td>yourself</td>
+                    <td>himself</td>
+                    <td>herself</td>
+                    <td>itself</td>
+                    <td>ourselves</td>
+                    <td>themselves</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-type1">Type 1: Subject (Підметовий)</h3>
+            <p>
+              Підметові займенники — це <strong>головні герої</strong> речення.
+              Вони виконують дію (відповідають на питання <em>Хто? Що?</em>) і
+              зазвичай стоять на самому початку речення,
+              <strong>перед дієсловом</strong>.
+            </p>
+            <ul>
+              <li>
+                <span class="accent">She</span> always checks her homework
+                before submitting it. <em>(Хто перевіряє? Вона.)</em>
+              </li>
+              <li>
+                <span class="accent">They</span> forgot to bring their
+                textbooks.
+              </li>
+            </ul>
+
+            <div class="soft-callout" style="background-color: var(--hover-bg)">
+              <p class="bold" style="margin-top: 0">Quick Check 1: Subject</p>
+              <ol style="margin-top: 10px">
+                <li>(Us / We) need to submit the assignment today.</li>
+                <li>
+                  Max and (I / me) are going to the library. <br />
+                  <span class="italic text-soft"
+                    >💡 Лайфхак: якщо сумніваєшся, прибери іншу людину. Як
+                    правильно: "I am going" чи "me am going"?</span
+                  >
+                </li>
+              </ol>
+              <textarea
+                id="l6-p2-check1"
+                class="test-textarea"
+                placeholder="1 - ..., 2 - ..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-type2">Type 2: Object (Об'єктний)</h3>
+            <p>
+              Об'єктні займенники — це ті, на кого
+              <strong>спрямована дія</strong>. Вони "приймають" дію на себе
+              (відповідають на питання <em>Кого? Кому? Ким?</em>). Вони завжди
+              стоять <strong>після дієслова</strong> або після
+              <strong>прийменників</strong> (to, for, with, about, between).
+            </p>
+            <ul>
+              <li>
+                The teacher reminded <span class="accent">her</span> about the
+                deadline. <em>(Нагадав кому? Їй. Стоїть після дієслова).</em>
+              </li>
+              <li>
+                He gave the notebook to <span class="accent">me</span>.
+                <em>(Стоїть після прийменника to).</em>
+              </li>
+            </ul>
+
+            <div class="tablecontainer" style="margin-top: 20px">
+              <table>
+                <thead>
+                  <tr>
+                    <th>❌ Incorrect</th>
+                    <th>✅ Correct</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Between you and <span class="accent bold">I</span>...
+                    </td>
+                    <td>
+                      Between you and <span class="accent bold">me</span>...
+                      <br />
+                      <span class="italic"
+                        >(Після прийменника between ставимо лише об'єктний
+                        відмінок).</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="accent bold">Him</span> and me forgot our
+                      schedules.
+                    </td>
+                    <td>
+                      <span class="accent bold">He</span> and I forgot our
+                      schedules. <br />
+                      <span class="italic"
+                        >(Вони виконують дію, тому це підмет).</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="soft-callout">
+              <p class="bold" style="margin-top: 0; color: var(--brand2)">
+                🗣️ Phrase Spotlight: "Between you and me"
+              </p>
+              <p>
+                Ця фраза перекладається як <strong>«між нами (кажучи)»</strong>.
+                Носії мови використовують її, коли хочуть поділитися секретом
+                або відвертою думкою, яка "не для всіх".
+              </p>
+              <ul style="margin-bottom: 15px">
+                <li>
+                  <em
+                    ><span class="accent">Between you and me</span>, I don't
+                    like our new textbook.</em
+                  ><br />
+                  <span class="italic text-soft"
+                    >(Між нами кажучи, мені не подобається наш новий
+                    підручник).</span
+                  >
+                </li>
+              </ul>
+              <p style="margin-bottom: 0">
+                💡 <strong>Чому "me", а не "I"?</strong> Тому що слово
+                <em>between</em> (між) — це прийменник. А за правилом, після
+                всіх прийменників ми завжди маємо використовувати об'єктний
+                відмінок (Type 2).
+              </p>
+            </div>
+
+            <div class="soft-callout" style="background-color: var(--hover-bg)">
+              <p class="bold" style="margin-top: 0">Quick Check 2: Object</p>
+              <ol style="margin-top: 10px">
+                <li>The teacher gave (they / them) a good grade.</li>
+                <li>
+                  Just between you and (I / me), this math test is very
+                  difficult.
+                </li>
+              </ol>
+              <textarea
+                id="l6-p2-check2"
+                class="test-textarea"
+                placeholder="1 - ..., 2 - ..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-type3">
+              Type 3: Possessive Adjective vs. Pronoun (Залежні і самостійні
+              присвійні займенники)
+            </h3>
+            <p>
+              Обидва види виражають приналежність (<em>Чий?</em>), але
+              поводяться в реченні зовсім по-різному.
+            </p>
+
+            <p>
+              <strong>1. Possessive Adjective (Залежний)</strong> — стоїть
+              строго ПЕРЕД іменником. Він не може існувати без іменника, йому
+              треба за щось триматися.
+            </p>
+            <ul>
+              <li><span class="accent">My</span> notebook is blue.</li>
+              <li>She checked <span class="accent">her</span> assignment.</li>
+            </ul>
+
+            <p>
+              <strong>2. Possessive Pronoun (Самостійний)</strong> — стоїть
+              САМОСТІЙНО. Він повністю поглинає іменник, щоб уникнути повторення
+              в реченні.
+            </p>
+            <ul>
+              <li>
+                The blue notebook is <span class="accent">mine</span>.
+                <em>(mine = my notebook)</em>.
+              </li>
+              <li>
+                Is this textbook <span class="accent">yours</span>?
+                <em>(yours = your textbook)</em>.
+              </li>
+            </ul>
+
+            <div class="tablecontainer" style="margin-top: 20px">
+              <table>
+                <thead>
+                  <tr>
+                    <th>❌ Incorrect</th>
+                    <th>✅ Correct</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      This notebook is <span class="accent bold">my</span>.
+                    </td>
+                    <td>
+                      This notebook is <span class="accent bold">mine</span>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Is this schedule <span class="accent bold">her</span>?
+                    </td>
+                    <td>
+                      Is this schedule <span class="accent bold">hers</span>?
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="soft-callout">
+              <p style="margin-top: 0">
+                💡 <strong>"his"</strong> — має однакову форму для обох типів:
+              </p>
+              <ul style="margin-bottom: 15px">
+                <li>
+                  This is <strong>his</strong> textbook. (Залежний, перед
+                  іменником)
+                </li>
+                <li>The textbook is <strong>his</strong>. (Самостійний)</li>
+              </ul>
+
+              <p style="margin-top: 0">⚠️ <strong>"its" ≠ "it's"</strong></p>
+              <ul>
+                <li>
+                  The notebook lost <strong>its</strong> cover. (Присвійний
+                  займенник, <strong>БЕЗ апострофа!</strong>)
+                </li>
+                <li><strong>It's</strong> a great textbook. (= It is)</li>
+              </ul>
+            </div>
+
+            <div class="soft-callout" style="background-color: var(--hover-bg)">
+              <p class="bold" style="margin-top: 0">
+                Quick Check 3: Possessives
+              </p>
+              <ol style="margin-top: 10px">
+                <li>
+                  I can't find (my / mine) textbook. Can I borrow (your /
+                  yours)?
+                </li>
+                <li>The dog wagged (its / it's) tail.</li>
+              </ol>
+              <textarea
+                id="l6-p2-check3"
+                class="test-textarea"
+                placeholder="1 - ..., 2 - ..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-type4">Type 4: Reflexive (Зворотний)</h3>
+            <p>
+              Мають закінчення <strong>-self</strong> (для однини) або
+              <strong>-selves</strong> (для множини). Використовуються у двох
+              випадках:
+            </p>
+
+            <p>
+              <strong>А) Дзеркало (Дія спрямована на самого себе):</strong>
+              Підмет і об'єкт — це одна і та сама особа.
+            </p>
+            <ul>
+              <li>
+                She hurt <span class="accent">herself</span> during PE class.
+              </li>
+              <li>He taught <span class="accent">himself</span> to code.</li>
+            </ul>
+
+            <p>
+              <strong>Б) Підсилення ("самостійно / без допомоги"):</strong> Ми
+              хочемо підкреслити, що людина зробила це особисто.
+            </p>
+            <ul>
+              <li>
+                I revised all the material <span class="accent">myself</span> —
+                nobody helped me.
+              </li>
+              <li>
+                Did you check your assignment
+                <span class="accent">yourself</span>?
+              </li>
+            </ul>
+
+            <div class="tablecontainer" style="margin-top: 20px">
+              <table>
+                <thead>
+                  <tr>
+                    <th>❌ Incorrect</th>
+                    <th>✅ Correct</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      They organized it
+                      <span class="accent bold">theirselves</span>.
+                    </td>
+                    <td>
+                      They organized it
+                      <span class="accent bold">themselves</span>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      We did it
+                      <span class="accent bold">ourself</span>.
+                    </td>
+                    <td>
+                      We did it
+                      <span class="accent bold">ourselves</span>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="soft-callout" style="background-color: var(--hover-bg)">
+              <p class="bold" style="margin-top: 0">Quick Check 4: Reflexive</p>
+              <ol style="margin-top: 10px">
+                <li>
+                  Nobody helped us. We fixed the schedule (ourself / ourselves).
+                </li>
+                <li>
+                  Did you make this cake by (yourself / yourselves), Sarah?
+                  <br /><span class="italic text-soft"
+                    >(Звертаємось до однієї Сари)</span
+                  >
+                </li>
+              </ol>
+              <textarea
+                id="l6-p2-check4"
+                class="test-textarea"
+                placeholder="1 - ..., 2 - ..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <!-- ОСНОВНА ПРАКТИКА -->
+            <h3 id="p2-practice">Practice</h3>
+
+            <!-- 1 -->
+            <div class="soft-callout">
+              <h4>Exercise 1: Write the Correct Pronouns</h4>
+              <div>
+                <ol style="margin-top: 20px; line-height: 2">
+                  <li>The teacher gave the assignment (їй).</li>
+                  <li>(Він і я) forgot to submit (наші) homework.</li>
+                  <li>Is this notebook (твій)?</li>
+                  <li>(Вона) checked (її) schedule before leaving.</li>
+                  <li>The textbook has lost (свою) cover.</li>
+                  <li>(Вони) organized the lost and found box (самі).</li>
+                  <li>
+                    (Між нами кажучи), (його) grade is much better than (наші).
+                  </li>
+                  <li>
+                    (Вона) did the whole assignment (сама) — nobody reminded
+                    (їй).
+                  </li>
+                </ol>
+                <textarea
+                  id="l6-p2-ex1"
+                  class="test-textarea"
+                  placeholder="1 - her, 2 - ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="soft-callout">
+              <h4>Exercise 2: Spot the Mistake</h4>
+              <div>
+                <p>Each sentence has ONE pronoun mistake. Find and fix it.</p>
+                <ol style="margin-top: 20px; line-height: 2">
+                  <li>My grade is better than her.</li>
+                  <li>The teacher asked he to submit the assignment again.</li>
+                  <li>This textbook is our — we bought it together.</li>
+                  <li>
+                    Between you and me, her schedule is much more organized than
+                    our.
+                  </li>
+                  <li>
+                    They revised the material theirselves before the deadline.
+                  </li>
+                  <li>
+                    Its a great subject, but its homework is always overdue.
+                  </li>
+                </ol>
+                <textarea
+                  id="l6-p2-ex2"
+                  class="test-textarea"
+                  placeholder="Type the corrected sentences..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="soft-callout">
+              <h4>Exercise 3: Rewrite Using Pronouns</h4>
+              <div>
+                <p>
+                  Replace the underlined parts with the correct pronouns to
+                  avoid repetition.
+                </p>
+                <ol style="margin-top: 20px; line-height: 2">
+                  <li>
+                    Anna's notebook is blue. So this red notebook doesn't belong
+                    to
+                    <u>Anna</u>.
+                  </li>
+                  <li>
+                    Ben and I submitted <u>Ben's and my</u> assignment together.
+                  </li>
+                  <li>
+                    The teacher checked the students' schedules.
+                    <u>The students' schedules</u>
+                    were busy.
+                  </li>
+                  <li>
+                    Dan forgot <u>Dan's</u> ruler. <u>Dan</u> lost
+                    <u>Dan's</u> ruler himself.
+                  </li>
+                  <li>
+                    Clara organized <u>Clara's</u> notebook. <u>Clara</u> is
+                    proud of <u>Clara's</u> work.
+                  </li>
+                </ol>
+                <textarea
+                  id="l6-p2-ex3"
+                  class="test-textarea"
+                  placeholder="Type the rewritten sentences..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="soft-callout">
+              <h4>Exercise 4: Translation</h4>
+              <div>
+                <p>Translate into English using all four pronoun types.</p>
+                <ol style="margin-top: 20px; line-height: 2">
+                  <li>Між тобою і мною, її оцінки набагато кращі за наші.</li>
+                  <li>
+                    Вони самі перевірили свій розклад — ніхто їм не нагадував.
+                  </li>
+                  <li>
+                    Чий це зошит? — Він мій. Подивись — мій розклад на першій
+                    сторінці.
+                  </li>
+                  <li>
+                    Наше домашнє завдання прострочене, але ми ще не здали його
+                    вчителеві.
+                  </li>
+                  <li>
+                    Він дуже організований: він сам перевіряє дедлайн кожного
+                    предмету.
+                  </li>
+                </ol>
+                <textarea
+                  id="l6-p2-ex4"
+                  class="test-textarea"
+                  placeholder="Translate..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-2"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3: MYSTERY CASE -->
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Reading: The Lost and Found</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p3-reading">The Lost and Found</h3>
+
+            <p>
+              Friday afternoon. The final bell had rung and the hallways were
+              quiet. In Room 7, Mrs. Peterson sat behind a small desk covered in
+              lost items.
+            </p>
+            <p>
+              Four students walked in together: Anna, Ben, Clara, and Dan. All
+              four of them had lost something during the week.
+            </p>
+            <p>
+              On Mrs. Peterson's desk lay four items: a blue notebook, a maths
+              textbook, a pencil case, and a ruler.
+            </p>
+
+            <p>
+              "My schedule is written on the very first page of my notebook,"
+              said Anna. "I can't revise for my test without it — I need to
+              check which subjects I have next week."
+            </p>
+
+            <p>
+              Ben stepped forward and picked up the textbook. "I write my name
+              inside every textbook I own," he said. "Every single one. It's the
+              most organized thing about me."
+            </p>
+
+            <p>
+              Clara sighed. "My assignment was already overdue and I was about
+              to submit it. I had everything in my bag." She looked at the
+              pencil case and shook her head. "But that one isn't mine. Mine is
+              brand new — I bought it last Monday. That one looks old."
+            </p>
+
+            <p>
+              Dan was the last to speak. He pointed quietly at the ruler. "My
+              mum wrote my name on it so I wouldn't forget it," he said. "It's
+              the third ruler I've lost this year."
+            </p>
+
+            <p>Mrs. Peterson turned each item over carefully.</p>
+            <ul>
+              <li>
+                The blue notebook had a weekly schedule written neatly on the
+                first page.
+              </li>
+              <li>
+                The maths textbook had no name written anywhere inside it.
+              </li>
+              <li>The pencil case was old, with a small sticker on the zip.</li>
+              <li>The ruler had a name written on the back in blue ink.</li>
+            </ul>
+
+            <p class="italic">
+              "I think I know exactly whose everything is," said Mrs. Peterson
+              with a smile.
+            </p>
+            <p class="bold" style="color: var(--brand2)">Do you?</p>
+
+            <hr />
+
+            <h3 id="p3-puzzle">The Puzzle</h3>
+
+            <p>
+              Figure out which item belongs to which student. There is one
+              correct answer.
+            </p>
+
+            <p>
+              You can write your thoughts here:
+              <textarea
+                id="l6-p3-thoughts"
+                class="test-textarea"
+                placeholder="Your theories..."
+              ></textarea>
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Person</th>
+                    <th>Item</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">Anna</td>
+                    <td>
+                      <textarea
+                        id="l6-p3-puzzle-1"
+                        class="test-textarea"
+                        rows="1"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Ben</td>
+                    <td>
+                      <textarea
+                        id="l6-p3-puzzle-2"
+                        class="test-textarea"
+                        rows="1"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Clara</td>
+                    <td>
+                      <textarea
+                        id="l6-p3-puzzle-3"
+                        class="test-textarea"
+                        rows="1"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Dan</td>
+                    <td>
+                      <textarea
+                        id="l6-p3-puzzle-4"
+                        class="test-textarea"
+                        rows="1"
+                      ></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <details class="answer">
+              <summary>
+                <span>Solution</span>
+              </summary>
+              <div>
+                <ul>
+                  <li>
+                    <strong>Anna:</strong> blue notebook (her schedule is on
+                    page 1).
+                  </li>
+                  <li>
+                    <strong>Dan:</strong> ruler (his mum wrote his name on it).
+                  </li>
+                  <li>
+                    <strong>Ben:</strong> pencil case (by elimination: he writes
+                    his name in textbooks, but this textbook has no name, so
+                    it's not his).
+                  </li>
+                  <li>
+                    <strong>Clara:</strong> maths textbook (by elimination: the
+                    old pencil case isn't hers, because hers is new).
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <hr />
+
+            <h3 id="p3-speaking">Speaking Tasks</h3>
+
+            <div class="soft-callout">
+              <h4>Task 1: Comprehension</h4>
+              <div>
+                <p>Answer using full sentences and correct pronouns.</p>
+                <ol>
+                  <li>Whose schedule is written in the notebook?</li>
+                  <li>Why doesn't the textbook belong to Ben?</li>
+                  <li>Is the old pencil case Clara's? Why not?</li>
+                  <li>How does Mrs. Peterson know the ruler is Dan's?</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Task 2: Explain your solution</h4>
+              <div>
+                <p>Explain your reasoning step by step. Use these phrases:</p>
+                <ul>
+                  <li class="italic text-soft">
+                    "The ___ belongs to ___ because ___."
+                  </li>
+                  <li class="italic text-soft">
+                    "It's ___'s. / It's his/hers."
+                  </li>
+                  <li class="italic text-soft">
+                    "___ can't belong to ___ because ___."
+                  </li>
+                  <li class="italic text-soft">
+                    "The clue was ___. It told me that ___."
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4>Task 3: Character descriptions</h4>
+              <div>
+                <ol>
+                  <li>Is Ben organized? What does he do that shows this?</li>
+                  <li>Is Clara's assignment overdue? What happened?</li>
+                  <li>
+                    What does Anna need to do this weekend? What subject does
+                    she have a test in?
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p3-bonus">Bonus: Another Mystery</h3>
+            <p>
+              Mrs. Peterson finds a fifth item — a red notebook with no name and
+              no schedule inside. None of the four students claims it.
+            </p>
+            <p class="italic text-soft">
+              "But someone in this school owns it," she says. "Here is what I
+              know: the owner is very neat. They use this notebook for only one
+              subject. The last entry is dated last Tuesday."
+            </p>
+
+            <div class="soft-callout">
+              <p>Answer the questions:</p>
+              <ol>
+                <li>Could the red notebook belong to Anna? Why / why not?</li>
+                <li>Could it belong to Ben? Why / why not?</li>
+                <li>
+                  What kind of person does it most likely belong to? Describe
+                  them in 2–3 sentences using vocabulary from today's lesson.
+                </li>
+              </ol>
+              <textarea
+                id="l6-p3-bonus"
+                class="test-textarea"
+                placeholder="Your theories..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-3"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

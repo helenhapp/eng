@@ -127,7 +127,7 @@ body.dyslexia-mode .objective {
 
   /* Текст і посилання */
   --text-main: #27302f;
-  --text-soft: #5e6b6a;
+  --text-soft: #5e606b;
   --title: var(--brand1);
   --link-color: #1b8a7f;
   --header-link-bg: transparent;
@@ -420,11 +420,10 @@ h3 {
 
 h4 {
   font-family: "Tektur", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   margin: 0.7rem 0;
-  /* color: var(--text-soft); */
-  color: var(--brand2);
+  color: var(--accent-pop);
 }
 
 h5 {
@@ -757,10 +756,10 @@ tr:hover td code {
 
 th,
 td {
-  padding: 15px;
+  padding: 7px 14px;
   border: 2px solid var(--accent);
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.4;
   hyphens: auto;
   -webkit-hyphens: auto;
   min-width: 150px;
