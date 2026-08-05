@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <title>English Lesson 7</title>
+
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="transition-curtain"></div>
+
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            class="site-logo"
+          />
+        </div>
+        <div class="top-bar__controls">
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <div class="title-container">
+        <a
+          href="./lesson6.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
+        >
+          <img src="./media/icons/double-alt-arrow-left.svg" />
+        </a>
+        <h1 id="lesson-title">English: 07</h1>
+        <a href="#" class="nav-arrow next-arrow" title="Наступний урок">
+          <img src="./media/icons/double-alt-arrow-right.svg" />
+        </a>
+      </div>
+      <p class="topic">Verbs & Prepositions (TO and AT)</p>
+      <hr />
+    </header>
+
+    <main>
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Vocabulary</button>
+        <button class="tab-btn" data-target="part-2">Grammar</button>
+        <button class="tab-btn" data-target="part-3">Read & Speak</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Action & Communication Verbs</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="vocab">Vocabulary Bank</h3>
+
+            <!-- Basic Words Callout -->
+            <div class="soft-callout">
+              <h4 style="margin-top: 0">Basic Verbs (Review)</h4>
+              <p>
+                Make sure you remember these basic communication and action
+                verbs:
+              </p>
+              <p class="bold callout3">
+                talk/speak &nbsp;|&nbsp; listen &nbsp;|&nbsp; look &nbsp;|&nbsp;
+                laugh &nbsp;|&nbsp; call &nbsp;|&nbsp; text &nbsp;|&nbsp; ask
+                &nbsp;|&nbsp; answer
+              </p>
+              <p
+                class="text-soft italic"
+                style="font-size: 0.9em; margin-bottom: 5px"
+              >
+                Translation notes (optional):
+              </p>
+              <textarea
+                id="l7-p1-easy-trans"
+                class="test-textarea"
+                rows="1"
+                placeholder="Type here if you need to translate any of these..."
+              ></textarea>
+            </div>
+
+            <p style="margin-top: 30px">
+              Here are some more challenging verbs:
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Word</th>
+                    <th>Translation</th>
+                    <th>Sentence</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="explain"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to explain</span>
+                      </div>
+                    </td>
+                    <td>пояснювати</td>
+                    <td>Can you explain this rule?</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="describe"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to describe</span>
+                      </div>
+                    </td>
+                    <td>описувати</td>
+                    <td>Please describe your painting.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="stare"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to stare</span>
+                      </div>
+                    </td>
+                    <td>витріщатися, пильно дивитися</td>
+                    <td>It's rude to stare at people.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="point"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to point</span>
+                      </div>
+                    </td>
+                    <td>вказувати (пальцем, предметом)</td>
+                    <td>She pointed at the map.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="apologise"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to apologise</span>
+                      </div>
+                    </td>
+                    <td>вибачатися</td>
+                    <td>I need to apologise for my mistake.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="reply"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to reply</span>
+                      </div>
+                    </td>
+                    <td>відповідати (на лист/повідомлення)</td>
+                    <td>He didn't reply to my message.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="glance"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to glance</span>
+                      </div>
+                    </td>
+                    <td>швидко поглянути, кинути погляд</td>
+                    <td>He glanced at his watch.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="throw"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to throw (threw, thrown)</span>
+                      </div>
+                    </td>
+                    <td>кидати</td>
+                    <td>Throw the ball to me!</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="catch"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to catch (caught, caught)</span>
+                      </div>
+                    </td>
+                    <td>ловити</td>
+                    <td>I tried to catch the keys.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="shout"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to shout</span>
+                      </div>
+                    </td>
+                    <td>кричати</td>
+                    <td>Please don't shout at me.</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">
+                      <div class="flex">
+                        <button
+                          class="pronounce-btn"
+                          data-word="whisper"
+                          title="Listen"
+                        >
+                          <img
+                            src="./media/icons/volume.svg"
+                            width="16"
+                            height="16"
+                            alt="play"
+                          />
+                        </button>
+                        <span>to whisper</span>
+                      </div>
+                    </td>
+                    <td>шепотіти</td>
+                    <td>She whispered a secret to me.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- FLASHCARDS -->
+            <h4 style="margin-top: 30px">Flashcards</h4>
+
+            <div
+              class="flashcard-module fc-long-text"
+              data-fc-id="lesson7-vocab"
+            >
+              <script type="application/json" class="fc-data">
+                [
+                  { "front": "to explain", "back": "пояснювати" },
+                  { "front": "to describe", "back": "описувати" },
+                  {
+                    "front": "to stare",
+                    "back": "витріщатися, пильно дивитися"
+                  },
+                  { "front": "to point", "back": "вказувати" },
+                  { "front": "to apologise", "back": "вибачатися" },
+                  {
+                    "front": "to reply",
+                    "back": "відповідати (на лист, повідомлення)"
+                  },
+                  {
+                    "front": "to glance",
+                    "back": "швидко поглянути"
+                  },
+                  { "front": "to throw", "back": "кидати" },
+                  { "front": "to catch", "back": "ловити" },
+                  { "front": "to shout", "back": "кричати" },
+                  { "front": "to whisper", "back": "шепотіти" }
+                ]
+              </script>
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-practice">Practice</h3>
+
+            <div class="soft-callout">
+              <h4>Exercise 1: Match the situation</h4>
+              <div>
+                <p>
+                  Read the situations below and match them with the correct verb
+                  from the new vocabulary.
+                </p>
+                <p class="bold callout3">
+                  explain &nbsp;|&nbsp; describe &nbsp;|&nbsp; stare
+                  &nbsp;|&nbsp; point &nbsp;|&nbsp; apologise &nbsp;|&nbsp;
+                  reply &nbsp;|&nbsp; glance &nbsp;|&nbsp; throw &nbsp;|&nbsp;
+                  catch &nbsp;|&nbsp; shout &nbsp;|&nbsp; whisper
+                </p>
+
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>You speak very quietly so nobody else can hear you.</li>
+                  <li>
+                    You tell someone what a person, place, or thing looks like.
+                  </li>
+                  <li>
+                    You look at something very quickly and then look away.
+                  </li>
+                  <li>You did something wrong and want to say sorry.</li>
+                  <li>You use your hand/arm to send a ball through the air.</li>
+                  <li>You answer a text message or an email.</li>
+                  <li>You use your finger to show where something is.</li>
+                  <li>
+                    You look at someone for a long time without moving your
+                    eyes.
+                  </li>
+                  <li>You stop a moving ball or object with your hands.</li>
+                  <li>
+                    You speak very loudly because you are angry or far away.
+                  </li>
+                  <li>
+                    You make something clear or easy to understand by giving
+                    details.
+                  </li>
+                </ol>
+                <textarea
+                  id="l7-p1-ex1"
+                  class="test-textarea"
+                  placeholder="1 - whisper, 2 - ..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-spotlight">Language Notes</h3>
+
+            <!-- 1 -->
+            <h4>1. Say vs. Tell vs. Speak vs. Talk</h4>
+            <p>
+              Усі ці слова перекладаються як «говорити/казати», але мають різні
+              правила використання.
+            </p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Verb</th>
+                    <th>Rule & Meaning</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">to say</td>
+                    <td>
+                      Сказати (щось). Акцент на самих словах. <br />
+                      <em
+                        >Якщо хочеш додати, КОМУ ти це сказав, обов'язково
+                        потрібен <strong>to</strong>.</em
+                      >
+                    </td>
+                    <td class="italic text-soft">
+                      She <strong>said</strong> "hello". <br />
+                      She <strong>said to</strong> me that she was tired.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold accent">to tell</td>
+                    <td>
+                      Розповісти / сказати (комусь). Акцент на передачі
+                      інформації. <br />
+                      <em
+                        >Після tell <strong>НІКОЛИ</strong> не ставиться to! Ми
+                        одразу називаємо людину.</em
+                      >
+                    </td>
+                    <td class="italic text-soft">
+                      <strong>Tell</strong> me a story. <br />
+                      He <strong>told</strong> us about his dog.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">to speak</td>
+                    <td>Говорити (більш формально) або розмовляти мовами.</td>
+                    <td class="italic text-soft">
+                      I <strong>speak</strong> English. <br />
+                      Can I <strong>speak to</strong> the manager?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">to talk</td>
+                    <td>Розмовляти (неформально, як бесіда між друзями).</td>
+                    <td class="italic text-soft">
+                      We <strong>talked</strong> about our favourite game.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 2 -->
+            <h4>2. Answer vs. Reply</h4>
+            <p>
+              Обидва слова означають «відповідати», але мають різні граматичні
+              правила.
+            </p>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>to answer</th>
+                    <th>to reply</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">Grammar</td>
+                    <td><strong>БЕЗ</strong> прийменника</td>
+                    <td>Завжди з прийменником <strong>TO</strong></td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Example</td>
+                    <td>
+                      Please <strong>answer</strong> my question. <br />
+                      He didn't <strong>answer</strong> me.
+                    </td>
+                    <td>
+                      Please <strong>reply to</strong> my email. <br />
+                      He didn't <strong>reply to</strong> me.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 3 -->
+            <h4>3. Look at vs. Watch vs. Stare at</h4>
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Verb</th>
+                    <th>Meaning</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">to look (at)</td>
+                    <td>
+                      Подивитися на щось нерухоме (спрямувати погляд). Потребує
+                      <strong>at</strong>.
+                    </td>
+                    <td class="italic text-soft">
+                      <strong>Look at</strong> this picture!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">to stare (at)</td>
+                    <td>
+                      Витріщатися (дивитися довго, не відриваючи очей). Потребує
+                      <strong>at</strong>.
+                    </td>
+                    <td class="italic text-soft">
+                      Why are you <strong>staring at</strong> me?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold accent">to watch</td>
+                    <td>
+                      Спостерігати за чимось у русі або протягом якогось часу
+                      (відео, гра, люди).
+                      <strong>Не потребує прийменників!</strong>
+                    </td>
+                    <td class="italic text-soft">
+                      Let's <strong>watch</strong> a movie. <br />(Не можна
+                      сказати <em>watch at</em>).
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 4 -->
+            <h4>4. Quick Tech Verbs: Phone, Call, Text, Message</h4>
+            <div class="soft-callout">
+              <p style="margin-top: 0">
+                Усі ці слова використовуються
+                <strong>БЕЗ прийменника to</strong>.
+              </p>
+              <ul>
+                <li>
+                  <strong>Phone vs. Call:</strong> Абсолютні синоніми
+                  (дзвонити). <em>Call</em> використовується частіше, особливо в
+                  Америці, а <em>phone</em> більше популярне у Британії. <br />
+                  <span class="italic text-soft"
+                    >✅ Call me / Phone me (❌ <s>Call to me</s>)</span
+                  >
+                </li>
+
+                <li style="margin-top: 10px">
+                  <strong>Text vs. Message:</strong> Обидва означають «написати
+                  повідомлення». <em>Text</em> зазвичай стосується SMS через
+                  номер телефону, а <em>message</em> — це повідомлення у
+                  будь-якому додатку (Telegram, Instagram, чат у грі).<br />
+                  <span class="italic text-soft"
+                    >✅ Text me / Message me on Discord (❌
+                    <s>Message to me</s>)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-1"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 2: GRAMMAR -->
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Verbs + Prepositions (TO and AT)</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p2-group1">1. TO = "to a person" (комусь)</h3>
+
+            <p>
+              Багато дієслів використовують <strong>to</strong>, коли після них
+              стоїть людина.
+            </p>
+            <ul>
+              <li><strong>talk / speak TO somebody</strong></li>
+              <li><strong>listen TO somebody/something</strong></li>
+              <li><strong>explain something TO somebody</strong></li>
+              <li><strong>describe something TO somebody</strong></li>
+              <li><strong>apologise TO somebody</strong></li>
+            </ul>
+
+            <div
+              style="
+                margin-top: 15px;
+                margin-bottom: 20px;
+                padding: 15px;
+                border-left: 3px solid var(--brand2);
+                background: var(--hover-bg);
+              "
+            >
+              <p style="margin-top: 0; font-weight: 600">
+                ⚡ Mini-task: Translate
+              </p>
+              <ol
+                style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px"
+              >
+                <li>слухати радіо</li>
+                <li>говорити з подругою</li>
+                <li>поясни мені...</li>
+              </ol>
+              <textarea
+                id="l7-p2-mini1"
+                class="test-textarea"
+                rows="2"
+                placeholder="..."
+              ></textarea>
+            </div>
+
+            <div class="soft-callout">
+              <p style="margin-top: 0; margin-bottom: 8px">
+                📝 <strong>Note:</strong> There are some special verbs (like
+                <em>give, tell, show, write, send</em>). They allow you to drop
+                the preposition <strong>to</strong> if the person comes right
+                after the verb:
+              </p>
+              <p style="margin: 0; line-height: 1.6">
+                ✅ Give the book to me. = ✅ Give <strong>me</strong> the
+                book.<br />
+                ✅ Tell the story to us. = ✅ Tell <strong>us</strong> the
+                story.<br /><br />
+                <strong>But our new verbs are strict:</strong><br />
+                ✅ Explain/describe the rule <strong>to me</strong>.<br />
+                ❌ <s>Explain me the rule.</s>
+              </p>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-group2">
+              2. AT = "towards a target" (на когось / у когось)
+            </h3>
+            <p>
+              Використовуємо <strong>at</strong>, коли погляд, емоція або дія
+              спрямовані на когось чи щось.
+            </p>
+            <ul>
+              <li><strong>look AT</strong></li>
+              <li><strong>stare AT</strong></li>
+              <li><strong>point AT</strong></li>
+              <li><strong>laugh AT</strong></li>
+              <li><strong>smile AT</strong></li>
+              <li><strong>shout AT</strong></li>
+            </ul>
+
+            <div
+              style="
+                margin-top: 15px;
+                padding: 15px;
+                border-left: 3px solid var(--brand2);
+                background: var(--hover-bg);
+              "
+            >
+              <p style="margin-top: 0; font-weight: 600">
+                ⚡ Mini-task: Translate
+              </p>
+              <ol
+                style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px"
+              >
+                <li>подивись на мене</li>
+                <li>посміхатися комусь</li>
+                <li>вказувати на карту</li>
+              </ol>
+              <textarea
+                id="l7-p2-mini2"
+                class="test-textarea"
+                rows="2"
+                placeholder="..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-group3">3. No Preposition (Без прийменника)</h3>
+            <p>Деякі англійські дієслова взагалі не потребують прийменника:</p>
+            <ul>
+              <li><strong>call somebody</strong></li>
+              <li><strong>text somebody</strong></li>
+              <li><strong>ask somebody</strong></li>
+              <li><strong>thank somebody</strong></li>
+              <li><strong>answer somebody</strong></li>
+              <li><strong>visit somebody</strong></li>
+            </ul>
+
+            <div class="soft-callout">
+              <p style="margin: 0">
+                ⚠️ <strong>answer</strong> somebody АЛЕ
+                <strong>reply to</strong> somebody
+              </p>
+            </div>
+
+            <div
+              style="
+                margin-top: 15px;
+                padding: 15px;
+                border-left: 3px solid var(--brand2);
+                background: var(--hover-bg);
+              "
+            >
+              <p style="margin-top: 0; font-weight: 600">
+                ⚡ Mini-task: Translate
+              </p>
+              <ol
+                style="margin-top: 5px; margin-bottom: 10px; padding-left: 20px"
+              >
+                <li>зателефонувати мамі</li>
+                <li>запитати вчителя</li>
+                <li>відповісти на лист</li>
+              </ol>
+              <textarea
+                id="l7-p2-mini3"
+                class="test-textarea"
+                rows="2"
+                placeholder="..."
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-group4">4. Some verbs change meaning</h3>
+            <p>Іноді заміна прийменника повністю змінює зміст дії.</p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>TO (Передача / Напрямок)</th>
+                    <th>AT (Агресія / Фокус)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="bold">Throw TO</td>
+                    <td class="bold">Throw AT</td>
+                  </tr>
+                  <tr>
+                    <td>кинути, щоб людина спіймала</td>
+                    <td>кинути, щоб вдарити</td>
+                  </tr>
+                  <tr>
+                    <td class="italic text-soft">
+                      I threw the keys <strong>to</strong> him.
+                    </td>
+                    <td class="italic text-soft">
+                      He threw a snowball <strong>at</strong> me.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Shout TO</td>
+                    <td class="bold">Shout AT</td>
+                  </tr>
+                  <tr>
+                    <td>кричати здалеку, щоб почули</td>
+                    <td>кричати через злість</td>
+                  </tr>
+                  <tr>
+                    <td class="italic text-soft">
+                      I shouted <strong>to</strong> her from the balcony.
+                    </td>
+                    <td class="italic text-soft">
+                      Why are you shouting <strong>at</strong> me?
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bold">Point TO</td>
+                    <td class="bold">Point AT</td>
+                  </tr>
+                  <tr>
+                    <td>вказувати рукою напрямок</td>
+                    <td>цілитися точно в об'єкт</td>
+                  </tr>
+                  <tr>
+                    <td class="italic text-soft">
+                      She pointed <strong>to</strong> the mountains.
+                    </td>
+                    <td class="italic text-soft">
+                      Don't point your finger <strong>at</strong> people!
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <!-- ПРАКТИКА -->
+            <h3 id="p2-practice">Practice</h3>
+
+            <!-- Exercise 1 -->
+            <div class="soft-callout">
+              <h4>Exercise 1: Choose the correct option</h4>
+              <div>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>Why are you staring (to / at) the screen like that?</li>
+                  <li>I need someone to talk (to / at) right now.</li>
+                  <li>
+                    It was a funny joke, and everyone laughed (to / at) it.
+                  </li>
+                  <li>She pointed (to / at) the strange bird in the sky.</li>
+                  <li>We sat by the fire and listened (to / at) the rain.</li>
+                </ol>
+                <textarea
+                  id="l7-p2-ex1"
+                  class="test-textarea"
+                  placeholder="..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="soft-callout">
+              <h4>Exercise 2: To, At, or Nothing?</h4>
+              <div>
+                <p>
+                  Встав <strong>to</strong>, <strong>at</strong>, або постав
+                  прочерк <strong>( - )</strong>, якщо прийменник не потрібен.
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>Can you explain this math problem ________ me?</li>
+                  <li>
+                    I am going to call ________ my friend in half an hour.
+                  </li>
+                  <li>Look ________ this cute photo of my dog!</li>
+                  <li>He thanked ________ the teacher for her help.</li>
+                  <li>She didn't reply ________ my message.</li>
+                  <li>If you have any questions, you can ask ________ me.</li>
+                  <li>
+                    She pointed ________ the painting and said it was beautiful.
+                  </li>
+                  <li>Please, answer ________ my question!</li>
+                </ol>
+                <textarea
+                  id="l7-p2-ex2"
+                  class="test-textarea"
+                  placeholder="..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="soft-callout">
+              <h4>Exercise 3: Friendly or Angry?</h4>
+              <div>
+                <p>
+                  Обери між <strong>to</strong> та <strong>at</strong> залежно
+                  від ситуації.
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>
+                    The students weren't listening to the teacher, so she
+                    shouted ________ them.
+                  </li>
+                  <li>
+                    I saw my friend across the street, so I shouted ________ him
+                    to say hello.
+                  </li>
+                  <li>
+                    We were playing a game. I threw the ball ________ my dog,
+                    and he caught it.
+                  </li>
+                </ol>
+                <textarea
+                  id="l7-p2-ex3"
+                  class="test-textarea"
+                  placeholder="..."
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="soft-callout">
+              <h4>Exercise 4: Spot the Mistakes</h4>
+              <div>
+                <p>
+                  The story below contains <strong>FIVE</strong> grammar
+                  mistakes related to prepositions. Find and correct them.
+                </p>
+                <div class="italic">
+                  My programming assignment is due tomorrow at half past nine. I
+                  got stuck on a difficult task, so I texted to my friend asking
+                  for help. She called me at a quarter to eight. During the
+                  call, she explained me how the function worked. I listened to
+                  her carefully and finally fixed the bug. Later, I thanked to
+                  her for helping me. Before midnight, I finished the code and
+                  emailed it to my teacher. The next morning, my teacher replied
+                  my email and said my work was very neat. I smiled to the
+                  screen, feeling really proud of myself.
+                </div>
+                <textarea
+                  id="l7-p2-ex4"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Exercise 5 -->
+            <div class="soft-callout">
+              <h4>Exercise 5: Translation</h4>
+              <div>
+                <p>
+                  Переклади речення англійською мовою, використовуючи правильні
+                  прийменники.
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>Я кинув тобі книгу, але ти її не спіймав.</li>
+                  <li>Опиши мені фільм, який ви дивилися вчора.</li>
+                  <li>Можеш пояснити мені це правило?</li>
+                  <li>Подивись на цю смішну фотографію!</li>
+                  <li>Тобі подобається слухати музику?</li>
+                </ol>
+                <textarea
+                  id="l7-p2-ex5"
+                  class="test-textarea"
+                  placeholder="..."
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-2"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3: READ & SPEAK -->
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img src="./media/icons/read.svg" class="star" alt="icon" />
+              <span>Baking a Cake</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p3-reading">Reading</h3>
+
+            <p>
+              Anna and Sofie decided to bake a chocolate cake together. It was
+              Sofie's first time baking, so Anna had to explain the recipe to
+              her.
+            </p>
+
+            <div class="callout2">
+              "First, mix the eggs and the sugar," Anna said.
+            </div>
+
+            <p>
+              But Sofie wasn't listening to her. She was looking at Anna's cat,
+              Cinnamon. The cat had jumped onto the kitchen table and was
+              walking slowly towards the food.
+            </p>
+
+            <div class="callout2" style="border-color: rgb(81, 112, 190)">
+              "Look at him!" Sofie shouted to Anna. "He's trying to steal the
+              butter!"
+            </div>
+
+            <p>
+              Before Anna could stop him, the cat grabbed a piece of butter in
+              his teeth.
+            </p>
+
+            <div class="callout2" style="border-color: rgb(245, 139, 53)">
+              "Quick, throw the towel to me!" Anna told her.
+            </div>
+
+            <p>
+              Sofie panicked. She tried to throw it to Anna, but she threw it at
+              the cat instead. The towel landed right on Cinnamon's head! He
+              dropped the butter and ran out of the room.
+            </p>
+            <p>
+              The cat wasn't impressed, but the girls couldn't stop laughing at
+              this situation. Later, Sofie apologised to Anna for the messy
+              kitchen, but Anna told her it was completely OK.
+            </p>
+
+            <p class="soft-callout">
+              <strong>"The cat wasn't impressed".</strong> Дослівно ця фраза
+              перекладається як <em>«кіт не був вражений»</em>. Але в
+              англійській мові вираз <strong>"not impressed"</strong> часто
+              використовують для сарказму. Насправді це означає, що хтось був
+              <strong>незадоволений</strong>, роздратований або не оцінив
+              ситуацію. Українською ми б сказали:
+              <em>«Кіт жарту не оцінив»</em> або
+              <em>«Кіт був не в захваті»</em>.
+            </p>
+
+            <hr />
+
+            <h3 id="p3-speaking">Speaking Tasks</h3>
+
+            <!-- Comprehension -->
+            <div class="soft-callout">
+              <h4>Task 1: Comprehension</h4>
+              <div>
+                <p>Answer the questions about the text.</p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>What did Anna have to explain to Sofie?</li>
+                  <li>Why wasn't Sofie listening to Anna at first?</li>
+                  <li>What did Sofie do with the towel?</li>
+                  <li>Why did Sofie apologise to Anna at the end?</li>
+                </ol>
+              </div>
+            </div>
+
+            <!-- What About You -->
+            <div class="soft-callout">
+              <h4>Task 2: What About You?</h4>
+              <div>
+                <p>
+                  Answer these questions about your own preferences and
+                  experiences.
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>Have you ever baked anything?</li>
+                  <li>
+                    Do you get distracted easily when someone explains something
+                    to you?
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
