@@ -241,7 +241,7 @@ body::before {
 main,
 header {
   width: 92%;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 main {
@@ -2030,19 +2030,19 @@ code.long-code .hljs-ln td.hljs-ln-code {
 @media (min-width: 1440px) {
   main,
   header {
-    max-width: 1200px;
+    max-width: 1100px;
   }
 }
 @media (min-width: 1920px) {
   main,
   header {
-    max-width: 1400px;
+    max-width: 1300px;
   }
 }
 @media (min-width: 2560px) {
   main,
   header {
-    max-width: 1600px;
+    max-width: 1500px;
   }
 }
 
