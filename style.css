@@ -305,6 +305,7 @@ p code {
   min-width: 22px;
   max-width: 22px;
   border: 0;
+  margin: 0;
 }
 
 .flex {
