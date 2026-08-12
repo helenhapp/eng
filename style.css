@@ -452,7 +452,7 @@ h4 {
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 p.topic {
@@ -471,8 +471,14 @@ p.topic {
 }
 
 .accent-string {
-  background-color: var(--soft-callout);
-  padding: 2px 4px;
+  background-color: rgb(249, 231, 216);
+  padding: 0 2px;
+  border-radius: 2px;
+  border: 1px solid rgb(254, 206, 164);
+}
+[data-theme="dark"] .accent-string {
+  background-color: rgb(47, 51, 54);
+  border: 1px solid rgb(17, 94, 117);
 }
 
 pre.accent-string {
@@ -2547,9 +2553,9 @@ code.long-code .hljs-ln td.hljs-ln-code {
 }
 
 .sorting-item.correct {
-  background-color: var(--brand3); /* Green */
+  background-color: var(--brand4); /* Green */
   color: #000;
-  border-color: var(--brand6);
+  border-color: var(--brand2);
   cursor: default;
 }
 
@@ -2569,7 +2575,7 @@ code.long-code .hljs-ln td.hljs-ln-code {
 
 .sorting-zone {
   flex: 1;
-  min-width: 200px;
+  min-width: 240px;
   background-color: var(--panel);
   border: 2px solid var(--accordion-border);
   border-radius: 6px;

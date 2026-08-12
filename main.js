@@ -1169,19 +1169,22 @@
   // -----------------------------------------
   // 6. FLASHCARD MANAGER
   // -----------------------------------------
+  // -----------------------------------------
+  // 6. FLASHCARD MANAGER
+  // -----------------------------------------
   class FlashcardManager {
     constructor(moduleElement) {
       this.module = moduleElement;
 
-      // 1. Читаємо JSON
+      // 1. Читаємо JSON (якщо він є)
       const dataScript = this.module.querySelector(".fc-data");
-      if (!dataScript) return;
-
-      try {
-        this.deck = JSON.parse(dataScript.textContent);
-      } catch (error) {
-        console.error("Помилка читання словника:", error);
-        return;
+      this.deck = [];
+      if (dataScript) {
+        try {
+          this.deck = JSON.parse(dataScript.textContent);
+        } catch (error) {
+          console.error("Помилка читання словника:", error);
+        }
       }
 
       // 2. DOM Елементи
@@ -1295,13 +1298,21 @@
     }
 
     executeClear() {
-      // Цей метод автоматично викличеться кнопкою "Так, видалити" з модального вікна
       this.resetData();
       this.saveState();
       this.updateUI();
     }
 
+    // НОВИЙ МЕТОД ДЛЯ ДИНАМІЧНИХ КАРТОК
+    updateDeck(newDeck) {
+      this.deck = newDeck;
+      this.resetData(); // Оновлення колоди скидає поточний прогрес
+      this.saveState();
+      this.updateUI();
+    }
+
     startPlaying() {
+      if (this.deck.length === 0) return; // Захист
       this.menuBlock.style.display = "none";
       this.controlsBlock.style.display = "flex";
       this.showCurrentCard();
@@ -1309,6 +1320,27 @@
 
     updateUI() {
       this.updateStats();
+
+      // Захист від порожнього словника (Dynamic flashcards)
+      if (this.deck.length === 0) {
+        this.showMenu(
+          "Словник порожній",
+          "Обери слова для вивчення ☝️",
+          "Очікування...",
+        );
+        if (this.btnAction) {
+          this.btnAction.disabled = true;
+          this.btnAction.style.opacity = "0.5";
+          this.btnAction.style.cursor = "not-allowed";
+        }
+        return;
+      } else {
+        if (this.btnAction) {
+          this.btnAction.disabled = false;
+          this.btnAction.style.opacity = "1";
+          this.btnAction.style.cursor = "pointer";
+        }
+      }
 
       // 1. Повна перемога (Всі слова вивчені)
       if (this.currentQueue.length === 0 && this.nextQueue.length === 0) {
@@ -1352,8 +1384,7 @@
       this.menuBlock.style.display = "block";
       this.cardElement.classList.remove("is-flipped");
 
-      // Якщо перемога - кнопка "Почати з нуля" скидає прогрес
-      if (title === "All done! ✔️") {
+      if (title === "All done! ✔️" || title === "🎉 Всі слова вивчено!") {
         this.btnAction.onclick = () => {
           this.resetData();
           this.saveState();
@@ -1365,57 +1396,47 @@
       }
 
       this.btnAction.textContent = btnText;
-      // Використовуємо обличчя картки як дошку для меню
       this.frontText.innerHTML = `<div style="line-height: 1.4;"><div style="font-size: 24px; margin-bottom: 10px; color: var(--title);">${title}</div><div style="font-size: 16px; font-weight: normal; color: var(--text-soft);">${subtitle}</div></div>`;
       this.backText.innerHTML = "";
     }
 
     showCurrentCard() {
       this.cardElement.classList.remove("is-flipped");
-
-      // Чекаємо, поки картка "перегорнеться" назад, щоб не було видно зміну тексту
       setTimeout(() => {
         if (this.currentQueue.length > 0) {
           const currentWord = this.currentQueue[0];
-
-          // Універсальні ключі (з підтримкою старих 'en'/'uk' для зворотної сумісності)
           this.frontText.textContent =
             currentWord.front || currentWord.en || "";
           this.backText.textContent = currentWord.back || currentWord.uk || "";
-
           this.updateStats();
         }
       }, 150);
     }
 
     handleAnswer(knowIt) {
-      // Блокуємо спам кнопками під час анімації
       if (this.isAnimating || this.currentQueue.length === 0) return;
       this.isAnimating = true;
 
-      // 1. Додаємо клас анімації змахування
       const swipeClass = knowIt ? "swipe-left" : "swipe-right";
       this.scene.classList.add(swipeClass);
 
-      // 2. Чекаємо завершення анімації (500мс)
       setTimeout(() => {
         const word = this.currentQueue.shift();
 
         if (knowIt) {
           this.learnedCount++;
         } else {
-          this.nextQueue.push(word); // Відправляємо у наступний раунд
+          this.nextQueue.push(word);
         }
 
         this.saveState();
-        this.scene.classList.remove(swipeClass); // Повертаємо сцену на місце
+        this.scene.classList.remove(swipeClass);
 
-        // 3. Вирішуємо, що робити далі
         if (this.currentQueue.length > 0) {
           this.showCurrentCard();
           this.isAnimating = false;
         } else {
-          this.updateUI(); // Викликаємо екран меню (Раунд завершено / Перемога)
+          this.updateUI();
           this.isAnimating = false;
         }
       }, 500);
@@ -1958,9 +1979,68 @@
       new HomeworkManager(form);
     });
 
-    // Ініціалізуємо всі модулі карток на сторінці
+    // // Ініціалізуємо всі модулі карток на сторінці
+    // document.querySelectorAll(".flashcard-module").forEach((module) => {
+    //   new FlashcardManager(module);
+    // });
+
+    // 1. Ініціалізуємо всі модулі карток на сторінці
     document.querySelectorAll(".flashcard-module").forEach((module) => {
-      new FlashcardManager(module);
+      // Зберігаємо об'єкт (інстанс) прямо в DOM-елементі, щоб мати до нього доступ!
+      module.fcInstance = new FlashcardManager(module);
+    });
+
+    // 2. Ініціалізуємо ДИНАМІЧНІ картки (з чекбоксами)
+    document.querySelectorAll(".dynamic-fc-container").forEach((container) => {
+      const targetId = container.getAttribute("data-target-fc");
+      const targetModule = document.getElementById(targetId);
+
+      if (!targetModule || !targetModule.fcInstance) return;
+
+      const checkboxes = container.querySelectorAll(".dynamic-cb");
+      const storageKey = "lms_cb_state_" + targetId;
+
+      // Відновлюємо галочки чекбоксів після перезавантаження сторінки
+      const savedState = JSON.parse(localStorage.getItem(storageKey));
+      if (savedState && savedState.length === checkboxes.length) {
+        checkboxes.forEach((cb, index) => {
+          cb.checked = savedState[index];
+        });
+      }
+
+      const updateDeckFromCheckboxes = (isUserClick = false) => {
+        const selectedWords = [];
+        const stateToSave = [];
+
+        checkboxes.forEach((cb) => {
+          stateToSave.push(cb.checked);
+          if (cb.checked) {
+            selectedWords.push({
+              front: cb.getAttribute("data-front"),
+              back: cb.getAttribute("data-back"),
+            });
+          }
+        });
+
+        localStorage.setItem(storageKey, JSON.stringify(stateToSave));
+
+        if (isUserClick) {
+          // Користувач клікнув: колода оновлюється, прогрес СКИДАЄТЬСЯ
+          targetModule.fcInstance.updateDeck(selectedWords);
+        } else {
+          // Завантаження сторінки: тихо підкладаємо колоду без скидання прогресу
+          targetModule.fcInstance.deck = selectedWords;
+          targetModule.fcInstance.updateUI();
+        }
+      };
+
+      // Запускаємо один раз при завантаженні (тихо)
+      updateDeckFromCheckboxes(false);
+
+      // Вішаємо слухача на всі чекбокси
+      checkboxes.forEach((cb) => {
+        cb.addEventListener("change", () => updateDeckFromCheckboxes(true));
+      });
     });
 
     // Глобальні обробники для модального вікна очищення

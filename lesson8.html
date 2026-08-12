@@ -1,0 +1,1952 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <title>English Lesson 8</title>
+
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css?v=1.2" />
+    <script src="./main.js?v=1.2" defer></script>
+  </head>
+
+  <body>
+    <div class="transition-curtain"></div>
+
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            class="site-logo"
+          />
+        </div>
+
+        <div class="top-bar__controls">
+          <a href="./menu.html" class="menu-link">All Lessons</a>
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <div class="title-container">
+        <a
+          href="./lesson7.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
+        >
+          <img src="./media/icons/double-alt-arrow-left.svg" />
+        </a>
+        <h1 id="lesson-title">English: 08</h1>
+        <!-- <a href="#" class="nav-arrow next-arrow" title="Наступний урок">
+          <img src="./media/icons/double-alt-arrow-right.svg" />
+        </a> -->
+      </div>
+      <p class="topic">Phonetics (part 1)</p>
+      <hr />
+    </header>
+
+    <main>
+      <!-- tab-btns -->
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Vocab</button>
+        <button class="tab-btn" data-target="part-2">Phonetics</button>
+        <button class="tab-btn" data-target="part-3">Videos</button>
+        <button class="tab-btn" data-target="part-4">Practice</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Vocabulary Bank</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- БЛОК З ЧЕКБОКСАМИ -->
+            <div
+              class="dynamic-fc-container soft-callout"
+              data-target-fc="fc-dynamic-vocab"
+            >
+              <h4 style="margin-top: 0">Обери слова для вивчення:</h4>
+              <p class="text-soft" style="font-size: 14px">
+                (Зміна словника скидає поточний прогрес карток)
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 15px;
+                  margin-top: 15px;
+                "
+              >
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="about"
+                    data-back="про"
+                  />
+                  about
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="also"
+                    data-back="також"
+                  />
+                  also
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="around"
+                    data-back="навколо"
+                  />
+                  around
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="aunt"
+                    data-back="тітка"
+                  />
+                  aunt
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="back"
+                    data-back="назад / спина"
+                  />
+                  back
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="bag"
+                    data-back="сумка"
+                  />
+                  bag
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="because"
+                    data-back="тому що"
+                  />
+                  because
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="build"
+                    data-back="будувати"
+                  />
+                  build
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="busy"
+                    data-back="зайнятий"
+                  />
+                  busy
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="cozy"
+                    data-back="затишний"
+                  />
+                  cozy
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="dark"
+                    data-back="темний"
+                  />
+                  dark
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="desk"
+                    data-back="парта / стіл"
+                  />
+                  desk
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="expend"
+                    data-back="витрачати"
+                  />
+                  expend
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="expensive"
+                    data-back="дорогий"
+                  />
+                  expensive
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="fan"
+                    data-back="вентилятор / фанат"
+                  />
+                  fan
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="farm"
+                    data-back="ферма"
+                  />
+                  farm
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="fast"
+                    data-back="швидкий / швидко"
+                  />
+                  fast
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="favorite"
+                    data-back="улюблений"
+                  />
+                  favorite
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="form"
+                    data-back="форма"
+                  />
+                  form
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="free"
+                    data-back="вільний"
+                  />
+                  free
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="fun"
+                    data-back="веселий"
+                  />
+                  fun
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="funny"
+                    data-back="смішний"
+                  />
+                  funny
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="glass"
+                    data-back="склянка / скло"
+                  />
+                  glass
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="guess"
+                    data-back="вгадувати"
+                  />
+                  guess
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="just"
+                    data-back="просто / щойно"
+                  />
+                  just
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="key"
+                    data-back="ключ"
+                  />
+                  key
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="knee"
+                    data-back="коліно"
+                  />
+                  knee
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="knock"
+                    data-back="стукати"
+                  />
+                  knock
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="leaf"
+                    data-back="листок"
+                  />
+                  leaf
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="little"
+                    data-back="маленький / мало"
+                  />
+                  little
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="middle"
+                    data-back="середина"
+                  />
+                  middle
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="nap"
+                    data-back="короткий сон / дрімати"
+                  />
+                  nap
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="net"
+                    data-back="сітка"
+                  />
+                  net
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="next"
+                    data-back="наступний"
+                  />
+                  next
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="none"
+                    data-back="жоден / ніхто"
+                  />
+                  none
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="palm"
+                    data-back="долоня / пальма"
+                  />
+                  palm
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="to plant"
+                    data-back="саджати"
+                  />
+                  to plant
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="really"
+                    data-back="дійсно / дуже"
+                  />
+                  really
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="salt"
+                    data-back="сіль"
+                  />
+                  salt
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sand"
+                    data-back="пісок"
+                  />
+                  sand
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sea"
+                    data-back="море"
+                  />
+                  sea
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="season"
+                    data-back="сезон / пора року"
+                  />
+                  season
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="seat"
+                    data-back="сидіння / місце"
+                  />
+                  seat
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="short"
+                    data-back="короткий"
+                  />
+                  short
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sit"
+                    data-back="сидіти"
+                  />
+                  sit
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="some"
+                    data-back="деякі / трохи"
+                  />
+                  some
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="son"
+                    data-back="син"
+                  />
+                  son
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="spot"
+                    data-back="пляма/ місце"
+                  />
+                  spot
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="storm"
+                    data-back="шторм"
+                  />
+                  storm
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="there"
+                    data-back="там"
+                  />
+                  there
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="there is/are"
+                    data-back="є / знаходиться"
+                  />
+                  there is/are
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="ticket"
+                    data-back="квиток"
+                  />
+                  ticket
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="valley"
+                    data-back="долина"
+                  />
+                  valley
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="village"
+                    data-back="село"
+                  />
+                  village
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="villager"
+                    data-back="житель села"
+                  />
+                  villager
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="yet"
+                    data-back="ще / вже"
+                  />
+                  yet
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="yummy"
+                    data-back="смачний"
+                  />
+                  yummy
+                </label>
+                <label class="test-label">
+                  <input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="zip"
+                    data-back="блискавка (застібка)"
+                  />
+                  zip
+                </label>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- КАРТКИ -->
+            <div
+              class="flashcard-module"
+              id="fc-dynamic-vocab"
+              data-fc-id="dynamic-vocab-1"
+            >
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Граматична підказка: There is / are -->
+            <div class="soft-callout">
+              <h4>There is / There are</h4>
+              <p>
+                Ми використовуємо цю конструкцію, коли хочемо сказати, що
+                <span class="bold">щось десь знаходиться або існує</span>.
+                Українською такі речення найзручніше перекладати з кінця:
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">There is</span> a dark spot on the leaf.
+                  — На листку <span class="accent">є</span> темна пляма.
+                </li>
+                <li>
+                  <span class="accent">There are</span> two free seats in the
+                  middle. — Посередині <span class="accent">є</span> два вільних
+                  місця.
+                </li>
+              </ul>
+
+              <p>
+                Якщо ми говоримо про <span class="bold">минулий час</span> (щось
+                десь було), ми замінюємо <em>is/are</em> на
+                <span class="accent">was/were</span>:
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">There was</span> a fun lesson yesterday.
+                  — Вчора <span class="accent">був</span> веселий урок.
+                </li>
+                <li>
+                  <span class="accent">There were</span> many people in the
+                  valley. — У долині <span class="accent">було</span> багато
+                  людей.
+                </li>
+              </ul>
+
+              <p>
+                А якщо ми хочемо сказати, що чогось
+                <span class="bold">немає</span> або
+                <span class="bold">не було</span>, найзручніше використати слово
+                <span class="accent">no</span>:
+              </p>
+              <ul>
+                <li>
+                  <span class="accent">There is no</span> salt in the food. — У
+                  їжі <span class="accent">немає</span> солі.
+                </li>
+                <li>
+                  <span class="accent">There was no</span> glass on the table. —
+                  На столі <span class="accent">не було</span> склянки.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Граматична підказка: Yet -->
+            <div class="soft-callout">
+              <h4>Yet</h4>
+              <p>
+                Слово <span class="bold">yet</span> зазвичай ставиться в самому
+                кінці речення. Воно допомагає нам сказати, що щось
+                <span class="accent">"ще не"</span> відбулося, або запитати, чи
+                воно <span class="accent">"вже"</span> сталося:
+              </p>
+
+              <ul>
+                <li>
+                  I don't know this word <span class="accent">yet</span>. — Я
+                  <span class="accent">ще</span> не знаю цього слова.
+                </li>
+                <li>
+                  Is the tea ready <span class="accent">yet</span>? — Чай
+                  <span class="accent">вже</span> готовий?
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 2: PHONETICS -->
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Transcription & Simple Sounds</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="p1-intro">
+              1. Що таке транскрипція і навіщо вона потрібна?
+            </h3>
+            <p>
+              В англійській мові <strong>26 букв</strong>, але аж
+              <strong>44 звуки</strong>. Це означає дві речі:
+            </p>
+
+            <div class="soft-callout">
+              <h4 style="margin-top: 0">
+                Одна літера може позначати різні звуки
+              </h4>
+              <p>
+                Подивися на букву <strong>"a"</strong> у цих трьох словах. Вона
+                скрізь однакова, але читається абсолютно по-різному:
+              </p>
+              <div class="tablecontainer">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Слово</th>
+                      <th>Транскрипція</th>
+                      <th>Звук</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="bold">c<span class="accent">a</span>t</td>
+                      <td>/ kæt /</td>
+                      <td>широке "е-а"</td>
+                    </tr>
+                    <tr>
+                      <td class="bold">c<span class="accent">a</span>r</td>
+                      <td>/ kɑː /</td>
+                      <td>глибоке довге "а"</td>
+                    </tr>
+                    <tr>
+                      <td class="bold">m<span class="accent">a</span>ke</td>
+                      <td>/ meɪk /</td>
+                      <td>"ей" (дифтонг)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4 style="margin-top: 0">
+                Різні літери можуть позначати один і той самий звук
+              </h4>
+              <p>
+                А тепер подивися, як по-різному на письмі може ховатися один і
+                той самий звук
+                <span class="accent-string">/ iː /</span> (довге "і"):
+              </p>
+              <div class="tablecontainer">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Слово</th>
+                      <th>Транскрипція</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="bold">s<span class="accent">ee</span></td>
+                      <td>/ siː /</td>
+                    </tr>
+                    <tr>
+                      <td class="bold">s<span class="accent">ea</span></td>
+                      <td>/ siː /</td>
+                    </tr>
+                    <tr>
+                      <td class="bold">m<span class="accent">e</span></td>
+                      <td>/ miː /</td>
+                    </tr>
+                    <tr>
+                      <td class="bold">k<span class="accent">ey</span></td>
+                      <td>/ kiː /</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <p style="margin-top: 20px">
+              Тому в англійській мові
+              <strong
+                >не завжди можна здогадатися, як правильно читати слово, лише
+                подивившись на те, як воно написане</strong
+              >. Щоб дізнатися точну вимову, ми використовуємо
+              <strong>транскрипцію</strong> — спеціальний запис звуків у
+              словнику. Але щоб вміти її читати, необхідно вивчити спеціальні
+              фонетичні символи, якими позначаються різні звуки.
+            </p>
+
+            <div class="callout2">
+              <div style="line-height: 1.6">
+                Перевіряти правильну вимову та транскрипцію слів найкраще в
+                словнику. Наприклад:
+                <a
+                  href="https://www.oxfordlearnersdictionaries.com/"
+                  target="_blank"
+                  class="bold"
+                  style="text-decoration: underline"
+                  >Oxford Learner's Dictionaries</a
+                >.
+              </div>
+            </div>
+
+            <p>
+              Сьогодні ми розглянемо 23 із 44 звуків: 15 приголосних та 8
+              голосних.
+            </p>
+
+            <hr />
+
+            <h3 id="p1-consonants">2. Приголосні (Consonants)</h3>
+            <p>Більшість англійських приголосних дуже схожі на українські:</p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Звук</th>
+                    <th>Приклади слів</th>
+                    <th>Вимова</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="accent-string">/ p /</span></td>
+                    <td>pen, stop</td>
+                    <td>Схоже на укр. "п", але з легким видихом</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ b /</span></td>
+                    <td>bag, club</td>
+                    <td>Як "б"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ t /</span></td>
+                    <td>ten, sit</td>
+                    <td>Схоже на укр. "т"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ d /</span></td>
+                    <td>dog, desk</td>
+                    <td>Схоже на укр. "д"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ k /</span></td>
+                    <td>cat, back</td>
+                    <td>Схоже на укр. "к"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɡ /</span></td>
+                    <td>big, glass</td>
+                    <td>Як "ґ" (як у слові ґава)</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ f /</span></td>
+                    <td>fast, leaf</td>
+                    <td>Як "ф"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ v /</span></td>
+                    <td>live, very</td>
+                    <td>Як "в", але верхні зуби торкаються нижньої губи</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ s /</span></td>
+                    <td>sit, sand</td>
+                    <td>Як "с"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ z /</span></td>
+                    <td>zip, buzz</td>
+                    <td>Як "з"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ m /</span></td>
+                    <td>man, milk</td>
+                    <td>Як "м"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ n /</span></td>
+                    <td>net, nap</td>
+                    <td>Як "н"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ l /</span></td>
+                    <td>leg, let</td>
+                    <td>Як "л", але трохи твердіше</td>
+                  </tr>
+
+                  <tr>
+                    <td><span class="accent-string">/ j /</span></td>
+                    <td>yes, yet</td>
+                    <td>Як "й" (НЕ "дж"!)</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ h /</span></td>
+                    <td>hand, hot</td>
+                    <td>Просто легкий видих – без голосу</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p1-vowels">3. Голосні (Vowels)</h3>
+            <p>
+              В англійській мові голосні можуть бути короткими (вимовляються
+              швидко) та довгими (мають двокрапку ː і тягнуться довше):
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Звук</th>
+                    <th>Приклади слів</th>
+                    <th>Вимова</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="accent-string">/ ɪ /</span></td>
+                    <td>sit, big, milk</td>
+                    <td>Короткий звук, щось середнє між "и" та "і"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ iː /</span></td>
+                    <td>tree, see, free</td>
+                    <td>Довге "і", губи трохи розтягнуті в усмішці</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ e /</span></td>
+                    <td>pen, ten, next</td>
+                    <td>Як "е"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ æ /</span></td>
+                    <td>cat, apple, plan</td>
+                    <td>
+                      Широке "е". Рот відкриваємо широко (як на "а"), але кажемо
+                      "е"
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ʌ /</span></td>
+                    <td>cup, sun, son</td>
+                    <td>Короткий звук, щось між "а" та "о"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɑː /</span></td>
+                    <td>car, plant, dark</td>
+                    <td>Довге, глибоке "а"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɒ /</span></td>
+                    <td>hot, dog, stop</td>
+                    <td>Коротке "о"</td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɔː /</span></td>
+                    <td>sport, short, walk</td>
+                    <td>Довге "о"</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Блок порівняння -->
+            <h4>Compare</h4>
+
+            <div class="tablecontainer" style="margin-top: 15px">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sound 1</th>
+                    <th>Sound 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="bold">sit</span>
+                      <span class="accent-string">/ sɪt /</span> (сидіти)
+                    </td>
+                    <td>
+                      <span class="bold">seat</span>
+                      <span class="accent-string">/ siːt /</span> (сидіння)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="bold">bed</span>
+                      <span class="accent-string">/ bed /</span> (ліжко)
+                    </td>
+                    <td>
+                      <span class="bold">bad</span>
+                      <span class="accent-string">/ bæd /</span> (поганий)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="bold">fun</span>
+                      <span class="accent-string">/ fʌn /</span> (веселий)
+                    </td>
+                    <td>
+                      <span class="bold">fan</span>
+                      <span class="accent-string">/ fæn /</span>
+                      (вентилятор/фанат)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="bold">spot</span>
+                      <span class="accent-string">/ spɒt /</span> (пляма)
+                    </td>
+                    <td>
+                      <span class="bold">sport</span>
+                      <span class="accent-string">/ spɔːt /</span> (спорт)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Блок Happy Vowel -->
+            <h4>"Happy Vowel" (Щасливий голосний)</h4>
+            <p>
+              Іноді в транскрипціях ти можеш зустріти символ
+              <span class="accent-string">/ i /</span> без двокрапки (наприклад,
+              у слові <span class="bold">city /ˈsɪti/</span>). Що це означає?
+            </p>
+            <p>
+              Коли звук "і" стоїть
+              <span class="bold">в кінці слова без наголосу</span>, потрібно
+              розтягнути губи в посмішку (як для довгого /iː/), але вимовити
+              звук швидко.
+            </p>
+
+            <ul>
+              <li>
+                <span class="bold">city</span>
+                <span class="accent-string">/ ˈsɪti /</span>
+              </li>
+              <li>
+                <span class="bold">happy</span>
+                <span class="accent-string">/ ˈhæpi /</span>
+              </li>
+              <li>
+                <span class="bold">busy</span>
+                <span class="accent-string">/ ˈbɪzi /</span>
+              </li>
+              <li>
+                <span class="bold">coffee</span>
+                <span class="accent-string">/ ˈkɒfi /</span>
+              </li>
+            </ul>
+
+            <h4>Короткий звук чи довгий?</h4>
+
+            <h5 class="accent">1. Закритий склад (Короткі звуки)</h5>
+            <p>
+              Якщо голосна літера стоїть між приголосними, вона читається
+              коротко:
+            </p>
+            <ul>
+              <li>
+                c<span class="bold">a</span>t
+                <span class="accent-string">/ kæt /</span>
+              </li>
+              <li>
+                p<span class="bold">e</span>n
+                <span class="accent-string">/ pen /</span>
+              </li>
+              <li>
+                s<span class="bold">i</span>t
+                <span class="accent-string">/ sɪt /</span>
+              </li>
+              <li>
+                h<span class="bold">o</span>t
+                <span class="accent-string">/ hɒt /</span>
+              </li>
+            </ul>
+
+            <br />
+
+            <h5 class="accent">2. Буквосполучення (Довгі звуки)</h5>
+            <p>
+              Звук стає довгим, коли літери працюють у парі. Найчастіше це
+              відбувається у двох випадках:
+            </p>
+            <ul>
+              <li>
+                <span class="bold">Дві голосні поруч (ee, ea):</span> s<span
+                  class="bold"
+                  >ee</span
+                >
+                <span class="accent-string">/ siː /</span>, t<span class="bold"
+                  >ea</span
+                >
+                <span class="accent-string">/ tiː /</span>
+              </li>
+              <li>
+                <span class="bold">Голосна + літера R (ar, or):</span> c<span
+                  class="bold"
+                  >ar</span
+                >
+                <span class="accent-string">/ kɑː /</span>, sp<span class="bold"
+                  >or</span
+                >t <span class="accent-string">/ spɔːt /</span> <br /><em
+                  >(У британській вимові сама літера "r" не читається, але вона
+                  подовжує попередню голосну).</em
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3: VIDEOS -->
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Pronunciation Videos</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- 0 -->
+            <h3 id="s0">Voiceless consonant / h /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/DM_gN6imoC8?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <!-- 1 -->
+            <h3 id="s1">Short vowel / ɪ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/TNFKG0yvDx4?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 2 -->
+            <h3 id="s2">Long vowel / iː /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RZmGzSb-6OM?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 3 -->
+            <h3 id="s3">Short vowel / e /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hLN1cdSTDo8?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 4 -->
+            <h3 id="s4">Short vowel / æ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qVhaIHk88a8?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 5 -->
+            <h3 id="s5">Short vowel / ʌ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PZwKFFp7V50?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 6 -->
+            <h3 id="s6">Long vowel / ɑː /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/uDHMuMQdBNw?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 7 -->
+            <h3 id="s7">Short vowel / ɒ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MAk-XtHsyzM?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- 8 -->
+            <h3 id="s8">Long vowel / ɔː /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/KHllC40_u1Q?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- more -->
+            <div class="callout2">
+              <div style="line-height: 1.6">
+                Весь плейлист:
+                <a
+                  href="https://www.youtube.com/playlist?list=PLD6B222E02447DC07"
+                  target="_blank"
+                  class="bold"
+                  style="text-decoration: underline"
+                  >BBC Learning English – Pronunciation Tips</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 4: EXERCISES -->
+      <section id="part-4" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Exercises</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- Practice 1: Read out loud -->
+            <h3 id="p4-ex1">Exercise 1</h3>
+            <div class="soft-callout">
+              <h4>Exercise 1: Read out loud</h4>
+              <p>Прочитай ці слова вголос, спираючись на їхню транскрипцію:</p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 20px;
+                  font-size: 16px;
+                  margin-top: 15px;
+                "
+              >
+                <!-- column 1 -->
+                <div style="flex: 1 1 200px">
+                  <ol>
+                    <li>tea <span class="accent-string">/tiː/</span></li>
+                    <li>palm <span class="accent-string">/pɑːm/</span></li>
+                    <li>listen <span class="accent-string">/ˈlɪsn/</span></li>
+                    <li>guess <span class="accent-string">/ɡes/</span></li>
+                    <li>busy <span class="accent-string">/ˈbɪzi/</span></li>
+                    <li>knee <span class="accent-string">/niː/</span></li>
+                    <li>people <span class="accent-string">/ˈpiːpl/</span></li>
+                    <li>
+                      expend <span class="accent-string">/ɪkˈspend/</span>
+                    </li>
+                    <li>build <span class="accent-string">/bɪld/</span></li>
+                    <li>head <span class="accent-string">/hed/</span></li>
+                  </ol>
+                </div>
+                <!-- column 2 -->
+                <div style="flex: 1 1 200px">
+                  <ol start="11">
+                    <li>salt <span class="accent-string">/sɔːlt/</span></li>
+                    <li>middle <span class="accent-string">/ˈmɪdl/</span></li>
+                    <li>none <span class="accent-string">/nʌn/</span></li>
+                    <li>storm <span class="accent-string">/stɔːm/</span></li>
+                    <li>yummy <span class="accent-string">/ˈjʌmi/</span></li>
+                    <li>all <span class="accent-string">/ɔːl/</span></li>
+                    <li>key <span class="accent-string">/kiː/</span></li>
+                    <li>aunt <span class="accent-string">/ɑːnt/</span></li>
+                    <li>form <span class="accent-string">/fɔːm/</span></li>
+                    <li>half <span class="accent-string">/hɑːf/</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 2 -->
+            <h3 id="p4-ex2">Exercise 2</h3>
+
+            <!-- 2.1 -->
+            <div class="soft-callout">
+              <h4>Exercise 2.1: Decipher the Word</h4>
+              <p>
+                Дано транскрипції. Прочитай їх вголос і спробуй здогадатися, які
+                слова їм відповідають:
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 20px;
+                  font-size: 16px;
+                  margin-top: 15px;
+                "
+              >
+                <!-- column 1 -->
+                <div style="flex: 1 1 200px">
+                  <ol>
+                    <li><span class="accent-string">/kæt/</span></li>
+                    <li><span class="accent-string">/klɑːs/</span></li>
+                    <li><span class="accent-string">/spiːk/</span></li>
+                    <li><span class="accent-string">/jes/</span></li>
+                    <li><span class="accent-string">/ɡɪv/</span></li>
+                    <li><span class="accent-string">/ˈtɪkɪt/</span></li>
+                    <li><span class="accent-string">/ænd/</span></li>
+                    <li><span class="accent-string">/fʌni/</span></li>
+                    <li><span class="accent-string">/ɪkˈspensɪv/</span></li>
+                  </ol>
+                </div>
+                <!-- column 2 -->
+                <div style="flex: 1 1 200px">
+                  <ol start="10">
+                    <li><span class="accent-string">/bæɡ/</span></li>
+                    <li><span class="accent-string">/ɔːl/</span></li>
+                    <li><span class="accent-string">/ˈkɒfi/</span></li>
+                    <li><span class="accent-string">/bæk/</span></li>
+                    <li><span class="accent-string">/ˈsɪksti/</span></li>
+                    <li><span class="accent-string">/ˈmʌni/</span></li>
+                    <li><span class="accent-string">/ˈlesn/</span></li>
+                    <li><span class="accent-string">/ˈsɪti/</span></li>
+                    <li><span class="accent-string">/ˈmɪnɪt/</span></li>
+                  </ol>
+                </div>
+                <textarea
+                  id="l8-p1-ex2-1"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Practice 2.2: Homophones -->
+            <div class="soft-callout">
+              <h4>Exercise 2.2: Homophones (Sound the same)</h4>
+              <div>
+                <p>
+                  Дано три транскрипції, кожній з яких відповідають одразу два
+                  слова. Знайді ці слова на панелі нижче (решта слів – фейки):
+                </p>
+                <p class="bold callout3" style="padding: 10px">
+                  sie &nbsp;|&nbsp; summ &nbsp;|&nbsp; sum &nbsp;|&nbsp; sea
+                  &nbsp;|&nbsp; som &nbsp;|&nbsp; san &nbsp;|&nbsp; some
+                  &nbsp;|&nbsp; sane &nbsp;|&nbsp; sun &nbsp;|&nbsp; same
+                  &nbsp;|&nbsp; son &nbsp;|&nbsp; si &nbsp;|&nbsp; see
+                </p>
+
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li><span class="accent-string">/ siː /</span></li>
+                  <li><span class="accent-string">/ sʌm /</span></li>
+                  <li><span class="accent-string">/ sʌn /</span></li>
+                </ol>
+                <textarea
+                  id="l8-p1-ex2-2"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 3: Drag and Drop Sorting -->
+            <h3 id="p4-ex3">Exercise 3</h3>
+
+            <div class="sorting-game-module" data-game-id="l8-sort-1">
+              <div class="sorting-header">
+                <h4 style="margin: 0">Exercise 3: Sort by Sound</h4>
+                <button type="button" class="reset-btn-hw sorting-reset-btn">
+                  🔄 Reset
+                </button>
+              </div>
+              <script type="application/json" class="sorting-data">
+                {
+                  "categories": [
+                    { "id": "snd-e", "title": "/ e /" },
+                    { "id": "snd-ae", "title": "/ æ /" },
+                    { "id": "snd-i", "title": "/ ɪ /" },
+                    { "id": "snd-ii", "title": "/ iː /" },
+                    { "id": "snd-o", "title": "/ ɒ /" },
+                    { "id": "snd-oo", "title": "/ ɔː /" }
+                  ],
+                  "items": [
+                    { "id": "p1-1", "text": "end", "correctCategory": "snd-e" },
+                    {
+                      "id": "p1-2",
+                      "text": "and",
+                      "correctCategory": "snd-ae"
+                    },
+                    { "id": "p1-3", "text": "pen", "correctCategory": "snd-e" },
+                    {
+                      "id": "p1-4",
+                      "text": "pan",
+                      "correctCategory": "snd-ae"
+                    },
+                    { "id": "p1-5", "text": "bet", "correctCategory": "snd-e" },
+                    {
+                      "id": "p1-6",
+                      "text": "bat",
+                      "correctCategory": "snd-ae"
+                    },
+                    {
+                      "id": "p1-7",
+                      "text": "said",
+                      "correctCategory": "snd-e"
+                    },
+                    {
+                      "id": "p1-8",
+                      "text": "sad",
+                      "correctCategory": "snd-ae"
+                    },
+                    { "id": "p1-9", "text": "men", "correctCategory": "snd-e" },
+                    {
+                      "id": "p1-10",
+                      "text": "man",
+                      "correctCategory": "snd-ae"
+                    },
+                    { "id": "p2-1", "text": "sit", "correctCategory": "snd-i" },
+                    {
+                      "id": "p2-2",
+                      "text": "seat",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p2-3",
+                      "text": "fill",
+                      "correctCategory": "snd-i"
+                    },
+                    {
+                      "id": "p2-4",
+                      "text": "feel",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p2-5",
+                      "text": "slip",
+                      "correctCategory": "snd-i"
+                    },
+                    {
+                      "id": "p2-6",
+                      "text": "sleep",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p2-7",
+                      "text": "live",
+                      "correctCategory": "snd-i"
+                    },
+                    {
+                      "id": "p2-8",
+                      "text": "leave",
+                      "correctCategory": "snd-ii"
+                    },
+                    { "id": "p2-9", "text": "fit", "correctCategory": "snd-i" },
+                    {
+                      "id": "p2-10",
+                      "text": "feet",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p2-11",
+                      "text": "sick",
+                      "correctCategory": "snd-i"
+                    },
+                    {
+                      "id": "p2-12",
+                      "text": "seek",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p2-13",
+                      "text": "rich",
+                      "correctCategory": "snd-i"
+                    },
+                    {
+                      "id": "p2-14",
+                      "text": "reach",
+                      "correctCategory": "snd-ii"
+                    },
+                    {
+                      "id": "p3-1",
+                      "text": "spot",
+                      "correctCategory": "snd-o"
+                    },
+                    {
+                      "id": "p3-2",
+                      "text": "sport",
+                      "correctCategory": "snd-oo"
+                    },
+                    { "id": "p3-3", "text": "pot", "correctCategory": "snd-o" },
+                    {
+                      "id": "p3-4",
+                      "text": "port",
+                      "correctCategory": "snd-oo"
+                    },
+                    { "id": "p3-5", "text": "fox", "correctCategory": "snd-o" },
+                    {
+                      "id": "p3-6",
+                      "text": "forks",
+                      "correctCategory": "snd-oo"
+                    },
+                    {
+                      "id": "p3-7",
+                      "text": "walk",
+                      "correctCategory": "snd-oo"
+                    },
+                    {
+                      "id": "p3-8",
+                      "text": "short",
+                      "correctCategory": "snd-oo"
+                    },
+                    {
+                      "id": "p3-9",
+                      "text": "law",
+                      "correctCategory": "snd-oo"
+                    },
+                    {
+                      "id": "p3-10",
+                      "text": "sheep",
+                      "correctCategory": "snd-ii"
+                    }
+                  ]
+                }
+              </script>
+              <div class="sorting-bank"></div>
+              <div class="sorting-zones-container"></div>
+              <div class="sorting-feedback"></div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 4: Encrypted Text -->
+            <h3 id="p4-ex4">Exercise 4</h3>
+            <div class="soft-callout">
+              <h4>Exercise 4: The Encrypted Text</h4>
+              <div>
+                <p>
+                  Прочитай цей текст вголос. Розшифруй заховані слова, запиши
+                  їх, та усно переклади текст на українську:
+                </p>
+
+                <div class="callout2" style="font-size: 1.1rem; line-height: 2">
+                  "I am playing a
+                  <span class="accent-string">/ fʌn /</span> game called
+                  "Stardew <span class="accent-string">/ ˈvæli /</span>". It's
+                  about a <span class="accent-string">/fɑːm/</span> in a cozy
+                  village. In this game, I have a house, and there is an
+                  <span class="accent-string">/ ˈæpl /</span>
+                  tree
+                  <span class="accent-string">/ nekst /</span> to it. I also
+                  <span class="accent-string">/ plæn /</span> to
+                  <span class="accent-string">/ plɑːnt /</span>
+                  <span class="accent-string">/ ˈmeni /</span> flowers there in
+                  the summer. <span class="accent-string">/ bɪˈkɒz /</span> of
+                  the flowers, summer is my favorite
+                  <span class="accent-string">/ ˈsiːzn /</span>. But today I'll
+                  just <span class="accent-string">/wɔːk/</span> around and
+                  <span class="accent-string">/tɔːk/</span> to the villagers.
+                  The music in this game is nice – I really like to
+                  <span class="accent-string">/ ˈlɪsn /</span> to it."
+                </div>
+
+                <textarea
+                  id="l8-p1-ex4"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 5: Find the Mistakes -->
+            <h3 id="p4-ex5">Exercise 5</h3>
+            <div class="soft-callout">
+              <h4>Exercise 5: Spot the Mistakes</h4>
+              <div>
+                <p>
+                  Дано 10 слів із транскрипціями.
+                  <strong>5 транскрипцій написані з помилками.</strong>. Знайди
+                  та виправ їх:
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>speak <strong>/ spiːk /</strong></li>
+                  <li>palm <strong>/ pɑːlm /</strong></li>
+                  <li>guess <strong>/ ɡes /</strong></li>
+                  <li>land <strong>/ lend /</strong></li>
+                  <li>tea <strong>/ tiː /</strong></li>
+                  <li>little <strong>/ ˈlɪttl /</strong></li>
+                  <li>cup <strong>/ cʌp /</strong></li>
+                  <li>knock <strong>/nɒk/</strong></li>
+                  <li>head <strong>/ hed /</strong></li>
+                  <li>film <strong>/ fiːlm /</strong></li>
+                </ol>
+                <textarea
+                  id="l8-p1-ex5"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <hr />
+
+            <!-- Practice 6: Translate & Speak -->
+            <h3 id="p4-ex6">Exercise 6</h3>
+            <div class="soft-callout">
+              <h4>Exercise 6: Translate</h4>
+              <p>
+                Переклади ці речення на англійську мову, використовуючи
+                <span class="accent">there is / there are</span> або
+                <span class="accent">there was / there were</span>. Запиши
+                переклад, а потім обов'язково прочитай кожне речення вголос:
+              </p>
+
+              <ol>
+                <li>В кімнаті був вентилятор.</li>
+                <li>В селі є затишна ферма.</li>
+                <li>Біля дверей є ключ.</li>
+                <li>На стіні було вісім картин.</li>
+                <li>В цій сумці ключі, гаманець і телефон.</li>
+                <li>Вчора був сильний шторм.</li>
+                <li>В саду є багато квітів.</li>
+                <li>Минулого тижня в нашому місті було багато туристів.</li>
+                <li>На фермі багато яблунь.</li>
+                <li>В тій чашці не було чаю.</li>
+              </ol>
+
+              <textarea
+                id="l8-p1-ex6"
+                class="test-textarea"
+                placeholder="..."
+                rows="12"
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-1"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
