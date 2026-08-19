@@ -2575,12 +2575,24 @@ code.long-code .hljs-ln td.hljs-ln-code {
 
 .sorting-zone {
   flex: 1;
-  min-width: 240px;
+  min-width: 250px;
   background-color: var(--panel);
   border: 2px solid var(--accordion-border);
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .sorting-zone {
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sorting-zone {
+    min-width: 350px;
+  }
 }
 
 .sorting-zone-header {

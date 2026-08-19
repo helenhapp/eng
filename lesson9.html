@@ -1,0 +1,2279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Навчальні матеріали" />
+
+    <link rel="icon" type="image/svg+xml" href="./media/icons/space.svg" />
+
+    <title>English Lesson 9</title>
+
+    <script>
+      const savedTheme = localStorage.getItem("lms_theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css?v=2.0" />
+    <script src="./main.js?v=2.0" defer></script>
+  </head>
+
+  <body>
+    <div class="transition-curtain"></div>
+
+    <div id="nav-container">
+      <nav class="top-bar">
+        <div class="logo-container">
+          <img
+            src="./media/icons/space.svg"
+            alt="Space Logo"
+            class="site-logo"
+          />
+        </div>
+
+        <div class="top-bar__controls">
+          <a href="./menu.html" class="menu-link">All Lessons</a>
+          <label class="toggle-switch" aria-label="Перемикач теми">
+            <input type="checkbox" id="theme-checkbox" />
+            <span class="slider">
+              <span class="icon sun"
+                ><img src="./media/icons/stars.svg"
+              /></span>
+              <span class="icon moon"
+                ><img src="./media/icons/moon.svg"
+              /></span>
+            </span>
+          </label>
+          <button
+            id="dyslexia-mode-btn"
+            class="wide-toggle"
+            title="Шрифт для дислектиків"
+          >
+            <img src="./media/icons/alphabet.svg" />
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <header>
+      <div class="title-container">
+        <a
+          href="./lesson8.html"
+          class="nav-arrow prev-arrow"
+          title="Попередній урок"
+        >
+          <img src="./media/icons/double-alt-arrow-left.svg" />
+        </a>
+        <h1 id="lesson-title">English: 09</h1>
+        <!-- <a href="#" class="nav-arrow next-arrow" title="Наступний урок">
+          <img src="./media/icons/double-alt-arrow-right.svg" />
+        </a> -->
+      </div>
+      <p class="topic">Phonetics (part 2)</p>
+      <hr />
+    </header>
+
+    <main>
+      <!-- tab-btns -->
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-target="part-1">Vocab</button>
+        <button class="tab-btn" data-target="part-2">Phonetics</button>
+        <button class="tab-btn" data-target="part-3">Videos</button>
+        <button class="tab-btn" data-target="part-4">Practice</button>
+      </div>
+
+      <!-- 🧩 ЧАСТИНА 1: VOCABULARY -->
+      <section id="part-1" class="lesson-wrapper tab-content active show">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Vocabulary Bank</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- БЛОК З ЧЕКБОКСАМИ -->
+            <div
+              class="dynamic-fc-container soft-callout"
+              data-target-fc="fc-dynamic-vocab"
+            >
+              <h4 style="margin-top: 0">Обери слова для вивчення:</h4>
+              <p class="text-soft" style="font-size: 14px">
+                (Зміна словника скидає поточний прогрес карток)
+              </p>
+
+              <!-- Група 1: Їжа та напої -->
+              <h5
+                style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-color);
+                "
+              >
+                Їжа та напої
+              </h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px">
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="avocado"
+                    data-back="авокадо"
+                  />
+                  avocado</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="bacon"
+                    data-back="бекон"
+                  />
+                  bacon</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="beans"
+                    data-back="квасоля"
+                  />
+                  beans</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="biscuit"
+                    data-back="печиво"
+                  />
+                  biscuit</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="cereal"
+                    data-back="пластівці"
+                  />
+                  cereal</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="cucumber"
+                    data-back="огірок"
+                  />
+                  cucumber</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="espresso"
+                    data-back="еспресо"
+                  />
+                  espresso</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="ham"
+                    data-back="шинка"
+                  />
+                  ham</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="jam"
+                    data-back="джем / варення"
+                  />
+                  jam</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="lemon"
+                    data-back="лимон"
+                  />
+                  lemon</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="lemonade"
+                    data-back="лимонад"
+                  />
+                  lemonade</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="mushroom"
+                    data-back="гриб"
+                  />
+                  mushroom</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="oatmeal"
+                    data-back="вівсянка"
+                  />
+                  oatmeal</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="olive oil"
+                    data-back="оливкова олія"
+                  />
+                  olive oil</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="omelette"
+                    data-back="омлет"
+                  />
+                  omelette</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="pastry"
+                    data-back="випічка"
+                  />
+                  pastry</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="porridge"
+                    data-back="каша"
+                  />
+                  porridge</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="rice"
+                    data-back="рис"
+                  />
+                  rice</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sandwich"
+                    data-back="сендвіч"
+                  />
+                  sandwich</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="soda"
+                    data-back="газована вода"
+                  />
+                  soda</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="soup"
+                    data-back="суп"
+                  />
+                  soup</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sour cream"
+                    data-back="сметана"
+                  />
+                  sour cream</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="spaghetti"
+                    data-back="спагеті"
+                  />
+                  spaghetti</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="strawberry"
+                    data-back="полуниця"
+                  />
+                  strawberry</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="toast"
+                    data-back="тост"
+                  />
+                  toast</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="yoghurt"
+                    data-back="йогурт"
+                  />
+                  yoghurt</label
+                >
+              </div>
+
+              <!-- Група 2: Кухня, посуд, меню -->
+              <h5
+                style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-color);
+                "
+              >
+                Кухня та страви
+              </h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px">
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="bowl"
+                    data-back="миска"
+                  />
+                  bowl</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="cup"
+                    data-back="чашка"
+                  />
+                  cup</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="favorite"
+                    data-back="улюблений (страва)"
+                  />
+                  favorite</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="flavor"
+                    data-back="смак"
+                  />
+                  flavor</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="fork"
+                    data-back="виделка"
+                  />
+                  fork</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="glass"
+                    data-back="склянка"
+                  />
+                  glass</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="microwave"
+                    data-back="мікрохвильовка"
+                  />
+                  microwave</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="plate"
+                    data-back="тарілка"
+                  />
+                  plate</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="popular choice"
+                    data-back="популярний вибір"
+                  />
+                  popular choice</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="recipe"
+                    data-back="рецепт"
+                  />
+                  recipe</label
+                >
+              </div>
+
+              <!-- Група 3: Опис їжі та загальні прикметники -->
+              <h5
+                style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-color);
+                "
+              >
+                Прикметники
+              </h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px">
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="dangerous"
+                    data-back="небезпечний"
+                  />
+                  dangerous</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="delicious"
+                    data-back="смачний"
+                  />
+                  delicious</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="fresh"
+                    data-back="свіжий"
+                  />
+                  fresh</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="grilled"
+                    data-back="смажений на грилі"
+                  />
+                  grilled</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="healthy"
+                    data-back="корисний / здоровий"
+                  />
+                  healthy</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="hungry"
+                    data-back="голодний"
+                  />
+                  hungry</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="light"
+                    data-back="легкий"
+                  />
+                  light</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="pickled"
+                    data-back="маринований"
+                  />
+                  pickled</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="strong"
+                    data-back="міцний (про чай/каву)"
+                  />
+                  strong</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="sweet"
+                    data-back="солодкий"
+                  />
+                  sweet</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="thirsty"
+                    data-back="спраглий"
+                  />
+                  thirsty</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="traditional"
+                    data-back="традиційний"
+                  />
+                  traditional</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="warm"
+                    data-back="теплий"
+                  />
+                  warm</label
+                >
+              </div>
+
+              <!-- Група 4: Дієслова та прислівники -->
+              <h5
+                style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-color);
+                "
+              >
+                Дієслова, прислівники та вирази
+              </h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px">
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="around the world"
+                    data-back="по всьому світу"
+                  />
+                  around the world</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="carefully"
+                    data-back="обережно / уважно"
+                  />
+                  carefully</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="everywhere"
+                    data-back="скрізь"
+                  />
+                  everywhere</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="measure"
+                    data-back="вимірювати"
+                  />
+                  measure</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="reply"
+                    data-back="відповідати"
+                  />
+                  reply</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="to enjoy"
+                    data-back="насолоджуватися"
+                  />
+                  to enjoy</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="to include"
+                    data-back="включати"
+                  />
+                  to include</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="to order"
+                    data-back="замовляти"
+                  />
+                  to order</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="usually"
+                    data-back="зазвичай"
+                  />
+                  usually</label
+                >
+              </div>
+
+              <!-- Група 5: Інші іменники -->
+              <h5
+                style="
+                  margin-top: 20px;
+                  margin-bottom: 10px;
+                  color: var(--text-color);
+                "
+              >
+                Інші іменники
+              </h5>
+              <div style="display: flex; flex-wrap: wrap; gap: 15px">
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="adventure"
+                    data-back="пригода"
+                  />
+                  adventure</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="circle"
+                    data-back="коло"
+                  />
+                  circle</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="habit"
+                    data-back="звичка"
+                  />
+                  habit</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="journey"
+                    data-back="подорож"
+                  />
+                  journey</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="question"
+                    data-back="питання"
+                  />
+                  question</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="temperature"
+                    data-back="температура"
+                  />
+                  temperature</label
+                >
+                <label class="test-label"
+                  ><input
+                    type="checkbox"
+                    class="test-checkbox dynamic-cb"
+                    data-front="treasure"
+                    data-back="скарб"
+                  />
+                  treasure</label
+                >
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- КАРТКИ -->
+            <div
+              class="flashcard-module"
+              id="fc-dynamic-vocab"
+              data-fc-id="dynamic-vocab-2"
+            >
+              <div class="flashcard-stats">
+                <span class="fc-remaining">Remaining: 0</span>
+                <span class="fc-learned">Learned: 0</span>
+              </div>
+              <div class="flashcard-scene">
+                <div class="flashcard">
+                  <div class="flashcard-face flashcard-front fc-front">
+                    Word
+                  </div>
+                  <div class="flashcard-face flashcard-back fc-back">
+                    Translation
+                  </div>
+                </div>
+              </div>
+              <div class="flashcard-controls">
+                <button
+                  type="button"
+                  class="submit-btn fc-know-btn"
+                  title="Key: Left Arrow"
+                >
+                  ← I know it
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-dont-know-btn"
+                  title="Key: Right Arrow"
+                >
+                  I don't know →
+                </button>
+              </div>
+              <div class="flashcard-menu" style="display: none">
+                <button type="button" class="submit-btn fc-action-btn">
+                  Start
+                </button>
+                <button
+                  type="button"
+                  class="reset-btn-hw fc-clear-btn"
+                  style="margin-top: 15px; width: 100%"
+                >
+                  Reset progress
+                </button>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Граматична підказка: Countable vs Uncountable -->
+            <div class="soft-callout">
+              <h4>
+                Злічувані та незлічувані іменники (Countable / Uncountable)
+              </h4>
+              <p>
+                В англійській мові вся їжа та напої поділяються на дві групи:
+              </p>
+              <ul style="line-height: 1.6">
+                <li>
+                  <span class="bold">Злічувані (Countable):</span> те, що можна
+                  порахувати поштучно. Вони можуть бути в однині та множині.
+                  <br /><em>Приклади:</em> a mushroom (один гриб) — two
+                  mushrooms (два гриби), a biscuit — three biscuits.
+                </li>
+                <li>
+                  <span class="bold">Незлічувані (Uncountable):</span> те, що не
+                  можна порахувати поштучно (рідини, сипучі продукти,
+                  матеріали). Вони не мають форми множини. <br /><em
+                    >Приклади:</em
+                  >
+                  water (вода), jam (джем), bread (хліб), rice (рис), cheese
+                  (сир), bacon (бекон).
+                </li>
+              </ul>
+            </div>
+
+            <!-- Граматична підказка: Some / Any -->
+            <div class="soft-callout">
+              <h4>Some / Any (Трохи, кілька)</h4>
+              <p>
+                Коли ми говоримо про незлічувані продукти або множину
+                злічуваних, ми рідко знаємо точну кількість. Щоб сказати "трохи"
+                або "кілька", ми використовуємо слова
+                <span class="accent">some</span> та
+                <span class="accent">any</span>.
+              </p>
+
+              <p>
+                <span class="bold">Some</span> використовується в
+                <span class="bold">стверджувальних</span> реченнях:
+              </p>
+              <ul>
+                <li>
+                  I have <span class="accent">some</span> mushrooms. — У мене є
+                  кілька грибів.
+                </li>
+                <li>
+                  There is <span class="accent">some</span> juice in the glass.
+                  — У склянці є трохи соку.
+                </li>
+              </ul>
+
+              <p>
+                <span class="bold">Any</span> використовується в
+                <span class="bold">запереченнях</span> та звичайних
+                <span class="bold">запитаннях</span>:
+              </p>
+              <ul>
+                <li>
+                  Do you have <span class="accent">any</span> strawberries? — У
+                  тебе є (хоч якісь) полуниці?
+                </li>
+                <li>
+                  There isn't <span class="accent">any</span> sugar in my tea. —
+                  У моєму чаї немає (ніякого) цукру.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Граматична підказка: At the Cafe -->
+            <div class="soft-callout">
+              <h4>В кафе: як ввічливо замовляти та пропонувати</h4>
+              <p>
+                Як ми щойно з'ясували, у запитаннях зазвичай використовується
+                слово <span class="accent">any</span>. Але з цього правила є
+                один дуже важливий виняток для ситуацій у кафе чи в гостях.
+              </p>
+
+              <p>
+                Коли ми <strong>ввічливо щось просимо</strong> або
+                <strong>пропонуємо</strong>, ми завжди ставимо
+                <span class="accent">some</span> замість
+                <span class="accent">any</span>:
+              </p>
+
+              <ul style="line-height: 1.6">
+                <li>
+                  <span class="bold">Прохання (Could I have...?)</span><br />
+                  <em
+                    >Could I have <span class="accent">some</span> water,
+                    please?</em
+                  >
+                  — Можна мені (трохи) води, будь ласка?
+                </li>
+                <li>
+                  <span class="bold">Пропозиція (Would you like...?)</span
+                  ><br />
+                  <em
+                    >Would you like <span class="accent">some</span> coffee?</em
+                  >
+                  — Бажаєте кави?
+                </li>
+              </ul>
+              <p>
+                <em>Зверни увагу:</em> українською ми часто просто кажемо "Можна
+                води?" або "Бажаєте кави?", але англійською перед незлічуваними
+                іменниками в таких фразах обов'язково треба додавати
+                <span class="accent">some</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 2: PHONETICS -->
+      <section id="part-2" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Phonetics: Remaining Sounds</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <h3 id="review">Quick Review</h3>
+
+            <!-- Швидке повторення (Quick Review) -->
+            <div class="soft-callout" style="margin-bottom: 25px">
+              <h4 style="margin-top: 0">Звуки з минулого уроку</h4>
+              <p>
+                Перш ніж переходити до нових звуків, давай швидко пригадаємо
+                приголосні та всі базові голосні, які ми вивчили минулого разу:
+              </p>
+
+              <p class="bold" style="margin-bottom: 5px">
+                Приголосні (Consonants):
+              </p>
+              <ul style="line-height: 1.8; margin-bottom: 15px; margin-top: 0">
+                <li>
+                  <span class="accent-string">/ θ /</span> (глухий міжзубний) —
+                  <strong>th</strong>ink, ma<strong>th</strong>
+                </li>
+                <li>
+                  <span class="accent-string">/ ð /</span> (дзвінкий міжзубний)
+                  — <strong>th</strong>is, <strong>th</strong>at
+                </li>
+                <li>
+                  <span class="accent-string">/ ŋ /</span> (носовий "н") —
+                  si<strong>ng</strong>, lo<strong>ng</strong>
+                </li>
+              </ul>
+
+              <p class="bold" style="margin-bottom: 5px">
+                Короткі голосні (Short Vowels):
+              </p>
+              <ul style="line-height: 1.8; margin-bottom: 15px; margin-top: 0">
+                <li>
+                  <span class="accent-string">/ ɪ /</span> (короткий "і") —
+                  m<strong>i</strong>lk, s<strong>i</strong>t
+                </li>
+                <li>
+                  <span class="accent-string">/ e /</span> (короткий "е") —
+                  <strong>e</strong>gg, p<strong>e</strong>n
+                </li>
+                <li>
+                  <span class="accent-string">/ æ /</span> (широкий "е") —
+                  <strong>a</strong>pple, c<strong>a</strong>t
+                </li>
+                <li>
+                  <span class="accent-string">/ ʌ /</span> (короткий "а") —
+                  c<strong>u</strong>p, b<strong>u</strong>s
+                </li>
+                <li>
+                  <span class="accent-string">/ ɒ /</span> (короткий "о") —
+                  h<strong>o</strong>t, d<strong>o</strong>g
+                </li>
+                <li>
+                  <span class="accent-string">/ ʊ /</span> (короткий "у") —
+                  c<strong>oo</strong>k, b<strong>oo</strong>k
+                </li>
+              </ul>
+
+              <p class="bold" style="margin-bottom: 5px">
+                Довгі голосні (Long Vowels):
+              </p>
+              <ul style="line-height: 1.8; margin-bottom: 0; margin-top: 0">
+                <li>
+                  <span class="accent-string">/ iː /</span> (довгий "і") —
+                  m<strong>ea</strong>t, t<strong>ea</strong>
+                </li>
+                <li>
+                  <span class="accent-string">/ ɑː /</span> (довгий "а") —
+                  gl<strong>a</strong>ss, f<strong>a</strong>st
+                </li>
+                <li>
+                  <span class="accent-string">/ ɔː /</span> (довгий "о") —
+                  sp<strong>or</strong>t, t<strong>a</strong>ll
+                </li>
+                <li>
+                  <span class="accent-string">/ uː /</span> (довгий "у") —
+                  s<strong>ou</strong>p, m<strong>oo</strong>n
+                </li>
+              </ul>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-intro">1. Приголосні звуки</h3>
+            <p>
+              Ми вже вивчили більшість приголосних. Сьогодні розглянемо 6
+              останніх звуків. Деякі з них складаються з двох символів, але
+              вимовляються як один звук.
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Звук</th>
+                    <th>Приклади слів</th>
+                    <th>Вимова</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="accent-string">/ w /</span></td>
+                    <td>water, why, window</td>
+                    <td>
+                      Округли й витягни губи вперед у "трубочку", наче збираєшся
+                      свиснути або подути на гарячий чай. Звук утворюють тільки
+                      губи — язик і зуби участі не беруть, на відміну від
+                      українського "в".
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ r /</span></td>
+                    <td>rice, red, run</td>
+                    <td>
+                      Загни кінчик язика назад і підніми його до піднебіння, але
+                      НЕ торкайся ним і не вібруй, як в українському "р". Звук
+                      виходить м'який і плавний, майже без тертя.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ʃ /</span></td>
+                    <td>sugar, fish, shoe</td>
+                    <td>
+                      Округли губи трохи вперед, підніми середину язика (не
+                      кінчик!) до піднебіння і випусти повітря з тихим шипінням.
+                      Звук "ширший" і м'якший за українське "ш".
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ tʃ /</span></td>
+                    <td>cheese, chocolate</td>
+                    <td>
+                      Одне швидке поєднання двох рухів: спочатку язик повністю
+                      перекриває повітря (як / t /), потім різко "відпускає"
+                      його в / ʃ /. Разом звучить схоже на українське "ч", але
+                      трохи м'якше.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ʒ /</span></td>
+                    <td>usually, television</td>
+                    <td>
+                      Постав губи й язик так само, як для / ʃ /, але додай голос
+                      — зв'язки мають вібрувати (поклади пальці на горло, щоб
+                      відчути тремтіння).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ dʒ /</span></td>
+                    <td>juice, sausage, jam</td>
+                    <td>
+                      Той самий рух, що й для / tʃ /, тільки дзвінко, з голосом
+                      — виходить щось середнє між українськими "дж" і м'яким
+                      "джь".
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-vowels">2. The Schwa та довгий / ɜː /</h3>
+
+            <div class="soft-callout">
+              <h4>
+                Найголовніший звук англійської: The Schwa
+                <span class="accent-string">/ ə /</span>
+              </h4>
+              <p>
+                Схва — найкоротший і найрозслабленіший голосний звук в
+                англійській мові. Уяви легке зітхання або те, як ти кажеш "угу",
+                не думаючи — це майже і є / ə /.
+              </p>
+
+              <p><span class="bold">Як його вимовити:</span></p>
+              <ul>
+                <li>
+                  Повністю розслаб язик і губи — не округлюй їх, як для "о", і
+                  не розтягуй, як для "и".
+                </li>
+                <li>
+                  Рот ледь прочинений, язик лежить у нейтральному положенні: не
+                  спереду й не ззаду, не вгорі й не внизу — просто посередині
+                  рота.
+                </li>
+                <li>
+                  Звук виходить коротким і приглушеним, майже "проковтнутим" —
+                  його ніколи не тягнуть.
+                </li>
+              </ul>
+
+              <p>
+                Головне правило:
+                <span class="bold">The Schwa ніколи не буває під наголосом</span
+                >. Це звук ненаголошених складів. Коли слово стає довгим,
+                "зайві" ненаголошені голосні перестають звучати чітко і
+                зливаються саме в / ə / — незалежно від того, яка буква
+                написана: a, e, i, o, u чи навіть кілька букв разом:
+              </p>
+              <ul>
+                <li>
+                  wat<span class="bold">er</span>
+                  <span class="accent-string">/ˈwɔːtə/</span>
+                </li>
+                <li>
+                  b<span class="bold">a</span>nan<span class="bold">a</span>
+                  <span class="accent-string">/bəˈnɑːnə/</span>
+                </li>
+                <li>
+                  breakf<span class="bold">a</span>st
+                  <span class="accent-string">/ˈbrekfəst/</span>
+                </li>
+              </ul>
+
+              <p>
+                <span class="bold">Типова помилка українських учнів:</span> в
+                українській мові кожен голосний вимовляється чітко, навіть
+                ненаголошений (у слові "молоко" всі три "о" звучать по-різному,
+                але виразно). В англійській — навпаки: ненаголошені голосні
+                "лінуються" і перетворюються на / ə /. Саме тому носії мови
+                звучать так швидко і "нерозбірливо" для початківців.
+              </p>
+
+              <p>
+                <span class="bold">Лайфхак:</span> прошепочи слово. У шепоті
+                наголошений склад все одно виділяється довжиною й чіткістю, а
+                ненаголошені склади "зникають" у легке / ə / — так простіше
+                почути, де саме він ховається.
+              </p>
+            </div>
+
+            <div class="tablecontainer" style="margin-top: 15px">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Звук</th>
+                    <th>Приклади слів</th>
+                    <th>Вимова</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="accent-string">/ ə /</span></td>
+                    <td>water, about, breakfast</td>
+                    <td>
+                      Найкоротший і найслабший звук мови — язик і губи повністю
+                      розслаблені, рот ледь відкритий. Звучить як швидке,
+                      "проковтнуте" уканя.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɜː /</span></td>
+                    <td>bird, girl, word</td>
+                    <td>
+                      По суті — це schwa, яку розтягнули й поставили під
+                      наголос. Язик у тому самому нейтральному положенні, що й
+                      для / ə /, але звук довгий і добре чутний. Губи не
+                      округлені й не розтягнуті, просто розслаблені.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr />
+
+            <h3 id="p2-diphthongs">3. Дифтонги (Diphthongs)</h3>
+            <p>
+              Дифтонг — це два голосні звуки, які стоять поруч і плавно
+              перетікають один в одного, утворюючи один склад. Їх всього 8.
+            </p>
+            <p>
+              Головне правило: перший звук завжди довший і сильніший, а другий —
+              короткий, слабкий і майже "проковтнутий". Язик і губи плавно
+              рухаються від положення першого звука до положення другого, без
+              різкої паузи між ними — ніби один звук "перетікає" в інший.
+            </p>
+
+            <div class="tablecontainer">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Звук</th>
+                    <th>Приклади слів</th>
+                    <th>Вимова</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="accent-string">/ eɪ /</span></td>
+                    <td>
+                      bacon <span class="accent-string">/ˈbeɪkən/</span>, day
+                      <span class="accent-string">/deɪ/</span>
+                    </td>
+                    <td>
+                      Від / e / до / ɪ /: рот трохи відкритий, потім губи плавно
+                      розтягуються, ніби в легку посмішку.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ aɪ /</span></td>
+                    <td>
+                      rice <span class="accent-string">/raɪs/</span>, time
+                      <span class="accent-string">/taɪm/</span>
+                    </td>
+                    <td>
+                      Від широкого / a / до / ɪ /: рот широко відкривається,
+                      потім швидко "закривається" до посмішки.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɔɪ /</span></td>
+                    <td>
+                      coin
+                      <span class="accent-string">/kɔɪn/</span>, choice
+                      <span class="accent-string">/tʃɔɪs/</span>
+                    </td>
+                    <td>
+                      Від округленого / ɔ / до / ɪ /: губи спочатку округлені,
+                      потім швидко розтягуються.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ aʊ /</span></td>
+                    <td>
+                      cow <span class="accent-string">/kaʊ/</span>, brown
+                      <span class="accent-string">/braʊn/</span>
+                    </td>
+                    <td>
+                      Від відкритого / a / до округленого / ʊ /: рот широко
+                      відкривається, потім губи округлюються і стискаються.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ əʊ /</span></td>
+                    <td>
+                      toast <span class="accent-string">/təʊst/</span>, code
+                      <span class="accent-string">/kəʊd/</span>
+                    </td>
+                    <td>
+                      Від нейтрального schwa / ə / до округленого / ʊ /: губи
+                      ледь округлюються дедалі більше до кінця звука.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ɪə /</span></td>
+                    <td>
+                      cereal <span class="accent-string">/ˈsɪəriəl/</span>, here
+                      <span class="accent-string">/hɪə/</span>
+                    </td>
+                    <td>
+                      Від / ɪ / до / ə /: губи спочатку трохи розтягнуті, потім
+                      розслабляються в нейтральне положення.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ eə /</span></td>
+                    <td>
+                      there <span class="accent-string">/ðeə/</span>, hair
+                      <span class="accent-string">/heə/</span>
+                    </td>
+                    <td>
+                      Від / e / до / ə /: рот середньо відкритий, потім плавно
+                      розслабляється.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><span class="accent-string">/ ʊə /</span></td>
+                    <td>
+                      tourist <span class="accent-string">/ˈtʊərɪst/</span>,
+                      pure
+                      <span class="accent-string">/pjʊə/</span>
+                    </td>
+                    <td>
+                      Від округленого / ʊ / до / ə /: губи спочатку округлені,
+                      потім розслабляються.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 3: VIDEOS -->
+      <section id="part-3" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Pronunciation Videos</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- Consonants -->
+            <h3 id="v1">Schwa sound / ə /</h3>
+            <!-- video 1 -->
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/wg0P0oYkniE?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <!-- video 2 -->
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/KwDJnXt3ZVQ?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v2">Long vowel / ɜː /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zSJJWHymEPw?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v3">Diphthong / ɪə /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vC0h4S0YPJc?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v4">Diphthong / aʊ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/9WDnVMQIaTs?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v5">Diphthong / əʊ /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/r1BRCG0P9C8?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v6">Diphthong / eə /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/0J7-5maJJIk?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v7">Diphthong / ʊə /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/nHSqluHrD-U?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v8">Consonant / r /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Lxuo14hjP_8?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <h3 id="v9">Consonant / w /</h3>
+            <div class="video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HzhPB1hXG-o?rel=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <hr />
+
+            <!-- more -->
+            <div class="callout2">
+              <div style="line-height: 1.6">
+                Весь плейлист:
+                <a
+                  href="https://www.youtube.com/playlist?list=PLD6B222E02447DC07"
+                  target="_blank"
+                  class="bold"
+                  style="text-decoration: underline"
+                  >BBC Learning English – Pronunciation Tips</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🧩 ЧАСТИНА 4: EXERCISES -->
+      <section id="part-4" class="lesson-wrapper tab-content">
+        <div class="lesson-block">
+          <div class="lesson-header">
+            <h2>
+              <img
+                src="./media/icons/read.svg"
+                class="star"
+                alt="an open book"
+              />
+              <span>Exercises</span>
+            </h2>
+          </div>
+
+          <div class="lesson-content">
+            <!-- Practice 1: Read out loud -->
+            <h3 id="l9-p4-ex1">Exercise 1</h3>
+            <div class="soft-callout">
+              <h4>Exercise 1.1: Read out loud</h4>
+              <p>
+                Прочитай ці слова вголос, звертаючи увагу на транскрипцію та
+                нові звуки:
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 20px;
+                  font-size: 16px;
+                  margin-top: 15px;
+                "
+              >
+                <!-- column 1 -->
+                <div style="flex: 1 1 200px">
+                  <ol>
+                    <li>water <span class="accent-string">/ˈwɔːtə/</span></li>
+                    <li>
+                      cheesecake <span class="accent-string">/ˈtʃiːzkeɪk/</span>
+                    </li>
+                    <li>burger <span class="accent-string">/ˈbɜːɡə/</span></li>
+                    <li>
+                      delicious <span class="accent-string">/dɪˈlɪʃəs/</span>
+                    </li>
+                    <li>juice <span class="accent-string">/dʒuːs/</span></li>
+                    <li>measure <span class="accent-string">/ˈmeʒə/</span></li>
+                    <li>
+                      oatmeal <span class="accent-string">/ˈəʊtmiːl/</span>
+                    </li>
+                    <li>circle <span class="accent-string">/ˈsɜːkl/</span></li>
+                    <li>
+                      chocolate <span class="accent-string">/ˈtʃɒklət/</span>
+                    </li>
+                    <li>
+                      potatoes <span class="accent-string">/pəˈteɪtəʊz/</span>
+                    </li>
+                    <li>
+                      sausage <span class="accent-string">/ˈsɒsɪdʒ/</span>
+                    </li>
+                    <li>
+                      usually <span class="accent-string">/ˈjuːʒəli/</span>
+                    </li>
+                    <li>recipe <span class="accent-string">/ˈresəpi/</span></li>
+                    <li>reply <span class="accent-string">/rɪˈplaɪ/ </span></li>
+                    <li>sour <span class="accent-string">/ˈsaʊə/ </span></li>
+                  </ol>
+                </div>
+                <!-- column 2 -->
+                <div style="flex: 1 1 200px">
+                  <ol start="16">
+                    <li>girl <span class="accent-string">/ɡɜːl/</span></li>
+                    <li>
+                      biscuit <span class="accent-string">/ˈbɪskɪt/</span>
+                    </li>
+                    <li>
+                      dangerous <span class="accent-string">/ˈdeɪndʒərəs/</span>
+                    </li>
+                    <li>
+                      mushroom <span class="accent-string">/ˈmʌʃruːm/</span>
+                    </li>
+                    <li>
+                      temperature
+                      <span class="accent-string">/ˈtemprətʃə/</span>
+                    </li>
+                    <li>
+                      microwave <span class="accent-string">/ˈmaɪkrəweɪv/</span>
+                    </li>
+                    <li>
+                      journey <span class="accent-string">/ˈdʒɜːni/</span>
+                    </li>
+                    <li>butter <span class="accent-string">/ˈbʌtə/</span></li>
+                    <li>
+                      question <span class="accent-string">/ˈkwestʃən/</span>
+                    </li>
+                    <li>sugar <span class="accent-string">/ˈʃʊɡə/</span></li>
+                    <li>
+                      treasure <span class="accent-string">/ˈtreʒə/</span>
+                    </li>
+                    <li>
+                      vegetable <span class="accent-string">/ˈvedʒtəbl/</span>
+                    </li>
+                    <li>
+                      adventure <span class="accent-string">/ədˈventʃə/</span>
+                    </li>
+                    <li>
+                      carefully <span class="accent-string">/ˈkeəfəli/</span>
+                    </li>
+                    <li>world <span class="accent-string">/wɜːld/</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Фонетична підказка: Linking R -->
+            <div class="soft-callout">
+              <h4>Linking "r" (Зв'язуючий звук / r /)</h4>
+              <p>
+                Іноді в словнику в кінці транскрипції деяких слів пишуть
+                <strong>(r)</strong>:
+              </p>
+
+              <ul>
+                <li>water <span class="accent-string">/ˈwɔːtə(r)/</span></li>
+                <li>burger <span class="accent-string">/ˈbɜːɡə(r)/</span></li>
+                <li>measure <span class="accent-string">/ˈmeʒə(r)/</span></li>
+                <li>
+                  temperature <span class="accent-string">/ˈtemprətʃə(r)/</span>
+                </li>
+                <li>butter <span class="accent-string">/ˈbʌtə(r)/</span></li>
+                <li>sugar <span class="accent-string">/ˈʃʊɡə(r)/</span></li>
+                <li>treasure <span class="accent-string">/ˈtreʒə(r)/</span></li>
+                <li>
+                  adventure <span class="accent-string">/ədˈventʃə(r)/</span>
+                </li>
+              </ul>
+
+              <p>
+                У Британській англійській літеру <strong>r</strong> у кінці
+                слова зазвичай <strong>не вимовляють</strong> (вона
+                "ковтається", залишаючи легкий звук <strong>/ ə /</strong> або
+                подовжуючи попередній голосний). Але є один важливий виняток:
+                якщо наступне слово в реченні починається з
+                <strong>голосного звуку</strong>, британці вимовляють
+                <strong>r</strong>, щоб плавно з'єднати два слова. Це
+                називається <span class="accent">Linking r</span> (зв'язуючий
+                "р").
+              </p>
+            </div>
+
+            <!-- Practice 1.2: Linking R -->
+            <div class="soft-callout">
+              <h4>Exercise 1.2: Read out loud (Linking r)</h4>
+              <p>
+                Прочитай ці речення вголос. Порівняй, як вимовляється слово з
+                кінцевим <strong>r</strong> перед голосною (звук з'являється) та
+                перед приголосною або в кінці речення (звук зникає):
+              </p>
+
+              <ol style="line-height: 1.8; font-size: 16px; margin-top: 15px">
+                <li>
+                  <span class="bold">water</span>
+                  <ul>
+                    <li>
+                      Water and ice.
+                      <span class="accent-string">/ ˈwɔːtər ənd /</span> [
+                      во-тер-енд ]
+                    </li>
+                    <li>
+                      The water is hot.
+                      <span class="accent-string">/ ˈwɔːtər ɪz /</span> [
+                      во-тер-із ]
+                    </li>
+                    <li>
+                      Water, please.
+                      <span class="accent-string">/ ˈwɔːtə pliːz /</span> [
+                      во-те пліз ]
+                    </li>
+                    <li>
+                      I need some water.
+                      <span class="accent-string">/ ˈwɔːtə /</span> [ во-те ]
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="bold">butter</span>
+                  <ul>
+                    <li>
+                      Butter and jam.
+                      <span class="accent-string">/ ˈbʌtər ənd /</span> [
+                      ба-тер-енд ]
+                    </li>
+                    <li>
+                      Butter on toast.
+                      <span class="accent-string">/ ˈbʌtər ɒn /</span> [
+                      ба-тер-он ]
+                    </li>
+                    <li>
+                      Butter for breakfast.
+                      <span class="accent-string">/ ˈbʌtə fə /</span> [ ба-те фо
+                      ]
+                    </li>
+                    <li>
+                      Pass me the butter, please.
+                      <span class="accent-string">/ ˈbʌtə /</span> [ ба-те ]
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="bold">sugar</span>
+                  <ul>
+                    <li>
+                      Sugar and milk.
+                      <span class="accent-string">/ ˈʃʊɡər ənd /</span> [
+                      шу-ґер-енд ]
+                    </li>
+                    <li>
+                      Sugar in tea.
+                      <span class="accent-string">/ ˈʃʊɡər ɪn /</span> [
+                      шу-ґер-ін ]
+                    </li>
+                    <li>
+                      Sugar for you.
+                      <span class="accent-string">/ ˈʃʊɡə fə /</span> [ шу-ґе фо
+                      ]
+                    </li>
+                    <li>
+                      I don't want any sugar.
+                      <span class="accent-string">/ ˈʃʊɡə /</span> [ шу-ґе ]
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <hr />
+
+            <!-- Practice 2 -->
+            <h3 id="l9-p4-ex2">Exercise 2</h3>
+
+            <!-- 2.1 -->
+            <div class="soft-callout">
+              <h4>Exercise 2.1: Decipher the Word</h4>
+              <p>
+                Дано транскрипції слів. Прочитай їх вголос і запиши ці слова:
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 20px;
+                  font-size: 16px;
+                  margin-top: 15px;
+                "
+              >
+                <!-- column 1 -->
+                <div style="flex: 1 1 200px">
+                  <ol>
+                    <li><span class="accent-string">/dɪˈzɜːt/</span></li>
+                    <li><span class="accent-string">/ˈɒmlət/</span></li>
+                    <li><span class="accent-string">/ˌleməˈneɪd/</span></li>
+                    <li><span class="accent-string">/ˈsænwɪtʃ/</span></li>
+                    <li><span class="accent-string">/ˌævəˈkɑːdəʊ/</span></li>
+                    <li><span class="accent-string">/ˈstrɔːbəri/</span></li>
+                  </ol>
+                </div>
+                <!-- column 2 -->
+                <div style="flex: 1 1 200px">
+                  <ol start="7">
+                    <li><span class="accent-string">/ˈkjuːkʌmbə/</span></li>
+                    <li><span class="accent-string">/spəˈɡeti/</span></li>
+                    <li><span class="accent-string">/ˈhelθi/</span></li>
+                    <li><span class="accent-string">/ˈθɜːsti/</span></li>
+                    <li><span class="accent-string">/ˈhʌŋɡri/</span></li>
+                    <li><span class="accent-string">/ˈjɒɡət/</span></li>
+                  </ol>
+                </div>
+                <textarea
+                  id="l9-p1-ex2-1"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Practice 2.2: Find the Schwa -->
+            <div class="soft-callout">
+              <h4>Exercise 2.2: Find the Schwa</h4>
+              <div>
+                <p>
+                  Знайди у кожному рядку <strong>два слова</strong>, які містять
+                  звук <span class="accent-string">/ ə /</span> (Schwa):
+                </p>
+
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>hot | water | tea | breakfast | milk</li>
+                  <li>rice | banana | fish | egg | vegetable</li>
+                  <li>chocolate | meat | delicious | cheese | juice</li>
+                  <li>toast | sugar | bread | bacon | soup</li>
+                  <li>plate | cereal | cup | fork | salad</li>
+                </ol>
+                <textarea
+                  id="l9-p1-ex2-2"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 3: Drag and Drop Sorting -->
+            <h3 id="l9-p4-ex3">Exercise 3</h3>
+
+            <div class="soft-callout" style="margin-bottom: 25px">
+              <h4 style="margin: 0">Exercise 3.1: Sort by Sound</h4>
+              <p>Розподіли слова за правильним приголосним звуком.</p>
+
+              <div class="sorting-game-module" data-game-id="l9-sort-1">
+                <div class="sorting-header">
+                  <button type="button" class="reset-btn-hw sorting-reset-btn">
+                    🔄 Reset
+                  </button>
+                </div>
+                <script type="application/json" class="sorting-data">
+                  {
+                    "categories": [
+                      { "id": "snd-sh", "title": "/ ʃ /" },
+                      { "id": "snd-ch", "title": "/ tʃ /" },
+                      { "id": "snd-zh", "title": "/ ʒ /" },
+                      { "id": "snd-j", "title": "/ dʒ /" }
+                    ],
+                    "items": [
+                      {
+                        "id": "w1-1",
+                        "text": "sugar",
+                        "correctCategory": "snd-sh"
+                      },
+                      {
+                        "id": "w1-2",
+                        "text": "mushroom",
+                        "correctCategory": "snd-sh"
+                      },
+                      {
+                        "id": "w1-3",
+                        "text": "fish",
+                        "correctCategory": "snd-sh"
+                      },
+                      {
+                        "id": "w1-4",
+                        "text": "chocolate",
+                        "correctCategory": "snd-ch"
+                      },
+                      {
+                        "id": "w1-5",
+                        "text": "cheese",
+                        "correctCategory": "snd-ch"
+                      },
+                      {
+                        "id": "w1-6",
+                        "text": "sandwich",
+                        "correctCategory": "snd-ch"
+                      },
+                      {
+                        "id": "w1-7",
+                        "text": "usually",
+                        "correctCategory": "snd-zh"
+                      },
+                      {
+                        "id": "w1-8",
+                        "text": "measure",
+                        "correctCategory": "snd-zh"
+                      },
+                      {
+                        "id": "w1-9",
+                        "text": "treasure",
+                        "correctCategory": "snd-zh"
+                      },
+                      {
+                        "id": "w1-10",
+                        "text": "sausage",
+                        "correctCategory": "snd-j"
+                      },
+                      {
+                        "id": "w1-11",
+                        "text": "juice",
+                        "correctCategory": "snd-j"
+                      },
+                      {
+                        "id": "w1-12",
+                        "text": "journey",
+                        "correctCategory": "snd-j"
+                      }
+                    ]
+                  }
+                </script>
+                <div class="sorting-bank"></div>
+                <div class="sorting-zones-container"></div>
+                <div class="sorting-feedback"></div>
+              </div>
+            </div>
+
+            <div class="soft-callout">
+              <h4 style="margin: 0">Exercise 3.2: Sort by Diphthong</h4>
+              <p>Розподіли слова за правильним дифтонгом.</p>
+
+              <div class="sorting-game-module" data-game-id="l9-sort-2">
+                <div class="sorting-header">
+                  <button type="button" class="reset-btn-hw sorting-reset-btn">
+                    🔄 Reset
+                  </button>
+                </div>
+                <script type="application/json" class="sorting-data">
+                  {
+                    "categories": [
+                      { "id": "snd-ei", "title": "/ eɪ /" },
+                      { "id": "snd-ai", "title": "/ aɪ /" },
+                      { "id": "snd-oi", "title": "/ ɔɪ /" },
+                      { "id": "snd-au", "title": "/ aʊ /" }
+                    ],
+                    "items": [
+                      {
+                        "id": "w2-1",
+                        "text": "bacon",
+                        "correctCategory": "snd-ei"
+                      },
+                      {
+                        "id": "w2-2",
+                        "text": "plate",
+                        "correctCategory": "snd-ei"
+                      },
+                      {
+                        "id": "w2-3",
+                        "text": "cake",
+                        "correctCategory": "snd-ei"
+                      },
+                      {
+                        "id": "w2-4",
+                        "text": "rice",
+                        "correctCategory": "snd-ai"
+                      },
+                      {
+                        "id": "w2-5",
+                        "text": "time",
+                        "correctCategory": "snd-ai"
+                      },
+                      {
+                        "id": "w2-6",
+                        "text": "knife",
+                        "correctCategory": "snd-ai"
+                      },
+                      {
+                        "id": "w2-7",
+                        "text": "choice",
+                        "correctCategory": "snd-oi"
+                      },
+                      {
+                        "id": "w2-8",
+                        "text": "boy",
+                        "correctCategory": "snd-oi"
+                      },
+                      {
+                        "id": "w2-9",
+                        "text": "voice",
+                        "correctCategory": "snd-oi"
+                      },
+                      {
+                        "id": "w2-10",
+                        "text": "cow",
+                        "correctCategory": "snd-au"
+                      },
+                      {
+                        "id": "w2-11",
+                        "text": "brown",
+                        "correctCategory": "snd-au"
+                      },
+                      {
+                        "id": "w2-12",
+                        "text": "house",
+                        "correctCategory": "snd-au"
+                      }
+                    ]
+                  }
+                </script>
+                <div class="sorting-bank"></div>
+                <div class="sorting-zones-container"></div>
+                <div class="sorting-feedback"></div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 4: Reading & Discussion -->
+            <h3 id="l9-p4-ex4">Exercise 4</h3>
+            <div class="soft-callout">
+              <h4>Exercise 4: Reading & Speaking</h4>
+              <p style="margin-bottom: 15px">
+                <strong>Словник:</strong>
+                <a
+                  href="https://www.oxfordlearnersdictionaries.com/"
+                  target="_blank"
+                  class="bold"
+                  style="text-decoration: underline"
+                  >Oxford Learner's Dictionaries</a
+                >
+              </p>
+
+              <ol
+                style="line-height: 1.8; margin-top: 15px; margin-bottom: 20px"
+              >
+                <li>
+                  <span class="bold">Step 1:</span> Прочитай текст вголос та
+                  усно переклади його українською мовою.
+                </li>
+                <li>
+                  <span class="bold">Step 2:</span> Під час читання зверни увагу
+                  на слова, які тобі було складно вимовити. Запиши їх у поле під
+                  текстом.
+                </li>
+                <li>
+                  <span class="bold">Step 3:</span> Знайди транскрипції цих слів
+                  у словнику за посиланням вище та потренуйся читати їх
+                  правильно.
+                </li>
+                <li>
+                  <span class="bold">Step 4:</span> Дай розгорнуті усні
+                  відповіді на запитання після тексту (Speaking practice).
+                </li>
+              </ol>
+
+              <div
+                class="callout2"
+                style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px"
+              >
+                "Breakfast habits change a lot around the world. For example, in
+                England, people often enjoy a big breakfast with bacon, eggs,
+                and sausages, sometimes with toast and beans. In Italy,
+                breakfast is much lighter: usually just a strong espresso and a
+                sweet pastry. In Spain, a popular choice is 'pan con tomate' —
+                toasted bread with fresh tomato and olive oil. In Japan, a
+                traditional breakfast can include rice, grilled fish, miso soup,
+                and pickled vegetables. In Ukraine, many families eat porridge
+                or syrnyky with sour cream, and drink tea or coffee. Still, no
+                matter where you live, some things stay the same: a bowl of
+                cereal with milk, warm oatmeal, or a glass of juice are
+                breakfast favorites almost everywhere."
+              </div>
+
+              <textarea
+                id="l9-p1-ex4"
+                class="test-textarea"
+                placeholder="Запиши сюди слова, які важко вимовити..."
+                rows="4"
+              ></textarea>
+
+              <div style="margin-top: 25px">
+                <h4>Discussion Questions:</h4>
+                <ol style="line-height: 1.8; font-size: 16px; margin-top: 15px">
+                  <li>
+                    What is your favorite breakfast food? Are there any foods
+                    you completely dislike?
+                  </li>
+                  <li>Do you usually eat a big breakfast or a small one?</li>
+                  <li>
+                    Which country's breakfast from the text sounds the most
+                    delicious to you and why?
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Practice 5: Translate & Speak -->
+            <h3 id="l9-p4-ex5">Exercise 5</h3>
+            <div class="soft-callout">
+              <h4>Exercise 5: At the Cafe (Translate & Speak)</h4>
+              <p>
+                Переклади ці речення англійською мовою, використовуючи
+                <span class="accent">some</span> або
+                <span class="accent">any</span>. Запиши переклад, а потім
+                обов'язково прочитай кожне речення вголос.
+              </p>
+
+              <ol style="line-height: 1.8">
+                <li>Можна мені трохи води, будь ласка?</li>
+                <li>У вас є якісь сендвічі з шинкою?</li>
+                <li>Бажаєте молока до вашої кави?</li>
+                <li>Вибачте, у нас сьогодні немає ніякого печива.</li>
+                <li>Я б хотіла замовити рис з овочами.</li>
+                <li>Чи є у вас якісь десерти з лимонним смаком?</li>
+                <li>Бажаєте ще трохи хліба?</li>
+                <li>Я не хочу ніякого сиру в моєму бургері, дякую.</li>
+                <li>Можна мені трохи льоду в мою газовану воду ?</li>
+                <li>Вибачте, у нас не залишилося шоколадного морозива.</li>
+              </ol>
+
+              <textarea
+                id="l9-p1-ex5"
+                class="test-textarea"
+                placeholder="1. Could I have..."
+                rows="12"
+              ></textarea>
+            </div>
+
+            <hr />
+
+            <!-- Practice 6: Find the Mistakes -->
+            <h3 id="l9-p4-ex6">Exercise 6</h3>
+
+            <div class="soft-callout">
+              <h4>Exercise 6: Spot the Mistakes</h4>
+              <div>
+                <p>
+                  Дано 10 слів із транскрипціями.
+                  <strong>5 транскрипцій написані з помилками.</strong> Знайди
+                  та виправ їх:
+                </p>
+                <ol style="margin-top: 15px; line-height: 2">
+                  <li>sugar <strong>/ ˈsʊɡə /</strong></li>
+                  <li>cheese <strong>/ tʃiːz /</strong></li>
+                  <li>water <strong>/ ˈvɔːtə /</strong></li>
+                  <li>rice <strong>/ raɪs /</strong></li>
+                  <li>juice <strong>/ dʒuːɪs /</strong></li>
+                  <li>bread <strong>/ bred /</strong></li>
+                  <li>chocolate <strong>/ ˈtʃɒkəleɪt /</strong></li>
+                  <li>bacon <strong>/ ˈbeɪkən /</strong></li>
+                  <li>vegetable <strong>/ ˈvedʒetəbl /</strong></li>
+                  <li>toast <strong>/ təʊst /</strong></li>
+                </ol>
+                <textarea
+                  id="l9-p1-ex6"
+                  class="test-textarea"
+                  placeholder="..."
+                  rows="5"
+                ></textarea>
+              </div>
+            </div>
+
+            <hr />
+
+            <div style="text-align: right; margin-top: 20px">
+              <button
+                type="button"
+                class="reset-btn-hw clear-section-btn"
+                data-section="part-4"
+              >
+                Clear All Answers
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by Olena Hapchyna</p>
+    </footer>
+
+    <button
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      aria-label="Scroll to top"
+    >
+      <img src="./media/icons/ufo-alien.svg" />
+    </button>
+
+    <dialog id="clear-confirm-dialog" class="custom-dialog">
+      <div class="dialog-content">
+        <h3>⚠️ Attention!</h3>
+        <p>Do you really want to delete ALL your answers and start over?</p>
+        <div class="dialog-actions">
+          <button type="button" id="dialog-cancel-btn">No</button>
+          <button type="button" id="dialog-confirm-btn">Yes, delete</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
