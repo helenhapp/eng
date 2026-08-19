@@ -475,6 +475,7 @@ p.topic {
   padding: 0 2px;
   border-radius: 2px;
   border: 1px solid rgb(254, 206, 164);
+  white-space: nowrap;
 }
 [data-theme="dark"] .accent-string {
   background-color: rgb(47, 51, 54);
