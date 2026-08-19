@@ -2153,6 +2153,34 @@
                 rows="4"
               ></textarea>
 
+              <!-- Gallery Style & HTML -->
+              <style>
+                .ex4-gallery {
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 15px;
+                  margin-bottom: 20px;
+                }
+                .ex4-gallery img {
+                  width: 100%;
+                  height: 150px;
+                  object-fit: cover;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                }
+                @media (max-width: 600px) {
+                  .ex4-gallery {
+                    grid-template-columns: repeat(2, 1fr);
+                  }
+                }
+              </style>
+              <div class="ex4-gallery">
+                <img src="breakfast1.jpg" alt="English Breakfast" />
+                <img src="breakfast2.jpg" alt="Italian Breakfast" />
+                <img src="breakfast3.jpg" alt="Spanish Breakfast" />
+                <img src="breakfast4.jpg" alt="Japanese Breakfast" />
+              </div>
+
               <div style="margin-top: 25px">
                 <h4>Discussion Questions:</h4>
                 <ol style="line-height: 1.8; font-size: 16px; margin-top: 15px">
